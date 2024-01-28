@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.549">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="keywords" content="Face perception, Psychophysics, Face inversion effect">
+
+<title>Differences in the Perceptual Processing of Unfamiliar and Familiar Faces</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="citation_title" content="Differences in the Perceptual Processing of Unfamiliar and Familiar Faces">
+<meta name="citation_abstract" content="Evidence that familiar faces are perceived differently from unfamiliar faces has important implications for our understanding of face recognition. Although familiarity effects on face recognition performance have been extensively researched, the perceptual processes that underlie these differences are comparatively unknown. Using a psychophysical staircase paradigm, we collected data from 28 female participants aged 18-65 years ($M = 43.1$, $SD = 12.7$) and examined the minimum amount of time required to recognise a previously seen face across three levels of familiarity (unfamiliar, familiar, and self). A repeated-measures analysis of variance revealed shorter recognition and reaction times for more familiar faces than for unfamiliar faces. As expected, inverted faces took longer to recognise than upright faces, but this effect was reduced for familiar and self-faces. Recognition times provide evidence for distinct perceptual processing based on level of familiarity and suggest that our ability to recognise familiar faces may be poorly characterised by current theories. Overall, the results emphasise the uniqueness of the self-face within the familiarity continuum, as all participants were able to recognise their own face significantly faster than other faces. In light of these results, it is clear that a full understanding of face recognition will require a better characterisation of how we respond to highly familiar faces.
+">
+<meta name="citation_keywords" content="Face perception,Psychophysics,Face inversion effect">
+<meta name="citation_author" content="Kasey McGinness">
+<meta name="citation_author" content="Jessica Taubert">
+<meta name="citation_author" content="Deborah Apthorp">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Reverse engineering the face space: Discovering the critical features for face identification;,citation_author=N. Abudarham;,citation_author=G. Yovel;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=3;,citation_doi=10.1167/16.3.40;,citation_volume=16;,citation_journal_title=Journal of Vision;">
+<meta name="citation_reference" content="citation_title=Critical features for face recognition;,citation_author=N. Abudarham;,citation_author=L. Shkiller;,citation_author=G. Yovel;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1016/j.cognition.2018.09.002;,citation_volume=182;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=Turning the face inversion effect on its head: Violated expectations of orientation, lighting, and gravity enhance N170 amplitudes;,citation_author=Y. Allen-Davidian;,citation_author=M. Russo;,citation_author=N. Yamamoto;,citation_author=J. Kaufman;,citation_author=A. J. Pegna;,citation_author=P. Johnston;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=2;,citation_doi=10.1162/jocn\_a\_01656;,citation_volume=33;,citation_journal_title=The Journal of Cognitive Neuroscience;">
+<meta name="citation_reference" content="citation_title=Is your own face more than a highly familiar face?;,citation_author=E. Alzueta;,citation_author=M. Melcón;,citation_author=C. Poch;,citation_author=A. Capilla;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1016/j.biopsycho.2019.01.018;,citation_volume=142;,citation_journal_title=Biological Psychology;">
+<meta name="citation_reference" content="citation_title=Getting to know you: Emerging neural representations during face familiarisation;,citation_author=G. G. Ambrus;,citation_author=C. M. Eick;,citation_author=D. Kaiser;,citation_author=G. Kovacs;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=26;,citation_doi=10.1523/JNEUROSCI.2466-20.2021;,citation_volume=41;,citation_journal_title=The Journal of Neuroscience;">
+<meta name="citation_reference" content="citation_title=How does a newly encountered face become familiar? The effect of within-person variability on adults’ and children’s perception of identity;,citation_author=K. A. Baker;,citation_author=S. Laurence;,citation_author=C. J. Mondloch;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_doi=10.1016/j.cognition.2016.12.012;,citation_volume=161;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=From face processing to face recognition: Comparing three different processing levels;,citation_author=G. Besson;,citation_author=G. Barragan-Jason;,citation_author=M. Fabre-Thorpe;,citation_author=S. Puma;,citation_author=M. Ceccaldi;,citation_author=E. J. Barbeau;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_doi=10.1016/j.cognition.2016.10.004;,citation_volume=158;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=Self or familiar-face recognition advantage? New insight using ambient images;,citation_author=C. Bortolon;,citation_author=S. Lorieux;,citation_author=S. Raffard;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=6;,citation_doi=10.1080/17470218.2017.1327982;,citation_volume=71;,citation_journal_title=The Quarterly Journal of Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Self-face advantage over familiar and unfamiliar faces: A three-level meta-analytic approach;,citation_author=undefined Bortolon.;,citation_author=S. Raffard;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_doi=10.3758/s13423-018-1487-9;,citation_volume=25;,citation_journal_title=Psychonomic Bulletin &amp;amp;amp; Review;">
+<meta name="citation_reference" content="citation_title=Computational insights into human perceptual expertise for familiar and unfamiliar face recognition;,citation_author=N. M. Blauch;,citation_author=M. Behrmann;,citation_author=D. C. Plaut;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/j.cognition.2020.104341;,citation_volume=208;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=Deep learning of shared perceptual representations for familiar and unfamiliar faces: Reply to commentaries;,citation_author=N. M. Blauch;,citation_author=M. Behrmann;,citation_author=D. C. Plaut;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/j.cognition.2020.104484;,citation_volume=208;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=Face recognition in poor-quality video: Evidence from security surveillance;,citation_author=A. M. Burton;,citation_author=M. Wilson;,citation_author=M. Cowan;,citation_author=V. Bruce;,citation_publication_date=1999;,citation_cover_date=1999;,citation_year=1999;,citation_issue=3;,citation_doi=10.1111/1467-9280.00144;,citation_volume=10;,citation_journal_title=Psychological Science;">
+<meta name="citation_reference" content="citation_title=Mental representations of familiar faces;,citation_author=A. M. Burton;,citation_author=R. Jenkins;,citation_author=S. R. Schweinberger;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_doi=10.1111/j.2044-8295.2011.02039.x;,citation_volume=102;,citation_journal_title=British Journal of Psychology;">
+<meta name="citation_reference" content="citation_title=Why has research in face recognition progressed so slowly? The importance of variability;,citation_author=A. M. Burton;,citation_publication_date=2013;,citation_cover_date=2013;,citation_year=2013;,citation_issue=8;,citation_doi=10.1080/17470218.2013.800125;,citation_volume=66;,citation_journal_title=The Quarterly Journal of Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Identity from variation: Representations of faces derived from multiple instances;,citation_author=A. M. Burton;,citation_author=R. S. S. Kramer;,citation_author=K. L. Ritchie;,citation_author=R. Jenkins;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=1;,citation_doi=10.1111/cogs.12231;,citation_volume=40;,citation_journal_title=Cognitive Science;">
+<meta name="citation_reference" content="citation_title=Arguments against a configural processing account of familiar face recognition;,citation_author=A. M. Burton;,citation_author=S. R. Schweinberger;,citation_author=R. Jenkins;,citation_author=J. M. Kaufmann;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=4;,citation_doi=10.1177/1745691615583129;,citation_volume=10;,citation_journal_title=Perspectives on Psychological Science;">
+<meta name="citation_reference" content="citation_title=Face familiarity decisions take 200 msec in the human brain: Electrophysiological evidence from a go/no-go speeded task;,citation_author=S. Caharel;,citation_author=M. Ramon;,citation_author=B. Rossion;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_issue=1;,citation_doi=10.1162/jocn\_a\_00451;,citation_volume=26;,citation_journal_title=Journal of Cognitive Neuroscience;">
+<meta name="citation_reference" content="citation_title=The N170 is sensitive to long-term (personal) familiarity of a face identity;,citation_author=S. Caharel;,citation_author=B. Rossion;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/j.neuroscience.2020.12.036;,citation_volume=458;,citation_journal_title=Neuroscience;">
+<meta name="citation_reference" content="citation_title=Identity-specific neural responses to three categories of face familiarity (own, friend, stranger) using fast periodic visual stimulation;,citation_author=A. Campbell;,citation_author=R. Louw;,citation_author=E. Michniak;,citation_author=J. W. Tanaka;,citation_publication_date=2020;,citation_cover_date=2020;,citation_year=2020;,citation_volume=141;,citation_journal_title=Neuropsychologia;">
+<meta name="citation_reference" content="citation_title=When a stranger becomes a friend: Measuring the neural correlates of real-world face familiarisation;,citation_author=A. Campbell;,citation_author=J. W. Tanaka;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=10;,citation_doi=10.1080/13506285.2021.20002993;,citation_volume=29;,citation_journal_title=Visual Cognition;">
+<meta name="citation_reference" content="citation_title=The influence of perceptual and knowledge-based familiarity on the neural substrates of face perception;,citation_author=J. Cloutier;,citation_author=W. M. Kelley;,citation_author=T. F. Heatherton;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_issue=1;,citation_doi=10.1080/17470911003693622;,citation_volume=6;,citation_journal_title=Social Neuroscience;">
+<meta name="citation_reference" content="citation_title=Distinct neural processes for the perception of familiar versus unfamiliar faces along the visual hierarchy revealed by EEG;,citation_author=E. Collins;,citation_author=A. K. Robinson;,citation_author=M. Berrmann;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_doi=10.1016/j.neuroimage.2018.06.080;,citation_volume=181;,citation_journal_title=NeuroImage;">
+<meta name="citation_reference" content="citation_title=How face perception unfolds over time;,citation_author=K. Dobs;,citation_author=L. Isik;,citation_author=D. Pantazis;,citation_author=N. Kanwisher;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=1;,citation_doi=10.1038/s41467-019-09239-1;,citation_volume=10;,citation_journal_title=Nature Communications;">
+<meta name="citation_reference" content="citation_title=Face learning with multiple images leads to fast acquisition of familiarity for specific individuals;,citation_author=A. J. Dowsett;,citation_author=A. Sandford;,citation_author=A. M. Burton;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=1;,citation_doi=10.1080/17470218.2015.1017513;,citation_volume=69;,citation_journal_title=The Quarterly Journal of Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Statistical power analyses using g*power 3.1: Tests for correlation and regression analyses;,citation_author=F. Faul;,citation_author=E. Erdfelder;,citation_author=A. Buchner;,citation_author=A. G. Lang;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_doi=10.3758/BRM.41.4.1149;,citation_volume=41;,citation_journal_title=Behaviour Research Methods;">
+<meta name="citation_reference" content="citation_title=Self-face perception: Individual differences and discrepancies associated with mental self-face representation, attractiveness and self-esteem;,citation_author=F. M. Felisberti;,citation_author=K. Musholt;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_issue=2;,citation_doi=10.3922/j.psns.2014.013;,citation_volume=7;,citation_journal_title=Psychology &amp;amp;amp; Neuroscience;">
+<meta name="citation_reference" content="citation_title=The face inversion effect does not provide a pure measure of holistic face processing;,citation_author=C. Gerlach;,citation_author=E. Mogensen;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_doi=10.3758/s13428-022-02054-5;,citation_volume=1-12;,citation_journal_title=Behaviour Research Methods;">
+<meta name="citation_reference" content="citation_title=Recognition of unfamiliar faces;,citation_author=P. J. Hancock;,citation_author=V. Bruce;,citation_author=A. M. Burton;,citation_publication_date=2000;,citation_cover_date=2000;,citation_year=2000;,citation_issue=9;,citation_doi=10.1016/s1364-6613(00)01519-9;,citation_volume=4;,citation_journal_title=Trends in Cognitive Sciences;">
+<meta name="citation_reference" content="citation_title=Sex differences and the own-gender bias in face recognition: A meta-analytic review;,citation_author=A. Herlitz;,citation_author=J. Lovén;,citation_publication_date=2013;,citation_cover_date=2013;,citation_year=2013;,citation_issue=9-10;,citation_doi=10.1080/13506285.2013.823140;,citation_volume=21;,citation_journal_title=Visual Cognition;">
+<meta name="citation_reference" content="citation_title=Variability in photos of the same face;,citation_author=R. Jenkins;,citation_author=D. White;,citation_author=X. Montfort;,citation_author=A. M. Burton;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_doi=10.1016/j.cognition.2011.08.001;,citation_volume=121;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=How many faces do people know? Proceedings of the royal society;,citation_author=R. Jenkins;,citation_author=A. J. Dowsett;,citation_author=A. M. Burton;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_doi=10.1098/rspb.2018.1319;,citation_volume=285;,citation_journal_title=B, Biological Sciences;">
+<meta name="citation_reference" content="citation_title=Perceptual difficulty modulates the direction of information flow in familiar face recognition;,citation_author=H. Karimi-Rouzbahani;,citation_author=F. Ramezani;,citation_author=A. Woolgar;,citation_author=A. Rich;,citation_author=M. Ghodrati;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/j.neuroimage.2021.117896;,citation_volume=233;,citation_journal_title=NeuroImage;">
+<meta name="citation_reference" content="citation_title=Categorical perception effects for facial identity in robustly represented familiar and self-faces: The role of configural and featural information;,citation_author=H. Keyes;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_issue=4;,citation_doi=10.1080/17470218.2011.636822;,citation_volume=65;,citation_journal_title=The Quarterly Journal of Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Self-face recognition is characterised by “bi-lateral gain” and by faster, more accurate performance which persists when faces are inverted;,citation_author=H. Keyes;,citation_author=N. Brady;,citation_publication_date=2010;,citation_cover_date=2010;,citation_year=2010;,citation_issue=5;,citation_doi=10.1080/17470211003611264;,citation_volume=63;,citation_journal_title=The Quarterly Journal of Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Effects of personal familiarity on early neuromagnetic correlates of face perception;,citation_author=N. Kloth;,citation_author=C. Dobel;,citation_author=S. R. Schweinberger;,citation_author=P. Zwitserlood;,citation_author=J. Bölte;,citation_author=M. Junghöfer;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_doi=10.1111/j.1460-9568.2006.05211.x;,citation_volume=24;,citation_journal_title=European Journal of Neuroscience;">
+<meta name="citation_reference" content="citation_title=Robust social categorization emerges from learning the identities of very few faces;,citation_author=R. S. S. Kramer;,citation_author=A. W. Young;,citation_author=MgG Day;,citation_author=A. M. Burton;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=2;,citation_doi=10.1037/rev000048;,citation_volume=24;,citation_journal_title=Psychological Review;">
+<meta name="citation_reference" content="citation_title=Understanding face familiarity;,citation_author=R. S. S. Kramer;,citation_author=A. W. Young;,citation_author=A. M. Burton;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_doi=10.1016/j.cognition.2017.12.005;,citation_volume=172;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=A featural account for own-face processing? Looking for support from face inversion, composite face, and part-whole tasks;,citation_author=J. K. W. Lee;,citation_author=S. M. J. Janssen;,citation_author=A. J. Estudillo;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_issue=4;,citation_doi=10.1177/20416695221111409;,citation_volume=13;,citation_journal_title=i-Perception;">
+<meta name="citation_reference" content="citation_title=Familiarity is not notoriety;,citation_author=D. Liccione;,citation_author=S. Moruzzi;,citation_author=F. Rossi;,citation_author=A. Manganaro;,citation_author=M. Porta;,citation_author=N. Nugrahaningsih;,citation_author=V. Caserio;,citation_author=N. Allegri;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_doi=10.3389/fnhum.2014.00672;,citation_volume=8;,citation_journal_title=Frontiers in Human Neuroscience;">
+<meta name="citation_reference" content="citation_title=Women’s own-gender bias in face recognition memory;,citation_author=J. Lovén;,citation_author=A. Herlitz;,citation_author=J. Rehnman;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_issue=4;,citation_doi=10.1027/1618-3169/a000100;,citation_volume=58;,citation_journal_title=Experimental Psychology;">
+<meta name="citation_reference" content="citation_title=Unfamiliar faces are not faces: Evidence from a matching task;,citation_author=A. M. Megreya;,citation_author=A. M. Burton;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_issue=4;,citation_doi=10.3758/BF03193433;,citation_volume=34;,citation_journal_title=Memory &amp;amp;amp; Cognition;">
+<meta name="citation_reference" content="citation_title=Matching faces to photographs: Poor performance in eyewitness memory (without the memory);,citation_author=A. M. Megreya;,citation_author=A. M. Burton;,citation_publication_date=2008;,citation_cover_date=2008;,citation_year=2008;,citation_issue=4;,citation_doi=10.1037/a0013464;,citation_volume=14;,citation_journal_title=Journal of Experimental Psychology: Applied;">
+<meta name="citation_reference" content="citation_title=Gender differences in familiar face recognition and the influence of sociocultural gender inequality;,citation_author=M. V. Mishra;,citation_author=J. Likitlersuang;,citation_author=J. Wilmer;,citation_author=S. Cohan;,citation_author=L. Germine;,citation_author=J. M. DeGutis;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1038/s41598-019-54074-5;,citation_volume=9;,citation_journal_title=Scientific Reports;">
+<meta name="citation_reference" content="citation_title=Early identity recognition of familiar faces is not dependent on holistic processing;,citation_author=S. Mohr;,citation_author=A. Wang;,citation_author=A. D. Engell;,citation_publication_date=2018;,citation_cover_date=2018;,citation_year=2018;,citation_issue=10;,citation_doi=10.1093/scan/nsy079;,citation_volume=13;,citation_journal_title=Social Cognitive and Affective Neuroscience;">
+<meta name="citation_reference" content="citation_title=Exemplar variance supports robust learning of facial identity;,citation_author=J. Murphy;,citation_author=A. Ipser;,citation_author=S. B. Gaigg;,citation_author=R. Cook;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=3;,citation_doi=10.1037/xhp0000049;,citation_volume=41;,citation_journal_title=Journal of Experimental Psychology: Human Perception and Performance;">
+<meta name="citation_reference" content="citation_title=Clinical profiles of stigma experiences, self-esteem and social relationships among people with schizophrenia, depressive, and bipolar disorders;,citation_author=E. H. Oliveira;,citation_author=F. Esteves;,citation_author=H. Carvalho;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_issue=1-2;,citation_doi=10.1016/j.psychres.2015.07.047;,citation_volume=229;,citation_journal_title=Psychiatry Research;">
+<meta name="citation_reference" content="citation_title=The adult face-diet: A naturalistic observation study;,citation_author=I. Oruc;,citation_author=F. Shafai;,citation_author=S. Murthy;,citation_author=P. Lages;,citation_author=T. Ton;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1016/j.visres.2018.01.001;,citation_volume=157;,citation_journal_title=Vision Research;">
+<meta name="citation_reference" content="citation_title=Personal familiarity enhances sensitivity to horizontal structure during processing of face identity;,citation_author=M. V. Pachai;,citation_author=A. B. Sekular;,citation_author=P. J. Bennett;,citation_author=P. G. Schyns;,citation_author=M. Ramon;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=6;,citation_doi=10.1167/17.6.5;,citation_volume=17;,citation_journal_title=Journal of Vision;">
+<meta name="citation_reference" content="citation_title=The role of the occipital face area in the cortical face perception network;,citation_author=D. Pitcher;,citation_author=V. Walsh;,citation_author=B. Duchaine;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_issue=4;,citation_doi=10.1007/s00221-011-2579-1;,citation_volume=209;,citation_journal_title=Experimental Brain Research;">
+<meta name="citation_reference" content="citation_title=Is family special to the brain? An event-related fMRI study of familiar, familial, and self-face recognition;,citation_author=S. M. Platek;,citation_author=S. M. Kemp;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_doi=10.1016/j.neuropsychologia.2008.12.027;,citation_volume=47;,citation_journal_title=Neuropsychologia;">
+<meta name="citation_reference" content="citation_title=Critical information thresholds underlying generic and familiar face categorisation at the same face encounter;,citation_author=G. L. Quek;,citation_author=B. Rossion;,citation_author=J. Liu-Shuang;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/j.neuroimage.2021.118481;,citation_volume=243;,citation_journal_title=NeuroImage;">
+<meta name="citation_reference" content="citation_title=The speed of recognition of personally familiar faces;,citation_author=M. Ramon;,citation_author=S. Caharel;,citation_author=B. Rossion;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_doi=10.1068/p6794;,citation_volume=40;,citation_journal_title=Perception;">
+<meta name="citation_reference" content="citation_title=Real-life experience with personally familiar faces enhances discrimination based on global information;,citation_author=M. Ramon;,citation_author=G. Belle;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_doi=10.7717/peerj.1465;,citation_volume=4;,citation_journal_title=PeerJ;">
+<meta name="citation_reference" content="citation_title=Familiarity matters: A review on prioritized processing of personally familiar faces;,citation_author=M. Ramon;,citation_author=M. I. Gobbini;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=3;,citation_doi=10.1080/13506285.2017.1405134;,citation_volume=26;,citation_journal_title=Visual Cognition;">
+<meta name="citation_reference" content="citation_title=Representation of facial identity includes expression variability;,citation_author=A. S. Redfern;,citation_author=C. P. Benton;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1016/j.visres.2018.05.004;,citation_volume=157;,citation_journal_title=Vision Research;">
+<meta name="citation_reference" content="citation_title=The own-age bias in face recognition: A meta-analytic and theoretical view;,citation_author=M. G. Rhodes;,citation_author=J. S. Anastasi;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_issue=1;,citation_doi=10.1037/a0025750;,citation_volume=138;,citation_journal_title=Psychological Bulletin;">
+<meta name="citation_reference" content="citation_title=Shared or separate mechanisms for self-face and other-face processing? Evidence from adaptation;,citation_author=B. Rooney;,citation_author=H. Keyes;,citation_author=N. Brady;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_doi=https://doi.org.10.3389.fpsyg.2012.00066;,citation_volume=3;,citation_journal_title=Frontiers in Psychology;">
+<meta name="citation_reference" content="citation_title=Tolerance for distorted faces: Challenges to a configural processing account of familiar face recognition;,citation_author=A. Sandford;,citation_author=A. M. Burton;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_issue=3;,citation_doi=10.1016/j.cognition.2014.04.005;,citation_volume=132;,citation_journal_title=Cognition;">
+<meta name="citation_reference" content="citation_title=The roles of perceptual and conceptual information in face recognition;,citation_author=L. Schwartz;,citation_author=G. Yovel;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=11;,citation_doi=10.1037/xge0000220;,citation_volume=145;,citation_journal_title=Journal of Experimental Psychology: General;">
+<meta name="citation_reference" content="citation_title=Learning faces as concepts rather than percepts improves face recognition;,citation_author=L. Schwartz;,citation_author=G. Yovel;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=10;,citation_doi=10.1037/xlm0000673;,citation_volume=45;,citation_journal_title=Journal of Experimental Psychology: Learning, Memory, and Cognition;">
+<meta name="citation_reference" content="citation_title=Distinct information critically distinguishes judgements of face familiarity and identity;,citation_author=M. L. Smith;,citation_author=B. Volna;,citation_author=L. Ewing;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_issue=11;,citation_doi=10.1037/xhp0000243;,citation_volume=42;,citation_journal_title=Journal of Experimental Psychology: Human Perception and Performance;">
+<meta name="citation_reference" content="citation_title=The role of holistic processing in face perception: Evidence from the face inversion effect;,citation_author=J. Taubert;,citation_author=D. Apthorp;,citation_author=D. Aagten-Murphy;,citation_author=D. Alais;,citation_publication_date=2011;,citation_cover_date=2011;,citation_year=2011;,citation_doi=10.1016/j.visres.2011.04.002;,citation_volume=51;,citation_journal_title=Vision Research;">
+<meta name="citation_reference" content="citation_title=Robust representations for faces: Evidence from visual search;,citation_author=F. Tong;,citation_author=K. Nakayama;,citation_publication_date=1999;,citation_cover_date=1999;,citation_year=1999;,citation_issue=4;,citation_doi=10.1037//0096-1523.25.4.1016;,citation_volume=25;,citation_journal_title=Journal of Experimental Psychology: Human Perception and Performance;">
+<meta name="citation_reference" content="citation_title=The NimStim set of facial expressions: Judgements from untrained research participants;,citation_author=N. Tottenham;,citation_author=J. W. Tanaka;,citation_author=A. C. Leon;,citation_author=T. McCarry;,citation_author=M. Nurse;,citation_author=T. A. Hare;,citation_author=D. J. Marcus;,citation_author=A. Westerlund;,citation_author=B. J. Casey;,citation_author=C. Nelson;,citation_publication_date=2009;,citation_cover_date=2009;,citation_year=2009;,citation_issue=3;,citation_doi=10.1016/j.psychres.2008.05.006;,citation_volume=168;,citation_journal_title=Psychiatry Research;">
+<meta name="citation_reference" content="citation_title=The selfie culture: Identity creation and status conferral on social media;,citation_author=N. A. Tshidzumba;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=3;,citation_volume=17;,citation_journal_title=Gender &amp;amp;amp; Behaviour;">
+<meta name="citation_reference" content="citation_title=Familiarity facilitates feature-based face processing;,citation_author=M. Oleggio Castello;,citation_author=K. G. Wheeler;,citation_author=C. Cipolli;,citation_author=M. I. Gobbini;,citation_author=C. Urgesi;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=6;,citation_doi=10.1371/journal.pone.0178895;,citation_volume=12;,citation_journal_title=PLoS One;">
+<meta name="citation_reference" content="citation_title=Not looking yourself: The cost of self-selecting photographs for identity verification;,citation_author=D. White;,citation_author=A. L. Burton;,citation_author=R. I. Kemp;,citation_publication_date=2016;,citation_cover_date=2016;,citation_year=2016;,citation_doi=10.1111/bjop.12141;,citation_volume=107;,citation_journal_title=British Journal of Psychology;">
+<meta name="citation_reference" content="citation_title=A robust neural index of high face familiarity;,citation_author=H. Wiese;,citation_author=S. C. Tüttenberg;,citation_author=B. T. Ingram;,citation_author=C. Y. X. Chan;,citation_author=Z. Gurbuz;,citation_author=A. M. Burton;,citation_author=A. W. Young;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_issue=2;,citation_doi=10.1177/0956797618813572;,citation_volume=30;,citation_journal_title=Psychological Science;">
+<meta name="citation_reference" content="citation_title=Familiarity is familiarity is familiarity: Event-related brain potentials reveal qualitatively similar representations of personally familiar and famous faces;,citation_author=H. Wiese;,citation_author=G. Hobden;,citation_author=E. Siilbek;,citation_author=V. Martignac;,citation_author=T. R. Flack;,citation_author=K. L. Ritchie;,citation_author=A. W. Young;,citation_author=A. M. Burton;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_issue=8;,citation_doi=10.1037/xlm0001063;,citation_volume=48;,citation_journal_title=Journal of Experimental Psychology: Learning, Memory, and Cognition;">
+<meta name="citation_reference" content="citation_title=Size determines whether specialized expert processes are engaged for recognition of faces;,citation_author=N. Yang;,citation_author=F. Shafai;,citation_author=I. Oruc;,citation_publication_date=2014;,citation_cover_date=2014;,citation_year=2014;,citation_issue=8;,citation_doi=10.1167/14.8.17;,citation_volume=14;,citation_journal_title=Journal of Vision;">
+<meta name="citation_reference" content="citation_title=Are we face experts?;,citation_author=A. W. Young;,citation_author=A. M. Burton;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_issue=2;,citation_doi=10.1016/j.tics.2017.11.007;,citation_volume=22;,citation_journal_title=Trends in Cognitive Sciences;">
+<meta name="citation_reference" content="citation_title=An objective, sensitive and ecologically valid neural measure of rapid human individual face recognition;,citation_author=F. G. S. Zimmermann;,citation_author=X. Yan;,citation_author=B. Rossion;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_doi=10.1098/rsos.181904;,citation_volume=6;,citation_journal_title=Royal Society Open Science;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Differences in the Perceptual Processing of Unfamiliar and Familiar Faces</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Authors</div>
+          <div class="quarto-title-meta-heading">Affiliations</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Kasey McGinness </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of New England
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Jessica Taubert <a href="https://orcid.org/0000-0002-6519-8068" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of Queensland
+                      </p>
+                  </div>
+                      <div class="quarto-title-meta-contents">
+            <p class="author">Deborah Apthorp <a href="mailto:dapthorp@une.edu.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0001-5785-024X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        University of New England
+                      </p>
+                    <p class="affiliation">
+                        Australian National University
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (plos)</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
+    </div>
+
+    <div>
+      <div class="abstract">
+        <div class="block-title">Abstract</div>
+        <p>Evidence that familiar faces are perceived differently from unfamiliar faces has important implications for our understanding of face recognition. Although familiarity effects on face recognition performance have been extensively researched, the perceptual processes that underlie these differences are comparatively unknown. Using a psychophysical staircase paradigm, we collected data from 28 female participants aged 18-65 years (<span class="math inline">\(M = 43.1\)</span>, <span class="math inline">\(SD = 12.7\)</span>) and examined the minimum amount of time required to recognise a previously seen face across three levels of familiarity (unfamiliar, familiar, and self). A repeated-measures analysis of variance revealed shorter recognition and reaction times for more familiar faces than for unfamiliar faces. As expected, inverted faces took longer to recognise than upright faces, but this effect was reduced for familiar and self-faces. Recognition times provide evidence for distinct perceptual processing based on level of familiarity and suggest that our ability to recognise familiar faces may be poorly characterised by current theories. Overall, the results emphasise the uniqueness of the self-face within the familiarity continuum, as all participants were able to recognise their own face significantly faster than other faces. In light of these results, it is clear that a full understanding of face recognition will require a better characterisation of how we respond to highly familiar faces.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>Face perception, Psychophysics, Face inversion effect</p>
+      </div>
+    </div>
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#measuring-face-recognition" id="toc-measuring-face-recognition" class="nav-link" data-scroll-target="#measuring-face-recognition">Measuring Face Recognition</a></li>
+  <li><a href="#face-processing-efficiency" id="toc-face-processing-efficiency" class="nav-link" data-scroll-target="#face-processing-efficiency">Face Processing Efficiency</a></li>
+  <li><a href="#effects-of-different-levels-of-familiarity-on-face-recognition-performance" id="toc-effects-of-different-levels-of-familiarity-on-face-recognition-performance" class="nav-link" data-scroll-target="#effects-of-different-levels-of-familiarity-on-face-recognition-performance">Effects of Different Levels of Familiarity on Face Recognition Performance</a>
+  <ul class="collapse">
+  <li><a href="#recently-learned-faces" id="toc-recently-learned-faces" class="nav-link" data-scroll-target="#recently-learned-faces">Recently Learned Faces</a></li>
+  <li><a href="#personally-familiar-faces" id="toc-personally-familiar-faces" class="nav-link" data-scroll-target="#personally-familiar-faces">Personally Familiar Faces</a></li>
+  <li><a href="#the-self-face" id="toc-the-self-face" class="nav-link" data-scroll-target="#the-self-face">The Self-face</a></li>
+  </ul></li>
+  <li><a href="#aims-and-hypotheses" id="toc-aims-and-hypotheses" class="nav-link" data-scroll-target="#aims-and-hypotheses">Aims and Hypotheses</a></li>
+  </ul></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a>
+  <ul class="collapse">
+  <li><a href="#participants" id="toc-participants" class="nav-link" data-scroll-target="#participants">Participants</a></li>
+  <li><a href="#design-and-stimuli" id="toc-design-and-stimuli" class="nav-link" data-scroll-target="#design-and-stimuli">Design and Stimuli</a></li>
+  <li><a href="#threshold-analysis" id="toc-threshold-analysis" class="nav-link" data-scroll-target="#threshold-analysis">Threshold Analysis</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data Analysis</a></li>
+  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">Exploratory Analysis</a>
+  <ul class="collapse">
+  <li><a href="#reaction-time" id="toc-reaction-time" class="nav-link" data-scroll-target="#reaction-time">Reaction Time</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
+  <ul class="collapse">
+  <li><a href="#familiarity-and-recognition-time" id="toc-familiarity-and-recognition-time" class="nav-link" data-scroll-target="#familiarity-and-recognition-time">Familiarity and Recognition Time</a></li>
+  <li><a href="#familiarity-and-inversion-effects" id="toc-familiarity-and-inversion-effects" class="nav-link" data-scroll-target="#familiarity-and-inversion-effects">Familiarity and Inversion Effects</a></li>
+  <li><a href="#reaction-time-and-levels-of-familiarity" id="toc-reaction-time-and-levels-of-familiarity" class="nav-link" data-scroll-target="#reaction-time-and-levels-of-familiarity">Reaction Time and Levels of Familiarity</a></li>
+  <li><a href="#limitations-and-future-directions" id="toc-limitations-and-future-directions" class="nav-link" data-scroll-target="#limitations-and-future-directions">Limitations and Future Directions</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Face recognition is an extraordinary human skill. This unique ability is the foundation of our social behaviour as it helps us identify others and interpret important social cues, such as mood and focus of attention (Burton et al., 2015; Mohr et al., 2018). It has been estimated that we spend 20<span class="math inline">\(%\)</span> of our day looking at faces, and can recognise over 4000 faces during our lifetime <span class="citation" data-cites="jenkins2018a oruc2019a">(<a href="#ref-jenkins2018a" role="doc-biblioref">Jenkins et al., 2018</a>; <a href="#ref-oruc2019a" role="doc-biblioref">Oruc et al., 2019</a>)</span>. For most of us, the ability to recognise and recall identity-specific information for other individuals appears to occur almost effortlessly, with studies demonstrating that we can recognise a familiar face as quickly as 360ms <span class="citation" data-cites="besson2016a blauch2021a oruc2019a ramon2016a">(<a href="#ref-besson2016a" role="doc-biblioref">Besson et al., 2016</a>; <a href="#ref-blauch2021a" role="doc-biblioref">Blauch et al., 2021</a>; <a href="#ref-oruc2019a" role="doc-biblioref">Oruc et al., 2019</a>; <a href="#ref-ramon2016a" role="doc-biblioref">Ramon &amp; Belle, 2016</a>)</span>. The efficiency with which humans can discriminate within a relatively homogenous visual category, under constantly changing viewing conditions, has earned us the reputation for being face experts <span class="citation" data-cites="collins2018a dobs2019a kramer2017a quek2021a">(<a href="#ref-collins2018a" role="doc-biblioref">Collins et al., 2018</a>; <a href="#ref-dobs2019a" role="doc-biblioref">Dobs et al., 2019</a>; <a href="#ref-kramer2017a" role="doc-biblioref">Kramer et al., 2017</a>; <a href="#ref-quek2021a" role="doc-biblioref">Quek et al., 2021</a>)</span>.</p>
+<p>The precise nature of our face expertise remains poorly understood, with debate around whether the processes that govern face perception are the same for all faces or whether there are distinct perceptual processes for familiar faces <span class="citation" data-cites="abudarham2019a blauch2021a collins2018a">(<a href="#ref-abudarham2019a" role="doc-biblioref">Abudarham et al., 2019</a>; <a href="#ref-blauch2021a" role="doc-biblioref">Blauch et al., 2021</a>; <a href="#ref-collins2018a" role="doc-biblioref">Collins et al., 2018</a>)</span>. Central to the discussion is the idea that there may be a familiarity continuum in face recognition, whereby the brain will respond differently depending on the level of familiarity one has with the face. For example, our friends’ faces are not as familiar to us as our own face <span class="citation" data-cites="bortolon2018a rooney2012a tong1999a">(<a href="#ref-bortolon2018a" role="doc-biblioref">Bortolon. &amp; Raffard, 2018</a>; <a href="#ref-rooney2012a" role="doc-biblioref">Rooney et al., 2012</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. Understanding these differences may extend beyond the benefit to basic visual cognition. For example, it is possible that the processes responsible for recognising our own face index other higher-level constructs such as self-esteem and self-identity, which are thought to underlie serious pathologies such as depression, schizophrenia, and bipolar disorder <span class="citation" data-cites="felisberti2014a oliveira2015a">(<a href="#ref-felisberti2014a" role="doc-biblioref">Felisberti &amp; Musholt, 2014</a>; <a href="#ref-oliveira2015a" role="doc-biblioref">Oliveira et al., 2015</a>)</span>.</p>
+<p>There is abundant evidence that greater levels of familiarity facilitate processing efficiency, as it has been shown that the faces of personally familiar people are processed faster and more accurately than the faces of familiar celebrities, and both have an advantage over strangers faces <span class="citation" data-cites="bortolon2017a burton2015a tong1999a young2017a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>; <a href="#ref-burton2015a" role="doc-biblioref">Burton et al., 2015</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>; <a href="#ref-young2017a" role="doc-biblioref">Young &amp; Burton, 2017</a>)</span>. Further, changes in viewing conditions have been shown to impede unfamiliar face matching performance whereas recognition of familiar faces is extremely robust to within-identity image variability and low-quality images <span class="citation" data-cites="burton2013a jenkins2011a liccione2014a">(<a href="#ref-burton2013a" role="doc-biblioref">Burton, 2013</a>; <a href="#ref-jenkins2011a" role="doc-biblioref">Jenkins et al., 2011</a>; <a href="#ref-liccione2014a" role="doc-biblioref">Liccione et al., 2014</a>)</span>. For example, <span class="citation" data-cites="burton1999a">Burton et al. (<a href="#ref-burton1999a" role="doc-biblioref">1999</a>)</span> found performance differences in their study which involved showing low resolution CCTV images to familiar and unfamiliar viewers. Unfamiliar viewers were able to accurately identify faces 50% of the time, whereas familiar viewers could identify faces almost perfectly, suggesting that the processing of unfamiliar faces may be qualitatively different from familiar faces <span class="citation" data-cites="burton1999a">(<a href="#ref-burton1999a" role="doc-biblioref">Burton et al., 1999</a>)</span>. The familiar face advantage has been observed across a range of tasks including face inversion (i.e., turning faces upside down) and distortion (e.g., compressing images of faces) manipulations, highlighting familiarity as an important factor in face recognition <span class="citation" data-cites="allen-davidian2021a kramer2018a yang2014a">(<a href="#ref-allen-davidian2021a" role="doc-biblioref">Allen-Davidian et al., 2021</a>; <a href="#ref-kramer2018a" role="doc-biblioref">Kramer et al., 2018</a>; <a href="#ref-yang2014a" role="doc-biblioref">Yang et al., 2014</a>)</span>.</p>
+<p>However, familiarity is a challenging dimension to explore because its definition is multiplexed, and it is difficult to control in an experimental context. First, there are different levels of familiarity ranging from recently learned faces, to faces that are familiar but for which we have no personal knowledge (famous people, acquaintances), to the faces of those we know well (family, close friends, self-face; <span class="citation" data-cites="ramon2011a">Ramon et al. (<a href="#ref-ramon2011a" role="doc-biblioref">2011</a>)</span>). Levels of familiarity influence the depth of knowledge and experience we associate with an individual, which likely impacts the mental representations we store about them in memory <span class="citation" data-cites="ramon2017a">(<a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>)</span>. Second, each individual knows a unique collection of faces, which limits the type of stimuli that can be used in research, adding inherent variability in familiarity levels between participants <span class="citation" data-cites="ramon2017a">(<a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>)</span>. Third, the way in which faces become familiar can differ. For example, some faces become familiar through interaction with others in our daily lives, and other faces become familiar through repeated exposure (i.e., famous faces or experimentally learned faces). In other words, coming to ‘know’ a person could be different to image-based familiarity <span class="citation" data-cites="kramer2018a">(<a href="#ref-kramer2018a" role="doc-biblioref">Kramer et al., 2018</a>)</span>. Finally, to reduce noise in data, researchers often manipulate face images (e.g., cropped, hairless, expressionless) which is different to how a face appears under normal circumstances <span class="citation" data-cites="burton2011a">(<a href="#ref-burton2011a" role="doc-biblioref">Burton et al., 2011</a>)</span>. These challenges have contributed to the inconsistency in face research findings, particularly regarding familiar face recognition performance.</p>
+<section id="measuring-face-recognition" class="level2">
+<h2 class="anchored" data-anchor-id="measuring-face-recognition">Measuring Face Recognition</h2>
+<p>While in the real world only familiar faces are recognised, in face research, “face recognition” also describes an individual’s ability to detect a previously unknown face with which they are familiarised during an experimental procedure <span class="citation" data-cites="burton2013a hancock2000a">(<a href="#ref-burton2013a" role="doc-biblioref">Burton, 2013</a>; <a href="#ref-hancock2000a" role="doc-biblioref">Hancock et al., 2000</a>)</span>. Consistent with the literature, we will conceptualise face recognition as the ability to recognise previously known or recently learned faces (familiar) and previously unknown faces (unfamiliar).</p>
+<p>Face recognition has been investigated by recording the reaction time required to accurately find targets in visual search paradigms. Tasks often involve participants seeking a target face amongst distractor faces, where detection is indicated using a go/no-go categorisation, such as pressing specific keys on a keyboard to indicate whether the target was present or absent in a given display <span class="citation" data-cites="kloth2006a ramon2011a tong1999a">(<a href="#ref-kloth2006a" role="doc-biblioref">Kloth et al., 2006</a>; <a href="#ref-ramon2011a" role="doc-biblioref">Ramon et al., 2011</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. Reaction time data has mostly shown that participants are faster to recognise familiar faces than unfamiliar faces, but reported reaction times vary <span class="citation" data-cites="burton2015a ramon2011a ramon2017a">(<a href="#ref-burton2015a" role="doc-biblioref">Burton et al., 2015</a>; <a href="#ref-ramon2011a" role="doc-biblioref">Ramon et al., 2011</a>; <a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>)</span>. For example, <span class="citation" data-cites="ramon2011a">Ramon et al. (<a href="#ref-ramon2011a" role="doc-biblioref">2011</a>)</span> asked participants to accurately categorise 52 images of classmates and strangers using a go/no-go finger lift response and found observers could categorise their classmates within 360 ms, compared to 460 ms to categorise a face as unfamiliar. By contrast, <span class="citation" data-cites="alzueta2019a">Alzueta et al. (<a href="#ref-alzueta2019a" role="doc-biblioref">2019</a>)</span> asked participants to classify 450 images of their own face, friends, and strangers as quickly as possible using a keyboard button press. Results showed faster reaction times for the self-face (542 ms), but slower reaction times for friends’ faces (570 ms) compared with strangers (562 ms), providing conflicting evidence for the familiar face advantage. Together, findings highlight a common challenge in face recognition research regarding variability in reaction time data as a result of inconsistent task demands.</p>
+<p>A drawback of using reaction times as a dependent variable is that the data represents the elapsed time from stimulus onset to motor output, combining perceptual processing time, cognitive decision time, and motor response, thus inflating the real time required to recognise a face <span class="citation" data-cites="alzueta2019a burton2015a caharel2014a">(<a href="#ref-alzueta2019a" role="doc-biblioref">Alzueta et al., 2019</a>; <a href="#ref-burton2015a" role="doc-biblioref">Burton et al., 2015</a>; <a href="#ref-caharel2014a" role="doc-biblioref">Caharel et al., 2014</a>)</span>. <span class="citation" data-cites="taubert2011a">Taubert et al. (<a href="#ref-taubert2011a" role="doc-biblioref">2011</a>)</span> overcame this issue in their study using a staircase procedure, whereby the time needed to recognise a face is determined by manipulating the amount of time a face is displayed and measuring the amount of time a participant needs to correctly identify a target face 80% of the time. Their research revealed that participants (N = 10) could accurately discriminate between individual target faces after 50 ms <span class="citation" data-cites="taubert2011a">(<a href="#ref-taubert2011a" role="doc-biblioref">Taubert et al., 2011</a>)</span>. Others have used electroencephalography (EEG) frequency tagging to compare neural responses to face images that progressively increased in image duration, to identify the threshold for successful face recognition <span class="citation" data-cites="quek2021a">(<a href="#ref-quek2021a" role="doc-biblioref">Quek et al., 2021</a>)</span>. Results showed that exposures as brief as 83 ms enabled observers to consistently recognise familiar (famous) faces from unfamiliar faces <span class="citation" data-cites="quek2021a">(<a href="#ref-quek2021a" role="doc-biblioref">Quek et al., 2021</a>)</span>. Findings of both studies revealed that processing time was much shorter than the reaction times reported in other face recognition studies <span class="citation" data-cites="besson2016a blauch2021a oruc2019a">(<a href="#ref-besson2016a" role="doc-biblioref">Besson et al., 2016</a>; <a href="#ref-blauch2021a" role="doc-biblioref">Blauch et al., 2021</a>; <a href="#ref-oruc2019a" role="doc-biblioref">Oruc et al., 2019</a>)</span>.</p>
+</section>
+<section id="face-processing-efficiency" class="level2">
+<h2 class="anchored" data-anchor-id="face-processing-efficiency">Face Processing Efficiency</h2>
+<p>The literature provides two interpretations of face processing efficiency. The holistic processing perspective suggests that faces are processed by analysing the spatial relations between features, providing a unique configuration for each individual so that faces are processed whole, rather than in parts <span class="citation" data-cites="sandford2014a">(<a href="#ref-sandford2014a" role="doc-biblioref">Sandford &amp; Burton, 2014</a>)</span>. Evidence for holistic processing has been demonstrated predominantly in studies showing that when a face is inverted, disrupting it’s ordinary featural configuration, participants find it harder to identify target faces <span class="citation" data-cites="taubert2011a tong1999a">(<a href="#ref-taubert2011a" role="doc-biblioref">Taubert et al., 2011</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. Interestingly, studies have revealed that the effects of inversion are greater for unfamiliar faces than familiar faces, suggesting that the familiar face processing advantage may be attributed to holistic processing effects <span class="citation" data-cites="ramon2016a oleggio2017a">(<a href="#ref-oleggio2017a" role="doc-biblioref">Oleggio Castello et al., 2017</a> ; <a href="#ref-ramon2016a" role="doc-biblioref">Ramon &amp; Belle, 2016</a>)</span></p>
+<p>By contrast, the feature-based processing perspective suggests that processing efficiency, as observed with familiar faces, can be attributed to the learning of face features, such as eyes, nose, and mouth, which are then used as unique identifiers supporting processing efficiency <span class="citation" data-cites="abudarham2016a">(<a href="#ref-abudarham2016a" role="doc-biblioref">Abudarham &amp; Yovel, 2016</a>)</span>. <span class="citation" data-cites="lee2022a">Lee et al. (<a href="#ref-lee2022a" role="doc-biblioref">2022</a>)</span> explored holistic and featural processing effects in a study where participants viewed images of unfamiliar faces, friends’ faces, and the self-face in an inversion task, and a part-whole (isolated features) task. They found no significant difference in inversion effects across the unfamiliar, friend and self-face conditions, whereas, in the isolated features task, participants were faster and more accurate at recognising the self-face compared to friend and unfamiliar faces, suggesting the self-face may be processed in a more feature-based manner. Therefore, the commonly held belief that face recognition relies on holistic processing is being challenged, and it seems likely that not all faces are processed in the same way.</p>
+</section>
+<section id="effects-of-different-levels-of-familiarity-on-face-recognition-performance" class="level2">
+<h2 class="anchored" data-anchor-id="effects-of-different-levels-of-familiarity-on-face-recognition-performance">Effects of Different Levels of Familiarity on Face Recognition Performance</h2>
+<p>The idea that familiar faces may be more easily detected or recognised than unfamiliar faces makes intuitive sense, given the social importance of correctly identifying familiar faces, and the need for humans to efficiently process the enormous amount of visual information we are exposed to in our environment <span class="citation" data-cites="tong1999a">(<a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. The pursuit of identifying the neural mechanisms underlying the recognition of familiar faces has led to important discoveries regarding distinct processing capacities <span class="citation" data-cites="bortolon2017a ramon2017a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>; <a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>)</span>. There is growing evidence in support of a familiarity continuum in face recognition highlighting processing distinctions not only between unfamiliar and familiar faces, but within the familiar face category itself <span class="citation" data-cites="megraya2006a murphy2015a quek2021a wiese2021a">(<a href="#ref-megraya2006a" role="doc-biblioref">Megreya &amp; Burton, 2006</a>; <a href="#ref-murphy2015a" role="doc-biblioref">Murphy et al., 2015</a>; <a href="#ref-quek2021a" role="doc-biblioref">Quek et al., 2021</a>; <a href="#ref-wiese2021a" role="doc-biblioref">Wiese et al., 2021</a>)</span>.</p>
+<section id="recently-learned-faces" class="level3">
+<h3 class="anchored" data-anchor-id="recently-learned-faces">Recently Learned Faces</h3>
+<p>Evidence from behavioural studies has indicated that humans only need brief exposure for face learning to occur, as recently learned faces are more easily matched than unfamiliar faces in face matching tasks <span class="citation" data-cites="dowsett2016a kramer2017a murphy2015a quek2021a">(<a href="#ref-dowsett2016a" role="doc-biblioref">Dowsett et al., 2016</a>; <a href="#ref-kramer2017a" role="doc-biblioref">Kramer et al., 2017</a>; <a href="#ref-murphy2015a" role="doc-biblioref">Murphy et al., 2015</a>; <a href="#ref-quek2021a" role="doc-biblioref">Quek et al., 2021</a>)</span>. However, unlike recognition of familiar faces, which is robust to changes in viewing conditions such as lighting, viewpoint, and expression, face matching of recently familiar faces is hindered by even slight alterations in the appearance of the face <span class="citation" data-cites="burton2011a redfern2019a megraya2008a white2016a">(<a href="#ref-burton2011a" role="doc-biblioref">Burton et al., 2011</a>; <a href="#ref-megraya2008a" role="doc-biblioref">Megreya &amp; Burton, 2008</a>; <a href="#ref-redfern2019a" role="doc-biblioref">Redfern &amp; Benton, 2019</a>; <a href="#ref-white2016a" role="doc-biblioref">White et al., 2016</a>)</span>. In addition to perceptual information (e.g., facial features) acquired during face learning, research shows sparse conceptual information (e.g., name and occupation) can aid recognition <span class="citation" data-cites="oruc2019a schwartz2019a">(<a href="#ref-oruc2019a" role="doc-biblioref">Oruc et al., 2019</a>; <a href="#ref-schwartz2019a" role="doc-biblioref">Schwartz &amp; Yovel, 2019</a>)</span>. <span class="citation" data-cites="schwartz2016a">Schwartz &amp; Yovel (<a href="#ref-schwartz2016a" role="doc-biblioref">2016</a>)</span> compared the contribution of perceptual and conceptual information to face recognition performance in their study exposing participants to either perceptual information (manipulating lighting and facial angles) or conceptual information (name, occupation) about target identities. When participants were provided with new images of the same identities and tested on their recognition ability, results showed better recognition following conceptual information compared with perceptual information.</p>
+</section>
+<section id="personally-familiar-faces" class="level3">
+<h3 class="anchored" data-anchor-id="personally-familiar-faces">Personally Familiar Faces</h3>
+<p>Personal information acquired through repeated interaction with an identity appears to enhance familiar face recognition, as research shows that our face representations for personally familiar faces differ from those of recently learned faces and familiar celebrity faces <span class="citation" data-cites="cloutier2011a ramon2017a rooney2012a">(<a href="#ref-cloutier2011a" role="doc-biblioref">Cloutier et al., 2011</a>; <a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>; <a href="#ref-rooney2012a" role="doc-biblioref">Rooney et al., 2012</a>)</span>. <span class="citation" data-cites="karimi-rouzbahani2021a">Karimi-Rouzbahani et al. (<a href="#ref-karimi-rouzbahani2021a" role="doc-biblioref">2021</a>)</span> varied familiarity across stimuli (i.e., unfamiliar, famous, personally familiar, and self) and instructed 18 participants to categorise the stimulus as familiar or unfamiliar using a button press. EEG data, measuring brain electrical activity, showed that higher levels of familiarity (self-face and personally familiar) generated greater transfer of information flow over the visual areas of the brain compared to unfamiliar and famous identities. In contrast, <span class="citation" data-cites="wiese2021a">Wiese et al. (<a href="#ref-wiese2021a" role="doc-biblioref">2021</a>)</span> found substantial EEG event-related potential familiarity effects in response to the self-face, personally familiar faces, and favourite celebrities compared with other celebrities, demonstrating similar processing of personally familiar faces and favourite celebrities.</p>
+</section>
+<section id="the-self-face" class="level3">
+<h3 class="anchored" data-anchor-id="the-self-face">The Self-face</h3>
+<p>Our own face is unique, as it plays an influential role in our self-consciousness and identity, and is an important tool for social engagement <span class="citation" data-cites="bortolon2018a">(<a href="#ref-bortolon2018a" role="doc-biblioref">Bortolon. &amp; Raffard, 2018</a>)</span>. The ‘self-face advantage’ in face recognition has been consistently observed across different contexts and task demands, however, there is conflicting evidence for distinct processing between the self-face and other familiar faces <span class="citation" data-cites="alzueta2019a tong1999a wiese2019a">(<a href="#ref-alzueta2019a" role="doc-biblioref">Alzueta et al., 2019</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>; <a href="#ref-wiese2019a" role="doc-biblioref">Wiese et al., 2019</a>)</span>. For example, <span class="citation" data-cites="alzueta2019a">Alzueta et al. (<a href="#ref-alzueta2019a" role="doc-biblioref">2019</a>)</span> used EEG to investigate whether the self-face elicits distinct neural processes compared to friends’ and stranger faces. The N170 component, a negative-going EEG potential typically associated with face perception (See Appendix A), did not exhibit sensitivity to the self-face, contradicting previous research <span class="citation" data-cites="caharel2021a wiese2019a">(<a href="#ref-caharel2021a" role="doc-biblioref">Caharel &amp; Rossion, 2021</a>; <a href="#ref-wiese2019a" role="doc-biblioref">Wiese et al., 2019</a>)</span>. Findings supported an earlier behavioural study, where 40 participants were asked to attend with a friend and bring five photographs of their own face unseen by their friend. Participants viewed images of themselves, friends, famous, and unfamiliar faces and completed a face matching task <span class="citation" data-cites="bortolon2017a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>)</span>. Results showed participants were better at matching photographs of their own face than famous and unknown faces, but were not faster or more accurate at matching their own face than their friend’s face.</p>
+<p>Our understanding of the effects of familiarity on face recognition can be improved by experimenting with personally familiar faces, compared to famous faces, which would better represent familiarity effects as a result of real-world face learning. The self-face is arguably the most familiar face to each of us, and, thus, is an important inclusion in studies seeking to understand the effects of levels of familiarity on facial processing. In addition, exploration of an alternative research method designed to isolate recognition time (i.e., perceptual processes) from reaction time (i.e., perceptual processes + cognitive decision + motor response) is warranted to provide a more precise measure of the perceptual processing time for faces. This information would add value to the debate around whether the brain processes faces differently based on the level of familiarity.</p>
+</section>
+</section>
+<section id="aims-and-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="aims-and-hypotheses">Aims and Hypotheses</h2>
+<p>The purpose of the present study was to investigate the effect of higher levels of face familiarity on face recognition by manipulating both familiarity and orientation while measuring the minimal display time required for recognition (i.e., recognition time) and how quickly participants responded (i.e., reaction time). A staircase procedure was used as an alternative method for characterising face recognition performance. Familiar and unfamiliar faces were presented in both upright and inverted orientations, with the overall expectation that participants would need less time to recognise their own face compared to familiar and unfamiliar faces, and less time to recognise familiar faces compared to unfamiliar faces. Our specific hypotheses were as follows:</p>
+<ol type="1">
+<li><p>Participants will be able to recognise their own faces at shorter face display times compared with less familiar and unfamiliar faces;</p></li>
+<li><p>Participants will require shorter face display times to recognise a familiar face (that of the experimenter) compared to an unfamiliar face;</p></li>
+<li><p>Participants will require longer display times to recognise all faces when the face display is inverted;</p></li>
+<li><p>The face inversion effect (the difference between performance in upright and inverted trials) will be reduced for more familiar faces.</p></li>
+</ol>
+</section>
+</section>
+<section id="method" class="level1">
+<h1>Method</h1>
+<section id="participants" class="level2">
+<h2 class="anchored" data-anchor-id="participants">Participants</h2>
+<p>A power analysis using G*Power 3.1.9.6 <span class="citation" data-cites="faul2009a">(<a href="#ref-faul2009a" role="doc-biblioref">Faul et al., 2009</a>)</span> determined that a repeated-measures analysis of variance (ANOVA) required 30 participants to reach a power of .90, with an alpha of .05 and an effect size of .15. This effect size was chosen based on previous studies <span class="citation" data-cites="campbell2021a zimmermann2019a">(<a href="#ref-campbell2021a" role="doc-biblioref">Campbell &amp; Tanaka, 2021</a>; <a href="#ref-zimmermann2019a" role="doc-biblioref">Zimmermann et al., 2019</a>)</span>. This study was approved by the Human Research Ethics Committee (Approval No.&nbsp;HE23-030) at the University of New England (UNE). Written informed consent was obtained from all participants (See Appendix B). While 30 participants completed the study, the data for two participants was excluded from the analysis based on the pre-registered exclusion criteria stating that participants will be excluded if their recognition times for the majority of their trials were slower than the starting point face display time (18 frames/66.67ms) for the majority of their trials. The final sample consisted of 28 females aged between 18 and 65 years (M = 43.1, SD = 12.7), recruited through word of mouth and via flyers distributed on campus at the UNE (See Appendix C). Participants signed up using the quick response (QR) code on the flyer, which generated an email to the experimenter. Only female participants were recruited to ensure stimulus consistency across conditions and eliminate gender as a possible biasing factor in face discrimination. The experiment took approximately 45 minutes to complete, and participants were compensated with an AUD $25 gift card. All participants had normal or corrected-to-normal vision and no self-reported diagnosed impairment in face perception (e.g., prosopagnosia).</p>
+</section>
+<section id="design-and-stimuli" class="level2">
+<h2 class="anchored" data-anchor-id="design-and-stimuli">Design and Stimuli</h2>
+<p>Stimuli were presented on a 22.5-inch (diagonal) VIEWPixx display toolbox, with a display resolution of 1920 (H) x 1200 (V) pixels. Face stimuli were programmed in MATLAB using custom code. Stimuli for the unfamiliar condition consisted of 16 female face identities selected from the NimStim database (the set of calm, neutral faces; <span class="citation" data-cites="tottenham2009a">Tottenham et al. (<a href="#ref-tottenham2009a" role="doc-biblioref">2009</a>)</span>). Two photographs of the experimenter were used to create a familiar face condition (See Appendix D). To create the self-face condition, prior to the experiment, participants were asked to send two photographs of themselves with a neutral expression, without eyewear and with no hair across the face. Several steps were taken to equate image sets across all three conditions. First, the faces were aligned at the eyes and cropped to an oval to exclude hair and clothing. Second, all face identities wore a neutral expression. Third, two images per identity were used so that responses would be more likely to indicate identity processing rather than image-based processing. Fourth, all images were greyscale and root mean square (RMS) normalised for contrast.</p>
+<p>The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180°. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6°) square patches of randomly-generated noise filtered with a <span class="math inline">\(1/f\)</span> frequency spectrum (see <a href="#fig-procedure" class="quarto-xref">Figure&nbsp;1</a>). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.</p>
+<div id="fig-procedure" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/FamiliarFace_Procedure.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/FamiliarFace_Procedure.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The visual stimulation sequence for each trial
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="threshold-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="threshold-analysis">Threshold Analysis</h2>
+<p>In this study we used a staircase procedure to measure face recognition speed. The staircase began with an easily detected visual display of a target face and distractor face (see <a href="#fig-procedure" class="quarto-xref">Figure&nbsp;1</a>), with the participant’s task being to indicate whether the target face was in the upper or lower part of the display. Subsequent face stimuli display times were reduced until the participant made an error, at which point the staircase reversed so that face stimuli were displayed for longer periods of time until the participant responded correctly, triggering another reversal. Image display times were measured in units of 8.33 millisecond video frames. The staircase used a 1-up-3-down design, where a correct response 3 times in a row generated a reduction in display time by 1 frame. If the participant made an incorrect response, stimulus display times increased by 1 frame. Each condition (unfamiliar, familiar, self-face) included four trials (two with upright faces and two with inverted faces) and each trial included two randomly interleaved staircases. The means of the thresholds for each staircase were averaged to calculate the shortest timeframe in which the face stimuli could be accurately recognised for each condition.</p>
+</section>
+<section id="procedure" class="level2">
+<h2 class="anchored" data-anchor-id="procedure">Procedure</h2>
+<p>Participants were verbally briefed on the aim of the research (See Appendix E) and provided with an information sheet (See Appendix F). An overview of the task was described as involving recognition of 12 target faces in a series of displays over the course of the experiment. Participants were seated opposite a desk with the VIEWPixx display screen and a keyboard to complete a practice trial to familiarise themselves with the task (see <a href="#fig-setup" class="quarto-xref">Figure&nbsp;2</a>). The practice trial featured a randomly selected face from the unfamiliar face set, which was then excluded from the main experiment. A random selection of target and distractor faces were chosen for each participant. Before each trial, written instructions appeared on the screen advising participants to focus on a fixation cross at the centre of the screen and use the up and down arrow keys to indicate whether the target face appeared above (up arrow) or below (down arrow) the fixation cross. Participants pressed any key to continue to initiate the display of a ‘target’ face stimulus for five seconds. After the inspection period, participants pressed any key to start the trial. Trials began with a mask stream followed by a display containing the target face and a distractor face above and below the fixation cross. The target face appeared randomly either above or below the fixation cross. Faces were displayed in either an upright or inverted position.</p>
+<div id="fig-setup" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/setup.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/setup.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (2023)
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
+<p>Data analyses were conducted using jamovi (version 2.3.21.0), with significance levels set to <span class="math inline">\(\alpha = .05\)</span> for analysis and <span class="math inline">\(\alpha = .001\)</span> for assumption testing. Data were examined for missing responses and no missingness was found. Two participants were excluded because their threshold scores were consistently above the starting point of the staircases (18 frames/ 66.67ms) for most of their trials. Thus, 28 of the original 30 participants were included in the analyses. Recognition time was measured using the number of frames required to complete the task as determined by the staircase procedure. Frames were then converted to milliseconds based on the monitor refresh rate of 120 Hz. Reaction time was measured in milliseconds.</p>
+</section>
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
+<p>Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as Fmax scores were below 10, in both upright, <span class="math inline">\(F_{max} = 2.110\)</span>, and inverted, <span class="math inline">\(F_{max} = 1.697\)</span>, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, <span class="math inline">\(W(28) = 0.82, p = .081\)</span> and the interaction between condition and face orientation, <span class="math inline">\(W(28) = 0.93, p = .399\)</span>.</p>
+<p>A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions <span class="math inline">\(F(2, 52) = 48.08, p &lt; .001, \eta_p^2 = .649\)</span>. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, <span class="math inline">\(t(26) = 3.99, p = .001\)</span>, and unfamiliar faces, <span class="math inline">\(t(26) = 11.12, p &lt; .001\)</span>. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, <span class="math inline">\(t(26) = 5.11, p &lt; .001\)</span>.</p>
+<p>Results also supported the third hypothesis that participants would require longer display times to recognise all faces when displays were inverted. The ANOVA indicated a main effect of orientation for face recognition times, <span class="math inline">\(F(1, 26) = 50.22, p &lt;.001, \eta_p^2 = .659\)</span>. In addition, the fourth hypothesis was supported: the face inversion effect was reduced for more familiar faces. The ANOVA indicated a significant interaction between condition and face orientation, <span class="math inline">\(F(2, 52) = 11.21, p &lt; .001, \eta_p^2 = .301\)</span>. The effects of inversion on recognition time were reduced when faces were more familiar. <a href="#fig-recognition-times" class="quarto-xref">Figure&nbsp;3</a> shows recognition times for inverted and upright face orientations for each condition.</p>
+<div id="cell-fig-recognition-times" class="cell">
+<div class="cell-output-display">
+<div id="fig-recognition-times" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-recognition-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/fig-recognition-times-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Recognition Times by Orientation for Each Condition
+</figcaption>
+</figure>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html#cell-fig-recognition-times">Source: Article Notebook</a></div>
+<p>A small but significant interaction was also observed between age and condition, <span class="math inline">\(F(2, 52) = 4.16, p = .021, \eta_p^2 = .138\)</span>. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. <a href="#fig-correlations" class="quarto-xref">Figure&nbsp;4</a> shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.</p>
+<div id="cell-fig-correlations" class="cell">
+<div class="cell-output-display">
+<div id="fig-correlations" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-correlations-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Correlations between recognition times by age for each condition
+</figcaption>
+</figure>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-2" href="index-preview.html#cell-fig-correlations">Source: Article Notebook</a></div>
+</section>
+<section id="exploratory-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-analysis">Exploratory Analysis</h2>
+<section id="reaction-time" class="level3">
+<h3 class="anchored" data-anchor-id="reaction-time">Reaction Time</h3>
+<p>An identical 2 x 3 repeated measures ANOVA was conducted on participant reaction times (computed as the elapsed time between stimulus presentation and button press), to identify whether reaction times would also reveal a familiarity effect in face recognition. The ANOVA showed a main effect of face condition, with faster reaction times for the more familiar faces, <span class="math inline">\(F(2, 52) = 3.85, p = .028, \eta_p^2 = .129\)</span>. There was also a significant main effect of face orientation, with longer reaction times for inverted faces, <span class="math inline">\(F(1, 26) = 18.71, p &lt;.001, eta_p^2 = .418\)</span>. However, there was no significant interaction between condition and face orientation, <span class="math inline">\(F(2, 52) = 0.14, p = .872, eta_p^2) = .005\)</span>. <a href="#fig-reaction-times" class="quarto-xref">Figure&nbsp;5</a> shows reaction times for inverted and upright face orientations for each condition.</p>
+<div id="cell-fig-reaction-times" class="cell">
+<div class="cell-output-display">
+<div id="fig-reaction-times" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-reaction-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/fig-reaction-times-1.png" class="img-fluid figure-img" width="672"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Reaction times by orientation for each condition
+</figcaption>
+</figure>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-3" href="index-preview.html#cell-fig-reaction-times">Source: Article Notebook</a></div>
+</section>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>To better understand the effect of greater levels of familiarity on face recognition, the present study used a staircase procedure to characterise face recognition performance. Participants responded to three different face categories manipulated by familiarity (unfamiliar, familiar, and self), and orientation (upright and inverted). Recognition time (i.e., perceptual processes) was isolated from reaction time (i.e., perceptual processes + cognitive decision + motor response) and used as an index of the familiarity effect. The overall findings confirmed predictions that more familiar faces are processed faster than less familiar and unfamiliar faces. Notably, our results underscore the self-face as a unique class of familiar face, providing compelling evidence for distinct perceptual processing.</p>
+<section id="familiarity-and-recognition-time" class="level2">
+<h2 class="anchored" data-anchor-id="familiarity-and-recognition-time">Familiarity and Recognition Time</h2>
+<p>In support of hypothesis one, participants recognised their own faces at shorter display times compared with other faces, providing evidence for distinct perceptual processing <span class="citation" data-cites="alzueta2019a rooney2012a">(<a href="#ref-alzueta2019a" role="doc-biblioref">Alzueta et al., 2019</a>; <a href="#ref-rooney2012a" role="doc-biblioref">Rooney et al., 2012</a>)</span>. Results conflicted with an EEG study demonstrating the self-face elicited similar neural responses relative to personally familiar faces <span class="citation" data-cites="wiese2021a">(<a href="#ref-wiese2021a" role="doc-biblioref">Wiese et al., 2021</a>)</span>. The self-face advantage observed in the recognition times may reflect robust self-representations developed over time, strengthened by both the amount of exposure and the nature of the exposure we have with our own face <span class="citation" data-cites="bortolon2017a tong1999a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. For example, examining our image in the mirror is a multisensory encounter, allowing us access to motor-sensory and tactile cues that enable us to update our mental representations of ourselves <span class="citation" data-cites="bortolon2017a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>)</span>. Further, research linking self-face recognition and self-esteem revealed that when participants viewed photographs of themselves alongside images that were manipulated to look more attractive, observers chose the manipulated images as more accurate self-representations, which correlated with higher self-esteem <span class="citation" data-cites="felisberti2014a">(<a href="#ref-felisberti2014a" role="doc-biblioref">Felisberti &amp; Musholt, 2014</a>)</span>. This tolerance to error, as reflected by the perceptual biases, may be a crucial and distinctive component of self-face representations that could enhance recognition performance <span class="citation" data-cites="felisberti2014a">(<a href="#ref-felisberti2014a" role="doc-biblioref">Felisberti &amp; Musholt, 2014</a>)</span>.</p>
+<p>Familiarity effects were also found in the shorter display times required to recognise the familiar face (the experimenter) compared to unfamiliar faces, supporting hypothesis two. The findings align with the abundant research evidence in face recognition demonstrating a qualitative and quantitative gap between familiar and unfamiliar face processing <span class="citation" data-cites="burton2013a burton2016a ramon2017a">(<a href="#ref-burton2013a" role="doc-biblioref">Burton, 2013</a>; <a href="#ref-burton2016a" role="doc-biblioref">Burton et al., 2016</a>; <a href="#ref-ramon2017a" role="doc-biblioref">Ramon &amp; Gobbini, 2017</a>)</span>. It is possible that familiar face recognition performance was strengthened by the opportunity for participants to learn how the experimenter’s face changed in appearance (e.g., different facial expressions and viewing angles), and the conceptual information (name and research interest) shared prior to the experiment <span class="citation" data-cites="dowsett2016a">(<a href="#ref-dowsett2016a" role="doc-biblioref">Dowsett et al., 2016</a>)</span>.</p>
+<p>The observation that older participants were faster at recognising their own face compared to younger participants was surprising given the rise in the importance of the “selfie” in youth culture <span class="citation" data-cites="tshidzumba2019a">(<a href="#ref-tshidzumba2019a" role="doc-biblioref">Tshidzumba, 2019</a>)</span>. In line with previous research suggesting that we are better at discriminating faces from our own age group, it is possible that older participants found it easier to distinguish their own face from the distractor faces, which were young identities (See Appendix C; <span class="citation" data-cites="rhodes2012a">Rhodes &amp; Anastasi (<a href="#ref-rhodes2012a" role="doc-biblioref">2012</a>)</span>).</p>
+</section>
+<section id="familiarity-and-inversion-effects" class="level2">
+<h2 class="anchored" data-anchor-id="familiarity-and-inversion-effects">Familiarity and Inversion Effects</h2>
+<p>The present study replicated the face inversion effect, a common finding in previous research that suggests human participants experience more difficulty recognising faces when they are upside down than when they are upright in their canonical orientation. Therefore, these findings support the third hypothesis, that regardless of familiarity, faces are harder to recognise upside down <span class="citation" data-cites="allen-davidian2021a kramer2018a taubert2011a young2017a">(<a href="#ref-allen-davidian2021a" role="doc-biblioref">Allen-Davidian et al., 2021</a>; <a href="#ref-kramer2018a" role="doc-biblioref">Kramer et al., 2018</a>; <a href="#ref-taubert2011a" role="doc-biblioref">Taubert et al., 2011</a>; <a href="#ref-young2017a" role="doc-biblioref">Young &amp; Burton, 2017</a>)</span>. This experiment also yielded empirical support for hypothesis four; the face inversion effect was significantly smaller for familiar faces than unfamiliar faces. Interestingly, the more familiar participants were with the face, the more immune they were to the inversion manipulation. This finding is consistent with previous studies that have also suggested that familiar faces are robust to the deleterious effects of inversion <span class="citation" data-cites="keyes2012a keyes2010a yang2014a">(<a href="#ref-keyes2012a" role="doc-biblioref">Keyes, 2012</a>; <a href="#ref-keyes2010a" role="doc-biblioref">Keyes &amp; Brady, 2010</a>; <a href="#ref-yang2014a" role="doc-biblioref">Yang et al., 2014</a>)</span>. However, results contradicted those of <span class="citation" data-cites="alzueta2019a">Alzueta et al. (<a href="#ref-alzueta2019a" role="doc-biblioref">2019</a>)</span>, who found no significant change in the size of inversion effects across unfamiliar, familiar and self-face conditions. Inconsistent findings may be explained by the difference in task complexity between the studies. For example, the staircase used in the present study involved finding a target face between two images, displayed for a short period (e.g., 66.67ms starting point), averaging performance across 12 trials, whereas <span class="citation" data-cites="alzueta2019a">Alzueta et al. (<a href="#ref-alzueta2019a" role="doc-biblioref">2019</a>)</span> allowed participants 1000ms to categorise a single face display as “me”, “friend” or “stranger”, averaging performance across 450 trials.</p>
+<p>Overall, these findings provide strong behavioural support for the idea that images of our face are processed differently to other faces, as participants were able to easily recognise their own face in the inverted position in less time than was required to recognise an upright unfamiliar face. The current results challenge the widely accepted view that all human faces are processed holistically, as the faster recognition times for inverted faces in the familiar and self-face conditions could be interpreted as evidence for stronger feature-based representations <span class="citation" data-cites="gerlach2022a tong1999a">(<a href="#ref-gerlach2022a" role="doc-biblioref">Gerlach &amp; Mogensen, 2022</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>.</p>
+</section>
+<section id="reaction-time-and-levels-of-familiarity" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-time-and-levels-of-familiarity">Reaction Time and Levels of Familiarity</h2>
+<p>Consistent with recognition time results and in alignment with the literature, there was a significant difference in reaction times between unfamiliar, familiar and self-face conditions <span class="citation" data-cites="kloth2006a ramon2011a young2017a">(<a href="#ref-kloth2006a" role="doc-biblioref">Kloth et al., 2006</a>; <a href="#ref-ramon2011a" role="doc-biblioref">Ramon et al., 2011</a>; <a href="#ref-young2017a" role="doc-biblioref">Young &amp; Burton, 2017</a>)</span>. Interestingly, the reaction times were found to be longer than those reported in other studies, which is likely due to the inherent task complexity when using a staircase, compared to more simple, untimed go/no-go face categorisation tasks <span class="citation" data-cites="bortolon2017a burton2016a ramon2011a smith2016a">(<a href="#ref-bortolon2017a" role="doc-biblioref">Bortolon et al., 2017</a>; <a href="#ref-burton2016a" role="doc-biblioref">Burton et al., 2016</a>; <a href="#ref-ramon2011a" role="doc-biblioref">Ramon et al., 2011</a>; <a href="#ref-smith2016a" role="doc-biblioref">Smith et al., 2016</a>)</span>.</p>
+<p>Importantly, the data revealed that recognition times were substantially shorter than reaction times for each condition. For example, on average, participants recognised (processed) upright familiar faces within 43.8ms but required 547ms to respond (process + decision + motor response) to the target face. These findings have important implications for future research designs, as they suggest that reaction times may be underestimating face recognition performance. Reaction times were longer for inverted faces compared to upright faces, however, the data did not reveal the interaction observed in the recognition time data, as there was no significant difference in the face inversion effect between conditions. Thus, recognition time seems to be a more sensitive measure of familiarity effects in face recognition.</p>
+<p>Recognition times for the experimenter’s face were not significantly different between previously unknown and previously known participants, conflicting with the research of <span class="citation" data-cites="ambrus2021a">Ambrus et al. (<a href="#ref-ambrus2021a" role="doc-biblioref">2021</a>)</span>, who found that personal familiarisation, compared to famous faces, led to more robust face representations and enhanced recognition performance. Instead, results align with research suggesting that strong visual representations for faces can be established even when a face is only recently learned, as participants who were previously unknown to the experimenter were able to recognise the experimenter’s face faster than unfamiliar faces <span class="citation" data-cites="dowsett2016a kramer2018a murphy2015a">(<a href="#ref-dowsett2016a" role="doc-biblioref">Dowsett et al., 2016</a>; <a href="#ref-kramer2018a" role="doc-biblioref">Kramer et al., 2018</a>; <a href="#ref-murphy2015a" role="doc-biblioref">Murphy et al., 2015</a>)</span>.</p>
+</section>
+<section id="limitations-and-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-future-directions">Limitations and Future Directions</h2>
+<p>The staircase procedure was a key strength of the research, demonstrating that the reaction times reported in research may be underestimating human face recognition ability <span class="citation" data-cites="besson2016a caharel2014a ramon2011a">(<a href="#ref-besson2016a" role="doc-biblioref">Besson et al., 2016</a>; <a href="#ref-caharel2014a" role="doc-biblioref">Caharel et al., 2014</a>; <a href="#ref-ramon2011a" role="doc-biblioref">Ramon et al., 2011</a>)</span>. However, the study design represented some limitations centred around comparability with other face recognition research. First, recognition times cannot be directly compared with reaction times. Second, the staircase procedure only measured the ability of participants to discriminate between two stimuli, unlike other studies that require participants to identify a target face among an array of distractor faces <span class="citation" data-cites="megraya2006a">(<a href="#ref-megraya2006a" role="doc-biblioref">Megreya &amp; Burton, 2006</a>)</span>. Third, the time constraint imposed by the staircase is not comparable with studies involving tasks without time limits <span class="citation" data-cites="zimmermann2019a">(<a href="#ref-zimmermann2019a" role="doc-biblioref">Zimmermann et al., 2019</a>)</span>. Future studies could attempt to address some of these comparability concerns by replicating the same study together with a standard go/no-go face categorisation task, to allow for a comparison of reaction times between the two tasks. Further, adapting the staircase to include a four alternative force choice task, compared to the two alternatives used here, would provide a better comparison with studies involving recognition tasks that require discrimination between multiple exemplars. Although the study examined three levels of familiarity (unfamiliar, familiar, and self), other highly familiar faces such as famous faces were not included <span class="citation" data-cites="campbell2020a wiese2021a">(<a href="#ref-campbell2020a" role="doc-biblioref">Campbell et al., 2020</a>; <a href="#ref-wiese2021a" role="doc-biblioref">Wiese et al., 2021</a>)</span>. Future studies could incorporate famous faces and face stimuli of identities that are more intimately known by the perceiver such as close friends and family members, to test the effects of different levels of familiarity on face recognition in both upright and inverted orientations. This would allow further exploration of the inversion effect found in the present study. It would also assist future face recognition research in defining the familiarity construct, particularly with respect to the self-face compared with other highly familiar faces. Further, the varying levels of familiarity participants had with the experimenter created inconsistency in the construct of the familiar condition. Future studies could include a larger sample of both previously unknown and previously known participants to compare the performance of two different levels of familiarity. Including previously unknown participants also provides valuable insight into the effects of real-world face learning on recognition.</p>
+<p>Future research should aim to involve diverse participants, including males and representation from all age groups. The female only sample may have influenced results, as there is some evidence suggesting a female own-gender bias in face recognition performance <span class="citation" data-cites="herlitz2013a lov2011a mishra2019a">(<a href="#ref-herlitz2013a" role="doc-biblioref">Herlitz &amp; Lovén, 2013</a>; <a href="#ref-lov2011a" role="doc-biblioref">Lovén et al., 2011</a>; <a href="#ref-mishra2019a" role="doc-biblioref">Mishra et al., 2019</a>)</span>. The mean age (43.1 years) in the present study is not reflective of the average age (~ 21-35 years) of participants in many other face recognition studies <span class="citation" data-cites="kloth2006a mohr2018a pachai2017a platek2009a">(<a href="#ref-kloth2006a" role="doc-biblioref">Kloth et al., 2006</a>; <a href="#ref-mohr2018a" role="doc-biblioref">Mohr et al., 2018</a>; <a href="#ref-pachai2017a" role="doc-biblioref">Pachai et al., 2017</a>; <a href="#ref-platek2009a" role="doc-biblioref">Platek &amp; Kemp, 2009</a>)</span>. Including a range of age groups is warranted given the age interaction found in the present study and research suggesting an age-bias in face recognition performance <span class="citation" data-cites="rhodes2012a">(<a href="#ref-rhodes2012a" role="doc-biblioref">Rhodes &amp; Anastasi, 2012</a>)</span>.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Overall, the findings of the present study demonstrate the familiarity advantage in face recognition. We provide strong evidence in support of distinct perceptual processing at different levels of familiarity, as demonstrated by faster recognition times for both the self-face and familiar face compared to unfamiliar faces. The self-face appears to be processed differently to other familiar faces, validating the self-face as an important inclusion in face studies seeking to understand the familiarity effect in face recognition. The staircase procedure provided a unique insight into processing time, highlighting the potential underestimation of face recognition ability in the literature. The finding that face inversion is less disruptive to the processing of more familiar faces is further evidence of distinct perceptual processes and challenges the widely held view that faces are processed holistically. We recommend further exploration of the effects of inversion at different levels of familiarity, to enhance understanding of perceptual processing distinctions, and identify implications for holistic and featural processing theories.</p>
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: The visual stimulation sequence for each trial</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (2023)</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;3: Recognition Times by Orientation for Each Condition</span>
+<span class="glightbox-desc lightbox-desc-4">Figure&nbsp;4: Correlations between recognition times by age for each condition</span>
+<span class="glightbox-desc lightbox-desc-5">Figure&nbsp;5: Reaction times by orientation for each condition</span>
+</div>
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-abudarham2019a" class="csl-entry" role="listitem">
+Abudarham, N., Shkiller, L., &amp; Yovel, G. (2019). Critical features for face recognition. <em>Cognition</em>, <em>182</em>, 73–83. <a href="https://doi.org/10.1016/j.cognition.2018.09.002">https://doi.org/10.1016/j.cognition.2018.09.002</a>
+</div>
+<div id="ref-abudarham2016a" class="csl-entry" role="listitem">
+Abudarham, N., &amp; Yovel, G. (2016). Reverse engineering the face space: Discovering the critical features for face identification. <em>Journal of Vision</em>, <em>16</em>(3), 1–18. <a href="https://doi.org/10.1167/16.3.40">https://doi.org/10.1167/16.3.40</a>
+</div>
+<div id="ref-allen-davidian2021a" class="csl-entry" role="listitem">
+Allen-Davidian, Y., Russo, M., Yamamoto, N., Kaufman, J., Pegna, A. J., &amp; Johnston, P. (2021). Turning the face inversion effect on its head: Violated expectations of orientation, lighting, and gravity enhance N170 amplitudes. <em>The Journal of Cognitive Neuroscience</em>, <em>33</em>(2), 303–314. <a href="https://doi.org/10.1162/jocn\_a\_01656">https://doi.org/10.1162/jocn\_a\_01656</a>
+</div>
+<div id="ref-alzueta2019a" class="csl-entry" role="listitem">
+Alzueta, E., Melcón, M., Poch, C., &amp; Capilla, A. (2019). Is your own face more than a highly familiar face? <em>Biological Psychology</em>, <em>142</em>, 100–107. <a href="https://doi.org/10.1016/j.biopsycho.2019.01.018">https://doi.org/10.1016/j.biopsycho.2019.01.018</a>
+</div>
+<div id="ref-ambrus2021a" class="csl-entry" role="listitem">
+Ambrus, G. G., Eick, C. M., Kaiser, D., &amp; Kovacs, G. (2021). Getting to know you: Emerging neural representations during face familiarisation. <em>The Journal of Neuroscience</em>, <em>41</em>(26), 5687–5698. <a href="https://doi.org/10.1523/JNEUROSCI.2466-20.2021">https://doi.org/10.1523/JNEUROSCI.2466-20.2021</a>
+</div>
+<div id="ref-besson2016a" class="csl-entry" role="listitem">
+Besson, G., Barragan-Jason, G., Fabre-Thorpe, M., Puma, S., Ceccaldi, M., &amp; Barbeau, E. J. (2016). From face processing to face recognition: Comparing three different processing levels. <em>Cognition</em>, <em>158</em>, 33–43. <a href="https://doi.org/10.1016/j.cognition.2016.10.004">https://doi.org/10.1016/j.cognition.2016.10.004</a>
+</div>
+<div id="ref-blauch2021a" class="csl-entry" role="listitem">
+Blauch, N. M., Behrmann, M., &amp; Plaut, D. C. (2021). Computational insights into human perceptual expertise for familiar and unfamiliar face recognition. <em>Cognition</em>, <em>208</em>, 1–13. <a href="https://doi.org/10.1016/j.cognition.2020.104341">https://doi.org/10.1016/j.cognition.2020.104341</a>
+</div>
+<div id="ref-bortolon2017a" class="csl-entry" role="listitem">
+Bortolon, C., Lorieux, S., &amp; Raffard, S. (2017). Self or familiar-face recognition advantage? New insight using ambient images. <em>The Quarterly Journal of Experimental Psychology</em>, <em>71</em>(6), 1396–1404. <a href="https://doi.org/10.1080/17470218.2017.1327982">https://doi.org/10.1080/17470218.2017.1327982</a>
+</div>
+<div id="ref-bortolon2018a" class="csl-entry" role="listitem">
+Bortolon., &amp; Raffard, S. (2018). Self-face advantage over familiar and unfamiliar faces: A three-level meta-analytic approach. <em>Psychonomic Bulletin &amp; Review</em>, <em>25</em>, 1287–1300. <a href="https://doi.org/10.3758/s13423-018-1487-9">https://doi.org/10.3758/s13423-018-1487-9</a>
+</div>
+<div id="ref-burton2013a" class="csl-entry" role="listitem">
+Burton, A. M. (2013). Why has research in face recognition progressed so slowly? The importance of variability. <em>The Quarterly Journal of Experimental Psychology</em>, <em>66</em>(8), 1467–1485. <a href="https://doi.org/10.1080/17470218.2013.800125">https://doi.org/10.1080/17470218.2013.800125</a>
+</div>
+<div id="ref-burton2011a" class="csl-entry" role="listitem">
+Burton, A. M., Jenkins, R., &amp; Schweinberger, S. R. (2011). Mental representations of familiar faces. <em>British Journal of Psychology</em>, <em>102</em>, 2943–2958. <a href="https://doi.org/10.1111/j.2044-8295.2011.02039.x">https://doi.org/10.1111/j.2044-8295.2011.02039.x</a>
+</div>
+<div id="ref-burton2016a" class="csl-entry" role="listitem">
+Burton, A. M., Kramer, R. S. S., Ritchie, K. L., &amp; Jenkins, R. (2016). Identity from variation: Representations of faces derived from multiple instances. <em>Cognitive Science</em>, <em>40</em>(1), 202–223. <a href="https://doi.org/10.1111/cogs.12231">https://doi.org/10.1111/cogs.12231</a>
+</div>
+<div id="ref-burton2015a" class="csl-entry" role="listitem">
+Burton, A. M., Schweinberger, S. R., Jenkins, R., &amp; Kaufmann, J. M. (2015). Arguments against a configural processing account of familiar face recognition. <em>Perspectives on Psychological Science</em>, <em>10</em>(4), 482–496. <a href="https://doi.org/10.1177/1745691615583129">https://doi.org/10.1177/1745691615583129</a>
+</div>
+<div id="ref-burton1999a" class="csl-entry" role="listitem">
+Burton, A. M., Wilson, M., Cowan, M., &amp; Bruce, V. (1999). Face recognition in poor-quality video: Evidence from security surveillance. <em>Psychological Science</em>, <em>10</em>(3), 243–248. <a href="https://doi.org/10.1111/1467-9280.00144">https://doi.org/10.1111/1467-9280.00144</a>
+</div>
+<div id="ref-caharel2014a" class="csl-entry" role="listitem">
+Caharel, S., Ramon, M., &amp; Rossion, B. (2014). Face familiarity decisions take 200 msec in the human brain: Electrophysiological evidence from a go/no-go speeded task. <em>Journal of Cognitive Neuroscience</em>, <em>26</em>(1), 81–95. <a href="https://doi.org/10.1162/jocn\_a\_00451">https://doi.org/10.1162/jocn\_a\_00451</a>
+</div>
+<div id="ref-caharel2021a" class="csl-entry" role="listitem">
+Caharel, S., &amp; Rossion, B. (2021). The N170 is sensitive to long-term (personal) familiarity of a face identity. <em>Neuroscience</em>, <em>458</em>, 244–255. <a href="https://doi.org/10.1016/j.neuroscience.2020.12.036">https://doi.org/10.1016/j.neuroscience.2020.12.036</a>
+</div>
+<div id="ref-campbell2020a" class="csl-entry" role="listitem">
+Campbell, A., Louw, R., Michniak, E., &amp; Tanaka, J. W. (2020). Identity-specific neural responses to three categories of face familiarity (own, friend, stranger) using fast periodic visual stimulation. <em>Neuropsychologia</em>, <em>141</em>, 1–12.
+</div>
+<div id="ref-campbell2021a" class="csl-entry" role="listitem">
+Campbell, A., &amp; Tanaka, J. W. (2021). When a stranger becomes a friend: Measuring the neural correlates of real-world face familiarisation. <em>Visual Cognition</em>, <em>29</em>(10), 689–707. <a href="https://doi.org/10.1080/13506285.2021.20002993">https://doi.org/10.1080/13506285.2021.20002993</a>
+</div>
+<div id="ref-cloutier2011a" class="csl-entry" role="listitem">
+Cloutier, J., Kelley, W. M., &amp; Heatherton, T. F. (2011). The influence of perceptual and knowledge-based familiarity on the neural substrates of face perception. <em>Social Neuroscience</em>, <em>6</em>(1), 63–75. <a href="https://doi.org/10.1080/17470911003693622">https://doi.org/10.1080/17470911003693622</a>
+</div>
+<div id="ref-collins2018a" class="csl-entry" role="listitem">
+Collins, E., Robinson, A. K., &amp; Berrmann, M. (2018). Distinct neural processes for the perception of familiar versus unfamiliar faces along the visual hierarchy revealed by EEG. <em>NeuroImage</em>, <em>181</em>, 120–131. <a href="https://doi.org/10.1016/j.neuroimage.2018.06.080">https://doi.org/10.1016/j.neuroimage.2018.06.080</a>
+</div>
+<div id="ref-dobs2019a" class="csl-entry" role="listitem">
+Dobs, K., Isik, L., Pantazis, D., &amp; Kanwisher, N. (2019). How face perception unfolds over time. <em>Nature Communications</em>, <em>10</em>(1), 1–10. <a href="https://doi.org/10.1038/s41467-019-09239-1">https://doi.org/10.1038/s41467-019-09239-1</a>
+</div>
+<div id="ref-dowsett2016a" class="csl-entry" role="listitem">
+Dowsett, A. J., Sandford, A., &amp; Burton, A. M. (2016). Face learning with multiple images leads to fast acquisition of familiarity for specific individuals. <em>The Quarterly Journal of Experimental Psychology</em>, <em>69</em>(1), 1–10. <a href="https://doi.org/10.1080/17470218.2015.1017513">https://doi.org/10.1080/17470218.2015.1017513</a>
+</div>
+<div id="ref-faul2009a" class="csl-entry" role="listitem">
+Faul, F., Erdfelder, E., Buchner, A., &amp; Lang, A. G. (2009). Statistical power analyses using g*power 3.1: Tests for correlation and regression analyses. <em>Behaviour Research Methods</em>, <em>41</em>, 1149–1160. <a href="https://doi.org/10.3758/BRM.41.4.1149">https://doi.org/10.3758/BRM.41.4.1149</a>
+</div>
+<div id="ref-felisberti2014a" class="csl-entry" role="listitem">
+Felisberti, F. M., &amp; Musholt, K. (2014). Self-face perception: Individual differences and discrepancies associated with mental self-face representation, attractiveness and self-esteem. <em>Psychology &amp; Neuroscience</em>, <em>7</em>(2), 65–72. <a href="https://doi.org/10.3922/j.psns.2014.013">https://doi.org/10.3922/j.psns.2014.013</a>
+</div>
+<div id="ref-gerlach2022a" class="csl-entry" role="listitem">
+Gerlach, C., &amp; Mogensen, E. (2022). The face inversion effect does not provide a pure measure of holistic face processing. <em>Behaviour Research Methods</em>, <em>1-12</em>. <a href="https://doi.org/10.3758/s13428-022-02054-5">https://doi.org/10.3758/s13428-022-02054-5</a>
+</div>
+<div id="ref-hancock2000a" class="csl-entry" role="listitem">
+Hancock, P. J., Bruce, V., &amp; Burton, A. M. (2000). Recognition of unfamiliar faces. <em>Trends in Cognitive Sciences</em>, <em>4</em>(9), 330–337. <a href="https://doi.org/10.1016/s1364-6613(00)01519-9">https://doi.org/10.1016/s1364-6613(00)01519-9</a>
+</div>
+<div id="ref-herlitz2013a" class="csl-entry" role="listitem">
+Herlitz, A., &amp; Lovén, J. (2013). Sex differences and the own-gender bias in face recognition: A meta-analytic review. <em>Visual Cognition</em>, <em>21</em>(9-10), 1306–1336. <a href="https://doi.org/10.1080/13506285.2013.823140">https://doi.org/10.1080/13506285.2013.823140</a>
+</div>
+<div id="ref-jenkins2018a" class="csl-entry" role="listitem">
+Jenkins, R., Dowsett, A. J., &amp; Burton, A. M. (2018). How many faces do people know? Proceedings of the royal society. <em>B, Biological Sciences</em>, <em>285</em>, 20181319. <a href="https://doi.org/10.1098/rspb.2018.1319">https://doi.org/10.1098/rspb.2018.1319</a>
+</div>
+<div id="ref-jenkins2011a" class="csl-entry" role="listitem">
+Jenkins, R., White, D., Montfort, X., &amp; Burton, A. M. (2011). Variability in photos of the same face. <em>Cognition</em>, <em>121</em>, 313–323. <a href="https://doi.org/10.1016/j.cognition.2011.08.001">https://doi.org/10.1016/j.cognition.2011.08.001</a>
+</div>
+<div id="ref-karimi-rouzbahani2021a" class="csl-entry" role="listitem">
+Karimi-Rouzbahani, H., Ramezani, F., Woolgar, A., Rich, A., &amp; Ghodrati, M. (2021). Perceptual difficulty modulates the direction of information flow in familiar face recognition. <em>NeuroImage</em>, <em>233</em>, 1–15. <a href="https://doi.org/10.1016/j.neuroimage.2021.117896">https://doi.org/10.1016/j.neuroimage.2021.117896</a>
+</div>
+<div id="ref-keyes2012a" class="csl-entry" role="listitem">
+Keyes, H. (2012). Categorical perception effects for facial identity in robustly represented familiar and self-faces: The role of configural and featural information. <em>The Quarterly Journal of Experimental Psychology</em>, <em>65</em>(4), 760–772. <a href="https://doi.org/10.1080/17470218.2011.636822">https://doi.org/10.1080/17470218.2011.636822</a>
+</div>
+<div id="ref-keyes2010a" class="csl-entry" role="listitem">
+Keyes, H., &amp; Brady, N. (2010). Self-face recognition is characterised by <span>“bi-lateral gain”</span> and by faster, more accurate performance which persists when faces are inverted. <em>The Quarterly Journal of Experimental Psychology</em>, <em>63</em>(5), 840–847. <a href="https://doi.org/10.1080/17470211003611264">https://doi.org/10.1080/17470211003611264</a>
+</div>
+<div id="ref-kloth2006a" class="csl-entry" role="listitem">
+Kloth, N., Dobel, C., Schweinberger, S. R., Zwitserlood, P., Bölte, J., &amp; Junghöfer, M. (2006). Effects of personal familiarity on early neuromagnetic correlates of face perception. <em>European Journal of Neuroscience</em>, <em>24</em>, 3317–3321. <a href="https://doi.org/10.1111/j.1460-9568.2006.05211.x">https://doi.org/10.1111/j.1460-9568.2006.05211.x</a>
+</div>
+<div id="ref-kramer2018a" class="csl-entry" role="listitem">
+Kramer, R. S. S., Young, A. W., &amp; Burton, A. M. (2018). Understanding face familiarity. <em>Cognition</em>, <em>172</em>, 46–58. <a href="https://doi.org/10.1016/j.cognition.2017.12.005">https://doi.org/10.1016/j.cognition.2017.12.005</a>
+</div>
+<div id="ref-kramer2017a" class="csl-entry" role="listitem">
+Kramer, R. S. S., Young, A. W., Day, M., &amp; Burton, A. M. (2017). Robust social categorization emerges from learning the identities of very few faces. <em>Psychological Review</em>, <em>24</em>(2), 115–129. <a href="https://doi.org/10.1037/rev000048">https://doi.org/10.1037/rev000048</a>
+</div>
+<div id="ref-lee2022a" class="csl-entry" role="listitem">
+Lee, J. K. W., Janssen, S. M. J., &amp; Estudillo, A. J. (2022). A featural account for own-face processing? Looking for support from face inversion, composite face, and part-whole tasks. <em>I-Perception</em>, <em>13</em>(4), 1–22. <a href="https://doi.org/10.1177/20416695221111409">https://doi.org/10.1177/20416695221111409</a>
+</div>
+<div id="ref-liccione2014a" class="csl-entry" role="listitem">
+Liccione, D., Moruzzi, S., Rossi, F., Manganaro, A., Porta, M., Nugrahaningsih, N., Caserio, V., &amp; Allegri, N. (2014). Familiarity is not notoriety. <em>Frontiers in Human Neuroscience</em>, <em>8</em>, 672–672. <a href="https://doi.org/10.3389/fnhum.2014.00672">https://doi.org/10.3389/fnhum.2014.00672</a>
+</div>
+<div id="ref-lov2011a" class="csl-entry" role="listitem">
+Lovén, J., Herlitz, A., &amp; Rehnman, J. (2011). Women’s own-gender bias in face recognition memory. <em>Experimental Psychology</em>, <em>58</em>(4), 333–340. <a href="https://doi.org/10.1027/1618-3169/a000100">https://doi.org/10.1027/1618-3169/a000100</a>
+</div>
+<div id="ref-megraya2006a" class="csl-entry" role="listitem">
+Megreya, A. M., &amp; Burton, A. M. (2006). Unfamiliar faces are not faces: Evidence from a matching task. <em>Memory &amp; Cognition</em>, <em>34</em>(4), 865–876. <a href="https://doi.org/10.3758/BF03193433">https://doi.org/10.3758/BF03193433</a>
+</div>
+<div id="ref-megraya2008a" class="csl-entry" role="listitem">
+Megreya, A. M., &amp; Burton, A. M. (2008). Matching faces to photographs: Poor performance in eyewitness memory (without the memory). <em>Journal of Experimental Psychology: Applied</em>, <em>14</em>(4), 364–372. <a href="https://doi.org/10.1037/a0013464">https://doi.org/10.1037/a0013464</a>
+</div>
+<div id="ref-mishra2019a" class="csl-entry" role="listitem">
+Mishra, M. V., Likitlersuang, J., Wilmer, J., Cohan, S., Germine, L., &amp; DeGutis, J. M. (2019). Gender differences in familiar face recognition and the influence of sociocultural gender inequality. <em>Scientific Reports</em>, <em>9</em>, 1–11. <a href="https://doi.org/10.1038/s41598-019-54074-5">https://doi.org/10.1038/s41598-019-54074-5</a>
+</div>
+<div id="ref-mohr2018a" class="csl-entry" role="listitem">
+Mohr, S., Wang, A., &amp; Engell, A. D. (2018). Early identity recognition of familiar faces is not dependent on holistic processing. <em>Social Cognitive and Affective Neuroscience</em>, <em>13</em>(10), 1019–1027. <a href="https://doi.org/10.1093/scan/nsy079">https://doi.org/10.1093/scan/nsy079</a>
+</div>
+<div id="ref-murphy2015a" class="csl-entry" role="listitem">
+Murphy, J., Ipser, A., Gaigg, S. B., &amp; Cook, R. (2015). Exemplar variance supports robust learning of facial identity. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>41</em>(3), 577–581. <a href="https://doi.org/10.1037/xhp0000049">https://doi.org/10.1037/xhp0000049</a>
+</div>
+<div id="ref-oleggio2017a" class="csl-entry" role="listitem">
+Oleggio Castello, M., Wheeler, K. G., Cipolli, C., Gobbini, M. I., &amp; Urgesi, C. (2017). Familiarity facilitates feature-based face processing. <em>PLoS One</em>, <em>12</em>(6), 1–13. <a href="https://doi.org/10.1371/journal.pone.0178895">https://doi.org/10.1371/journal.pone.0178895</a>
+</div>
+<div id="ref-oliveira2015a" class="csl-entry" role="listitem">
+Oliveira, E. H., Esteves, F., &amp; Carvalho, H. (2015). Clinical profiles of stigma experiences, self-esteem and social relationships among people with schizophrenia, depressive, and bipolar disorders. <em>Psychiatry Research</em>, <em>229</em>(1-2), 167–173. <a href="https://doi.org/10.1016/j.psychres.2015.07.047">https://doi.org/10.1016/j.psychres.2015.07.047</a>
+</div>
+<div id="ref-oruc2019a" class="csl-entry" role="listitem">
+Oruc, I., Shafai, F., Murthy, S., Lages, P., &amp; Ton, T. (2019). The adult face-diet: A naturalistic observation study. <em>Vision Research</em>, <em>157</em>, 222–229. <a href="https://doi.org/10.1016/j.visres.2018.01.001">https://doi.org/10.1016/j.visres.2018.01.001</a>
+</div>
+<div id="ref-pachai2017a" class="csl-entry" role="listitem">
+Pachai, M. V., Sekular, A. B., Bennett, P. J., Schyns, P. G., &amp; Ramon, M. (2017). Personal familiarity enhances sensitivity to horizontal structure during processing of face identity. <em>Journal of Vision</em>, <em>17</em>(6), 1–11. <a href="https://doi.org/10.1167/17.6.5">https://doi.org/10.1167/17.6.5</a>
+</div>
+<div id="ref-platek2009a" class="csl-entry" role="listitem">
+Platek, S. M., &amp; Kemp, S. M. (2009). Is family special to the brain? An event-related fMRI study of familiar, familial, and self-face recognition. <em>Neuropsychologia</em>, <em>47</em>, 849–858. <a href="https://doi.org/10.1016/j.neuropsychologia.2008.12.027">https://doi.org/10.1016/j.neuropsychologia.2008.12.027</a>
+</div>
+<div id="ref-quek2021a" class="csl-entry" role="listitem">
+Quek, G. L., Rossion, B., &amp; Liu-Shuang, J. (2021). Critical information thresholds underlying generic and familiar face categorisation at the same face encounter. <em>NeuroImage</em>, <em>243</em>, 1–14. <a href="https://doi.org/10.1016/j.neuroimage.2021.118481">https://doi.org/10.1016/j.neuroimage.2021.118481</a>
+</div>
+<div id="ref-ramon2016a" class="csl-entry" role="listitem">
+Ramon, M., &amp; Belle, G. van. (2016). Real-life experience with personally familiar faces enhances discrimination based on global information. <em>PeerJ</em>, <em>4</em>, 1–13. <a href="https://doi.org/10.7717/peerj.1465">https://doi.org/10.7717/peerj.1465</a>
+</div>
+<div id="ref-ramon2011a" class="csl-entry" role="listitem">
+Ramon, M., Caharel, S., &amp; Rossion, B. (2011). The speed of recognition of personally familiar faces. <em>Perception</em>, <em>40</em>, 437–449. <a href="https://doi.org/10.1068/p6794">https://doi.org/10.1068/p6794</a>
+</div>
+<div id="ref-ramon2017a" class="csl-entry" role="listitem">
+Ramon, M., &amp; Gobbini, M. I. (2017). Familiarity matters: A review on prioritized processing of personally familiar faces. <em>Visual Cognition</em>, <em>26</em>(3), 179–195. <a href="https://doi.org/10.1080/13506285.2017.1405134">https://doi.org/10.1080/13506285.2017.1405134</a>
+</div>
+<div id="ref-redfern2019a" class="csl-entry" role="listitem">
+Redfern, A. S., &amp; Benton, C. P. (2019). Representation of facial identity includes expression variability. <em>Vision Research</em>, <em>157</em>, 123–131. <a href="https://doi.org/10.1016/j.visres.2018.05.004">https://doi.org/10.1016/j.visres.2018.05.004</a>
+</div>
+<div id="ref-rhodes2012a" class="csl-entry" role="listitem">
+Rhodes, M. G., &amp; Anastasi, J. S. (2012). The own-age bias in face recognition: A meta-analytic and theoretical view. <em>Psychological Bulletin</em>, <em>138</em>(1), 146–174. <a href="https://doi.org/10.1037/a0025750">https://doi.org/10.1037/a0025750</a>
+</div>
+<div id="ref-rooney2012a" class="csl-entry" role="listitem">
+Rooney, B., Keyes, H., &amp; Brady, N. (2012). Shared or separate mechanisms for self-face and other-face processing? Evidence from adaptation. <em>Frontiers in Psychology</em>, <em>3</em>, 1–9. https://doi.org/<a href="https://doi.org.10.3389.fpsyg.2012.00066">https://doi.org.10.3389.fpsyg.2012.00066</a>
+</div>
+<div id="ref-sandford2014a" class="csl-entry" role="listitem">
+Sandford, A., &amp; Burton, A. M. (2014). Tolerance for distorted faces: Challenges to a configural processing account of familiar face recognition. <em>Cognition</em>, <em>132</em>(3), 262–268. <a href="https://doi.org/10.1016/j.cognition.2014.04.005">https://doi.org/10.1016/j.cognition.2014.04.005</a>
+</div>
+<div id="ref-schwartz2016a" class="csl-entry" role="listitem">
+Schwartz, L., &amp; Yovel, G. (2016). The roles of perceptual and conceptual information in face recognition. <em>Journal of Experimental Psychology: General</em>, <em>145</em>(11), 1493–1511. <a href="https://doi.org/10.1037/xge0000220">https://doi.org/10.1037/xge0000220</a>
+</div>
+<div id="ref-schwartz2019a" class="csl-entry" role="listitem">
+Schwartz, L., &amp; Yovel, G. (2019). Learning faces as concepts rather than percepts improves face recognition. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>45</em>(10), 1733–1747. <a href="https://doi.org/10.1037/xlm0000673">https://doi.org/10.1037/xlm0000673</a>
+</div>
+<div id="ref-smith2016a" class="csl-entry" role="listitem">
+Smith, M. L., Volna, B., &amp; Ewing, L. (2016). Distinct information critically distinguishes judgements of face familiarity and identity. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>42</em>(11), 1770–1779. <a href="https://doi.org/10.1037/xhp0000243">https://doi.org/10.1037/xhp0000243</a>
+</div>
+<div id="ref-taubert2011a" class="csl-entry" role="listitem">
+Taubert, J., Apthorp, D., Aagten-Murphy, D., &amp; Alais, D. (2011). The role of holistic processing in face perception: Evidence from the face inversion effect. <em>Vision Research</em>, <em>51</em>, 1273–1278. <a href="https://doi.org/10.1016/j.visres.2011.04.002">https://doi.org/10.1016/j.visres.2011.04.002</a>
+</div>
+<div id="ref-tong1999a" class="csl-entry" role="listitem">
+Tong, F., &amp; Nakayama, K. (1999). Robust representations for faces: Evidence from visual search. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>25</em>(4), 1016–1035. <a href="https://doi.org/10.1037//0096-1523.25.4.1016">https://doi.org/10.1037//0096-1523.25.4.1016</a>
+</div>
+<div id="ref-tottenham2009a" class="csl-entry" role="listitem">
+Tottenham, N., Tanaka, J. W., Leon, A. C., McCarry, T., Nurse, M., Hare, T. A., Marcus, D. J., Westerlund, A., Casey, B. J., &amp; Nelson, C. (2009). The NimStim set of facial expressions: Judgements from untrained research participants. <em>Psychiatry Research</em>, <em>168</em>(3), 242–249. <a href="https://doi.org/10.1016/j.psychres.2008.05.006">https://doi.org/10.1016/j.psychres.2008.05.006</a>
+</div>
+<div id="ref-tshidzumba2019a" class="csl-entry" role="listitem">
+Tshidzumba, N. A. (2019). The selfie culture: Identity creation and status conferral on social media. <em>Gender &amp; Behaviour</em>, <em>17</em>(3), 13577–13584.
+</div>
+<div id="ref-white2016a" class="csl-entry" role="listitem">
+White, D., Burton, A. L., &amp; Kemp, R. I. (2016). Not looking yourself: The cost of self-selecting photographs for identity verification. <em>British Journal of Psychology</em>, <em>107</em>, 359–373. <a href="https://doi.org/10.1111/bjop.12141">https://doi.org/10.1111/bjop.12141</a>
+</div>
+<div id="ref-wiese2021a" class="csl-entry" role="listitem">
+Wiese, H., Hobden, G., Siilbek, E., Martignac, V., Flack, T. R., Ritchie, K. L., Young, A. W., &amp; Burton, A. M. (2021). Familiarity is familiarity is familiarity: Event-related brain potentials reveal qualitatively similar representations of personally familiar and famous faces. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>48</em>(8), 1144–1164. <a href="https://doi.org/10.1037/xlm0001063">https://doi.org/10.1037/xlm0001063</a>
+</div>
+<div id="ref-wiese2019a" class="csl-entry" role="listitem">
+Wiese, H., Tüttenberg, S. C., Ingram, B. T., Chan, C. Y. X., Gurbuz, Z., Burton, A. M., &amp; Young, A. W. (2019). A robust neural index of high face familiarity. <em>Psychological Science</em>, <em>30</em>(2), 261–272. <a href="https://doi.org/10.1177/0956797618813572">https://doi.org/10.1177/0956797618813572</a>
+</div>
+<div id="ref-yang2014a" class="csl-entry" role="listitem">
+Yang, N., Shafai, F., &amp; Oruc, I. (2014). Size determines whether specialized expert processes are engaged for recognition of faces. <em>Journal of Vision</em>, <em>14</em>(8), 1–12. <a href="https://doi.org/10.1167/14.8.17">https://doi.org/10.1167/14.8.17</a>
+</div>
+<div id="ref-young2017a" class="csl-entry" role="listitem">
+Young, A. W., &amp; Burton, A. M. (2017). Are we face experts? <em>Trends in Cognitive Sciences</em>, <em>22</em>(2), 100–110. <a href="https://doi.org/10.1016/j.tics.2017.11.007">https://doi.org/10.1016/j.tics.2017.11.007</a>
+</div>
+<div id="ref-zimmermann2019a" class="csl-entry" role="listitem">
+Zimmermann, F. G. S., Yan, X., &amp; Rossion, B. (2019). An objective, sensitive and ecologically valid neural measure of rapid human individual face recognition. <em>Royal Society Open Science</em>, <em>6</em>, 181904. <a href="https://doi.org/10.1098/rsos.181904">https://doi.org/10.1098/rsos.181904</a>
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>
