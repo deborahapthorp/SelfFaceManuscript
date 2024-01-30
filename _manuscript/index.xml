@@ -15,10 +15,11 @@ and Familiar Faces</article-title>
             <given-names>Kasey</given-names>
           </name>
           <string-name>Kasey McGinness</string-name>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">investigation</role>
-          <role>statistical analysis</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal
+Analysis</role>
+          <role>Writing - original draft</role>
           <xref ref-type="aff" rid="aff-1">a</xref>
         </contrib>
         <contrib contrib-type="author">
@@ -28,8 +29,9 @@ and Familiar Faces</article-title>
             <given-names>Jessica</given-names>
           </name>
           <string-name>Jessica Taubert</string-name>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role>Writing - reviewing &amp; editing</role>
           <xref ref-type="aff" rid="aff-2">b</xref>
         </contrib>
         <contrib contrib-type="author" corresp="yes">
@@ -40,13 +42,15 @@ and Familiar Faces</article-title>
           </name>
           <string-name>Deborah Apthorp</string-name>
           <email>dapthorp@une.edu.au</email>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">project
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
 administration</role>
-          <role>coding</role>
-          <role>statistical analysis</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal
+analysis</role>
+          <role>Writing - reviewing &amp; editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
           <xref ref-type="aff" rid="aff-1">a</xref>
           <xref ref-type="aff" rid="aff-3">c</xref>
           <xref ref-type="corresp" rid="cor-3">*</xref>
@@ -107,10 +111,14 @@ highly familiar faces.</p>
     <sec id="introduction">
       <title>Introduction</title>
       <p>Face recognition is an extraordinary human skill. This unique
-  ability is the foundation of our social behaviour as it helps us
+  ability is the foundation of our social behaviour; it helps us
   identify others and interpret important social cues, such as mood and
-  focus of attention (Burton et al., 2015; Mohr et al., 2018). It has
-  been estimated that we spend 20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
+  focus of attention
+  (<xref alt="Burton et al., 2015" rid="ref-burton2015a" ref-type="bibr">Burton
+  et al., 2015</xref>;
+  <xref alt="Mohr et al., 2018" rid="ref-mohr2018a" ref-type="bibr">Mohr
+  et al., 2018</xref>). It has been estimated that we spend
+  20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
   of our day looking at faces, and can recognise over 4000 faces during
   our lifetime
   (<xref alt="Jenkins et al., 2018" rid="ref-jenkins2018a" ref-type="bibr">Jenkins
@@ -119,7 +127,7 @@ highly familiar faces.</p>
   et al., 2019</xref>). For most of us, the ability to recognise and
   recall identity-specific information for other individuals appears to
   occur almost effortlessly, with studies demonstrating that we can
-  recognise a familiar face as quickly as 360ms
+  recognise a familiar face as quickly as 360 ms
   (<xref alt="Besson et al., 2016" rid="ref-besson2016a" ref-type="bibr">Besson
   et al., 2016</xref>;
   <xref alt="Blauch et al., 2021" rid="ref-blauch2021a" ref-type="bibr">Blauch
@@ -128,7 +136,7 @@ highly familiar faces.</p>
   et al., 2019</xref>;
   <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a" ref-type="bibr">Ramon
   &amp; Belle, 2016</xref>). The efficiency with which humans can
-  discriminate within a relatively homogenous visual category, under
+  discriminate within a relatively homogeneous visual category, under
   constantly changing viewing conditions, has earned us the reputation
   for being face experts
   (<xref alt="Collins et al., 2018" rid="ref-collins2018a" ref-type="bibr">Collins
@@ -982,23 +990,6 @@ highly familiar faces.</p>
     difference in the face inversion effect between conditions. Thus,
     recognition time seems to be a more sensitive measure of familiarity
     effects in face recognition.</p>
-        <p>Recognition times for the experimenter’s face were not
-    significantly different between previously unknown and previously
-    known participants, conflicting with the research of Ambrus et al.
-    (<xref alt="2021" rid="ref-ambrus2021a" ref-type="bibr">2021</xref>),
-    who found that personal familiarisation, compared to famous faces,
-    led to more robust face representations and enhanced recognition
-    performance. Instead, results align with research suggesting that
-    strong visual representations for faces can be established even when
-    a face is only recently learned, as participants who were previously
-    unknown to the experimenter were able to recognise the
-    experimenter’s face faster than unfamiliar faces
-    (<xref alt="Dowsett et al., 2016" rid="ref-dowsett2016a" ref-type="bibr">Dowsett
-    et al., 2016</xref>;
-    <xref alt="Kramer et al., 2018" rid="ref-kramer2018a" ref-type="bibr">Kramer
-    et al., 2018</xref>;
-    <xref alt="Murphy et al., 2015" rid="ref-murphy2015a" ref-type="bibr">Murphy
-    et al., 2015</xref>).</p>
       </sec>
       <sec id="limitations-and-future-directions">
         <title>Limitations and Future Directions</title>
@@ -1215,36 +1206,6 @@ highly familiar faces.</p>
           <pub-id pub-id-type="doi">10.1016/j.biopsycho.2019.01.018</pub-id>
           <fpage>100</fpage>
           <lpage>107</lpage>
-        </element-citation>
-      </ref>
-      <ref id="ref-ambrus2021a">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Ambrus</surname>
-              <given-names>G. G.</given-names>
-            </name>
-            <name>
-              <surname>Eick</surname>
-              <given-names>C. M.</given-names>
-            </name>
-            <name>
-              <surname>Kaiser</surname>
-              <given-names>D.</given-names>
-            </name>
-            <name>
-              <surname>Kovacs</surname>
-              <given-names>G.</given-names>
-            </name>
-          </person-group>
-          <article-title>Getting to know you: Emerging neural representations during face familiarisation</article-title>
-          <source>The Journal of Neuroscience</source>
-          <year iso-8601-date="2021">2021</year>
-          <volume>41</volume>
-          <issue>26</issue>
-          <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2466-20.2021</pub-id>
-          <fpage>5687</fpage>
-          <lpage>5698</lpage>
         </element-citation>
       </ref>
       <ref id="ref-besson2016a">
@@ -2987,10 +2948,11 @@ and Familiar Faces</article-title>
             <given-names>Kasey</given-names>
           </name>
           <string-name>Kasey McGinness</string-name>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">investigation</role>
-          <role>statistical analysis</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal
+Analysis</role>
+          <role>Writing - original draft</role>
           <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
         </contrib>
         <contrib contrib-type="author">
@@ -3000,8 +2962,9 @@ and Familiar Faces</article-title>
             <given-names>Jessica</given-names>
           </name>
           <string-name>Jessica Taubert</string-name>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role>Writing - reviewing &amp; editing</role>
           <xref ref-type="aff" rid="aff-2-nb-article">b</xref>
         </contrib>
         <contrib contrib-type="author" corresp="yes">
@@ -3012,13 +2975,15 @@ and Familiar Faces</article-title>
           </name>
           <string-name>Deborah Apthorp</string-name>
           <email>dapthorp@une.edu.au</email>
-          <role>design</role>
-          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">project
+          <role vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
 administration</role>
-          <role>coding</role>
-          <role>statistical analysis</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <role vocab="https://credit.niso.org" vocab-term="writing – review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="https://credit.niso.org" vocab-term="formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal
+analysis</role>
+          <role>Writing - reviewing &amp; editing</role>
+          <role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <role vocab="https://credit.niso.org" vocab-term="supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
           <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
           <xref ref-type="aff" rid="aff-3-nb-article">c</xref>
           <xref ref-type="corresp" rid="cor-3-nb-article">*</xref>
@@ -3262,10 +3227,14 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
       <sec id="introduction-nb-article">
         <title>Introduction</title>
         <p>Face recognition is an extraordinary human skill. This unique
-  ability is the foundation of our social behaviour as it helps us
+  ability is the foundation of our social behaviour; it helps us
   identify others and interpret important social cues, such as mood and
-  focus of attention (Burton et al., 2015; Mohr et al., 2018). It has
-  been estimated that we spend 20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
+  focus of attention
+  (<xref alt="Burton et al., 2015" rid="ref-burton2015a-nb-article" ref-type="bibr">Burton
+  et al., 2015</xref>;
+  <xref alt="Mohr et al., 2018" rid="ref-mohr2018a-nb-article" ref-type="bibr">Mohr
+  et al., 2018</xref>). It has been estimated that we spend
+  20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
   of our day looking at faces, and can recognise over 4000 faces during
   our lifetime
   (<xref alt="Jenkins et al., 2018" rid="ref-jenkins2018a-nb-article" ref-type="bibr">Jenkins
@@ -3274,7 +3243,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   et al., 2019</xref>). For most of us, the ability to recognise and
   recall identity-specific information for other individuals appears to
   occur almost effortlessly, with studies demonstrating that we can
-  recognise a familiar face as quickly as 360ms
+  recognise a familiar face as quickly as 360 ms
   (<xref alt="Besson et al., 2016" rid="ref-besson2016a-nb-article" ref-type="bibr">Besson
   et al., 2016</xref>;
   <xref alt="Blauch et al., 2021" rid="ref-blauch2021a-nb-article" ref-type="bibr">Blauch
@@ -3283,7 +3252,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   et al., 2019</xref>;
   <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a-nb-article" ref-type="bibr">Ramon
   &amp; Belle, 2016</xref>). The efficiency with which humans can
-  discriminate within a relatively homogenous visual category, under
+  discriminate within a relatively homogeneous visual category, under
   constantly changing viewing conditions, has earned us the reputation
   for being face experts
   (<xref alt="Collins et al., 2018" rid="ref-collins2018a-nb-article" ref-type="bibr">Collins
@@ -4205,23 +4174,6 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     difference in the face inversion effect between conditions. Thus,
     recognition time seems to be a more sensitive measure of familiarity
     effects in face recognition.</p>
-          <p>Recognition times for the experimenter’s face were not
-    significantly different between previously unknown and previously
-    known participants, conflicting with the research of Ambrus et al.
-    (<xref alt="2021" rid="ref-ambrus2021a-nb-article" ref-type="bibr">2021</xref>),
-    who found that personal familiarisation, compared to famous faces,
-    led to more robust face representations and enhanced recognition
-    performance. Instead, results align with research suggesting that
-    strong visual representations for faces can be established even when
-    a face is only recently learned, as participants who were previously
-    unknown to the experimenter were able to recognise the
-    experimenter’s face faster than unfamiliar faces
-    (<xref alt="Dowsett et al., 2016" rid="ref-dowsett2016a-nb-article" ref-type="bibr">Dowsett
-    et al., 2016</xref>;
-    <xref alt="Kramer et al., 2018" rid="ref-kramer2018a-nb-article" ref-type="bibr">Kramer
-    et al., 2018</xref>;
-    <xref alt="Murphy et al., 2015" rid="ref-murphy2015a-nb-article" ref-type="bibr">Murphy
-    et al., 2015</xref>).</p>
         </sec>
         <sec id="limitations-and-future-directions-nb-article">
           <title>Limitations and Future Directions</title>
@@ -4438,36 +4390,6 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
             <pub-id pub-id-type="doi">10.1016/j.biopsycho.2019.01.018</pub-id>
             <fpage>100</fpage>
             <lpage>107</lpage>
-          </element-citation>
-        </ref>
-        <ref id="ref-ambrus2021a-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Ambrus</surname>
-                <given-names>G. G.</given-names>
-              </name>
-              <name>
-                <surname>Eick</surname>
-                <given-names>C. M.</given-names>
-              </name>
-              <name>
-                <surname>Kaiser</surname>
-                <given-names>D.</given-names>
-              </name>
-              <name>
-                <surname>Kovacs</surname>
-                <given-names>G.</given-names>
-              </name>
-            </person-group>
-            <article-title>Getting to know you: Emerging neural representations during face familiarisation</article-title>
-            <source>The Journal of Neuroscience</source>
-            <year iso-8601-date="2021">2021</year>
-            <volume>41</volume>
-            <issue>26</issue>
-            <pub-id pub-id-type="doi">10.1523/JNEUROSCI.2466-20.2021</pub-id>
-            <fpage>5687</fpage>
-            <lpage>5698</lpage>
           </element-citation>
         </ref>
         <ref id="ref-besson2016a-nb-article">
