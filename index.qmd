@@ -4,17 +4,18 @@ authors:
   - name: Kasey McGinness
     affiliation: University of New England
     roles: 
-      - design
-      - investigation
-      - statistical analysis
-      - writing
+      - Conceptualization
+      - Investigation
+      - Formal Analysis
+      - Writing - original draft
     corresponding: false
   - name: Jessica Taubert
     orcid: 0000-0002-6519-8068
     affiliation: University of Queensland
     roles: 
-      - design
-      - editing
+      - Conceptualization
+      - Methodology
+      - Writing - reviewing & editing
     corresponding: false
     
   - name: Deborah Apthorp
@@ -24,12 +25,13 @@ authors:
       - University of New England
       - Australian National University
     roles: 
-      - design
-      - project administration
-      - coding
-      - statistical analysis
-      - writing
-      - editing
+      - Conceptualization
+      - Project administration
+      - Software
+      - Formal analysis
+      - Writing - reviewing & editing
+      - Visualization
+      - Supervision
     corresponding: true
     
 keywords: 
@@ -211,7 +213,7 @@ faces_2x3_RTs <- raincloud_2x3_repmes(
 
 # Introduction
 
-Face recognition is an extraordinary human skill. This unique ability is the foundation of our social behaviour as it helps us identify others and interpret important social cues, such as mood and focus of attention [@burton2015a; @mohr2018a]. It has been estimated that we spend 20$%$ of our day looking at faces, and can recognise over 4000 faces during our lifetime [@jenkins2018a; @oruc2019a]. For most of us, the ability to recognise and recall identity-specific information for other individuals appears to occur almost effortlessly, with studies demonstrating that we can recognise a familiar face as quickly as 360ms [@besson2016a; @blauch2021a; @oruc2019a; @ramon2016a]. The efficiency with which humans can discriminate within a relatively homogeneous visual category, under constantly changing viewing conditions, has earned us the reputation for being face experts [@collins2018a; @dobs2019a; @kramer2017a; @quek2021a].
+Face recognition is an extraordinary human skill. This unique ability is the foundation of our social behaviour; it helps us identify others and interpret important social cues, such as mood and focus of attention [@burton2015a; @mohr2018a]. It has been estimated that we spend 20$%$ of our day looking at faces, and can recognise over 4000 faces during our lifetime [@jenkins2018a; @oruc2019a]. For most of us, the ability to recognise and recall identity-specific information for other individuals appears to occur almost effortlessly, with studies demonstrating that we can recognise a familiar face as quickly as 360 ms [@besson2016a; @blauch2021a; @oruc2019a; @ramon2016a]. The efficiency with which humans can discriminate within a relatively homogeneous visual category, under constantly changing viewing conditions, has earned us the reputation for being face experts [@collins2018a; @dobs2019a; @kramer2017a; @quek2021a].
 
 The precise nature of our face expertise remains poorly understood, with debate around whether the processes that govern face perception are the same for all faces or whether there are distinct perceptual processes for familiar faces [@abudarham2019a; @blauch2021a; @collins2018a]. Central to the discussion is the idea that there may be a familiarity continuum in face recognition, whereby the brain will respond differently depending on the level of familiarity one has with the face. For example, our friends’ faces are not as familiar to us as our own face [@bortolon2018a; @rooney2012a; @tong1999a]. Understanding these differences may extend beyond the benefit to basic visual cognition. For example, it is possible that the processes responsible for recognising our own face index other higher-level constructs such as self-esteem and self-identity, which are thought to underlie serious pathologies such as depression, schizophrenia, and bipolar disorder [@felisberti2014a; @oliveira2015a].
 
