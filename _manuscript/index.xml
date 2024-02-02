@@ -76,29 +76,30 @@ analysis</role>
       </author-notes>
       <history/>
       <abstract>
-        <p>Evidence that familiar faces are perceived differently from
-unfamiliar faces has important implications for our understanding of
-face recognition. Although familiarity effects on face recognition
-performance have been extensively researched, the perceptual processes
-that underlie these differences are comparatively unknown. Using a
-psychophysical staircase paradigm, we collected data from 28 female
-participants aged 18-65 years (<inline-formula><alternatives><tex-math><![CDATA[M = 43.1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mn>43.1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+        <p>Evidence that familiar faces are processed differently from
+unfamiliar faces has important implications for our understanding of how
+we recognise the people around us. Although familiarity effects on face
+recognition performance have been extensively researched, the perceptual
+processes that underlie these differences are comparatively unknown.
+Using a psychophysical staircase paradigm, we collected data from 28
+female participants aged 18-65 years (<inline-formula><alternatives><tex-math><![CDATA[M = 43.1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mn>43.1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
 <inline-formula><alternatives><tex-math><![CDATA[SD = 12.7]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>S</mml:mi><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mn>12.7</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>)
-and examined the minimum amount of time required to recognise a
-previously seen face across three levels of familiarity (unfamiliar,
-familiar, and self). A repeated-measures analysis of variance revealed
-shorter recognition and reaction times for more familiar faces than for
-unfamiliar faces. As expected, inverted faces took longer to recognise
-than upright faces, but this effect was reduced for familiar and
-self-faces. Recognition times provide evidence for distinct perceptual
-processing based on level of familiarity and suggest that our ability to
-recognise familiar faces may be poorly characterised by current
-theories. Overall, the results emphasise the uniqueness of the self-face
-within the familiarity continuum, as all participants were able to
-recognise their own face significantly faster than other faces. In light
-of these results, it is clear that a full understanding of face
-recognition will require a better characterisation of how we respond to
-highly familiar faces.</p>
+and probed perceptual processing by measuring the minimum amount of time
+required to recognise a previously seen face across three levels of
+familiarity (unfamiliar, familiar, and self). The results revealed that
+participants needed less time to recognise familiar faces compared to
+unfamiliar faces. Concomitantly, participants needed less time to
+respond when tasked with recognising faces compared to unfamiliar faces.
+As expected, inverted faces took longer to recognise than upright faces,
+but this effect was reduced for familiar and self-faces. Recognition
+times provide evidence for distinct perceptual processing based on level
+of familiarity and suggest that our ability to recognise familiar faces
+may be poorly characterised by current theories. Overall, the results
+emphasise the uniqueness of the self-face within the familiarity
+continuum, as all participants were able to recognise their own face
+significantly faster than other faces. In light of these results, it is
+clear that a full understanding of face recognition will require a
+better characterisation of how we respond to highly familiar faces.</p>
       </abstract>
       <kwd-group kwd-group-type="author">
         <kwd>Face perception</kwd>
@@ -110,24 +111,23 @@ highly familiar faces.</p>
   <body>
     <sec id="introduction">
       <title>Introduction</title>
-      <p>Face recognition is an extraordinary human skill. This unique
-  ability is the foundation of our social behaviour; it helps us
-  identify others and interpret important social cues, such as mood and
-  focus of attention
+      <p>Face recognition is the foundation of our social behaviour; it
+  helps us identify the people around us and make inferences about their
+  mood and focus of attention
   (<xref alt="Burton et al., 2015" rid="ref-burton2015a" ref-type="bibr">Burton
   et al., 2015</xref>;
   <xref alt="Mohr et al., 2018" rid="ref-mohr2018a" ref-type="bibr">Mohr
   et al., 2018</xref>). It has been estimated that we spend
-  20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
+  20<inline-formula><alternatives><tex-math><![CDATA[\%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>%</mml:mi></mml:math></alternatives></inline-formula>
   of our day looking at faces, and can recognise over 4000 faces during
   our lifetime
   (<xref alt="Jenkins et al., 2018" rid="ref-jenkins2018a" ref-type="bibr">Jenkins
   et al., 2018</xref>;
   <xref alt="Oruc et al., 2019" rid="ref-oruc2019a" ref-type="bibr">Oruc
   et al., 2019</xref>). For most of us, the ability to recognise and
-  recall identity-specific information for other individuals appears to
-  occur almost effortlessly, with studies demonstrating that we can
-  recognise a familiar face as quickly as 360 ms
+  recall identity-specific information appears to occur almost
+  effortlessly, with studies demonstrating that we can recognise a
+  familiar face as quickly as 360 ms
   (<xref alt="Besson et al., 2016" rid="ref-besson2016a" ref-type="bibr">Besson
   et al., 2016</xref>;
   <xref alt="Blauch et al., 2021" rid="ref-blauch2021a" ref-type="bibr">Blauch
@@ -141,14 +141,18 @@ highly familiar faces.</p>
   for being face experts
   (<xref alt="Collins et al., 2018" rid="ref-collins2018a" ref-type="bibr">Collins
   et al., 2018</xref>;
-  <xref alt="Dobs et al., 2019" rid="ref-dobs2019a" ref-type="bibr">Dobs
-  et al., 2019</xref>;
+  <xref alt="Dobs et al., 2019a" rid="ref-dobs2019a" ref-type="bibr">Dobs
+  et al., 2019a</xref>;
   <xref alt="Kramer et al., 2017" rid="ref-kramer2017a" ref-type="bibr">Kramer
   et al., 2017</xref>;
   <xref alt="Quek et al., 2021" rid="ref-quek2021a" ref-type="bibr">Quek
-  et al., 2021</xref>).</p>
+  et al., 2021</xref>;
+  <xref alt="Rossion &amp; Taubert, 2019" rid="ref-rossion_what_2019" ref-type="bibr">Rossion
+  &amp; Taubert, 2019</xref>;
+  <xref alt="Towler et al., 2019" rid="ref-towler_are_2019" ref-type="bibr">Towler
+  et al., 2019</xref>).</p>
       <p>The precise nature of our face expertise remains poorly understood,
-  with debate around whether the processes that govern face perception
+  with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
   processes for familiar faces
   (<xref alt="Abudarham et al., 2019" rid="ref-abudarham2019a" ref-type="bibr">Abudarham
@@ -160,7 +164,8 @@ highly familiar faces.</p>
   may be a familiarity continuum in face recognition, whereby the brain
   will respond differently depending on the level of familiarity one has
   with the face. For example, our friends’ faces are not as familiar to
-  us as our own face
+  us as our own face, and this difference could change the way the brain
+  encodes and processes a face at the sensory and cognitive level
   (<xref alt="Bortolon. &amp; Raffard, 2018" rid="ref-bortolon2018a" ref-type="bibr">Bortolon.
   &amp; Raffard, 2018</xref>;
   <xref alt="Rooney et al., 2012" rid="ref-rooney2012a" ref-type="bibr">Rooney
@@ -176,11 +181,11 @@ highly familiar faces.</p>
   &amp; Musholt, 2014</xref>;
   <xref alt="Oliveira et al., 2015" rid="ref-oliveira2015a" ref-type="bibr">Oliveira
   et al., 2015</xref>).</p>
-      <p>There is abundant evidence that greater levels of familiarity
-  facilitate processing efficiency, as it has been shown that the faces
-  of personally familiar people are processed faster and more accurately
-  than the faces of familiar celebrities, and both have an advantage
-  over strangers faces
+      <p>There is abundant evidence that greater levels of familiarity with
+  a person facilitate processing efficiency, as it has been shown that
+  the faces of personally familiar people are processed faster and more
+  accurately than the faces of familiar celebrities, and both have an
+  advantage over strangers faces
   (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a" ref-type="bibr">Bortolon
   et al., 2017</xref>;
   <xref alt="Burton et al., 2015" rid="ref-burton2015a" ref-type="bibr">Burton
@@ -201,33 +206,38 @@ highly familiar faces.</p>
   (<xref alt="1999" rid="ref-burton1999a" ref-type="bibr">1999</xref>)
   found performance differences in their study which involved showing
   low resolution CCTV images to familiar and unfamiliar viewers.
-  Unfamiliar viewers were able to accurately identify faces 50% of the
-  time, whereas familiar viewers could identify faces almost perfectly,
-  suggesting that the processing of unfamiliar faces may be
+  Unfamiliar viewers were able to accurately identify faces
+  50<inline-formula><alternatives><tex-math><![CDATA[\%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>%</mml:mi></mml:math></alternatives></inline-formula>
+  of the time, whereas familiar viewers could identify faces almost
+  perfectly, suggesting that the processing of unfamiliar faces may be
   qualitatively different from familiar faces
   (<xref alt="Burton et al., 1999" rid="ref-burton1999a" ref-type="bibr">Burton
   et al., 1999</xref>). The familiar face advantage has been observed
-  across a range of tasks including face inversion (i.e., turning faces
-  upside down) and distortion (e.g., compressing images of faces)
-  manipulations, highlighting familiarity as an important factor in face
-  recognition
+  across a range of image manipulations including face inversion (i.e.,
+  turning faces upside down) and geometric distortion (e.g., compressing
+  images of faces) manipulations, highlighting familiarity as an
+  important factor in face recognition
   (<xref alt="Allen-Davidian et al., 2021" rid="ref-allen-davidian2021a" ref-type="bibr">Allen-Davidian
   et al., 2021</xref>;
+  <xref alt="Hole et al., 2002" rid="ref-hole_effects_2002" ref-type="bibr">Hole
+  et al., 2002</xref>;
   <xref alt="Kramer et al., 2018" rid="ref-kramer2018a" ref-type="bibr">Kramer
   et al., 2018</xref>;
+  <xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008" ref-type="bibr">Rossion,
+  2008</xref>;
   <xref alt="Yang et al., 2014" rid="ref-yang2014a" ref-type="bibr">Yang
   et al., 2014</xref>).</p>
       <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
-  experimental context. First, there are different levels of familiarity
-  ranging from recently learned faces, to faces that are familiar but
-  for which we have no personal knowledge (famous people,
-  acquaintances), to the faces of those we know well (family, close
-  friends, self-face; Ramon et al.
+  experimental context. First, there are different levels of
+  familiarity, ranging from recently recently seen and recently learned
+  faces to faces that are familiar but for which we have no personal
+  knowledge (famous people, acquaintances), to the faces of those we
+  know well (family, close friends, self-face; Ramon et al.
   (<xref alt="2011" rid="ref-ramon2011a" ref-type="bibr">2011</xref>)).
   Levels of familiarity influence the depth of knowledge and experience
-  we associate with an individual, which likely impacts the mental
-  representations we store about them in memory
+  we associate with an individual, which likely impacts the underlying
+  mental representation we store in memory
   (<xref alt="Ramon &amp; Gobbini, 2017" rid="ref-ramon2017a" ref-type="bibr">Ramon
   &amp; Gobbini, 2017</xref>). Second, each individual knows a unique
   collection of faces, which limits the type of stimuli that can be used
@@ -245,9 +255,11 @@ highly familiar faces.</p>
   often manipulate face images (e.g., cropped, hairless, expressionless)
   which is different to how a face appears under normal circumstances
   (<xref alt="Burton et al., 2011" rid="ref-burton2011a" ref-type="bibr">Burton
-  et al., 2011</xref>). These challenges have contributed to the
-  inconsistency in face research findings, particularly regarding
-  familiar face recognition performance.</p>
+  et al., 2011</xref>;
+  <xref alt="Long et al., 2023" rid="ref-long_database_2023" ref-type="bibr">Long
+  et al., 2023</xref>). These methodological constraints and unique
+  challenges have contributed to the inconsistencies in face research,
+  particularly regarding familiar face recognition performance.</p>
       <sec id="measuring-face-recognition">
         <title>Measuring Face Recognition</title>
         <p>While in the real world only familiar faces are recognised, in
@@ -257,16 +269,16 @@ highly familiar faces.</p>
     (<xref alt="Burton, 2013" rid="ref-burton2013a" ref-type="bibr">Burton,
     2013</xref>;
     <xref alt="Hancock et al., 2000" rid="ref-hancock2000a" ref-type="bibr">Hancock
-    et al., 2000</xref>). Consistent with the literature, we will
+    et al., 2000</xref>;
+    <xref alt="White &amp; Burton, 2022" rid="ref-white_individual_2022" ref-type="bibr">White
+    &amp; Burton, 2022</xref>). Consistent with the literature, we will
     conceptualise face recognition as the ability to recognise
     previously known or recently learned faces (familiar) and previously
     unknown faces (unfamiliar).</p>
-        <p>Face recognition has been investigated by recording the reaction
-    time required to accurately find targets in visual search paradigms.
-    Tasks often involve participants seeking a target face amongst
-    distractor faces, where detection is indicated using a go/no-go
-    categorisation, such as pressing specific keys on a keyboard to
-    indicate whether the target was present or absent in a given display
+        <p>Face recognition has been investigated by recording how long it
+    takes participants to accurately find targets. These tasks often
+    involve participants seeking a target face, where detection is
+    indicated using a go/no-go categorisation
     (<xref alt="Kloth et al., 2006" rid="ref-kloth2006a" ref-type="bibr">Kloth
     et al., 2006</xref>;
     <xref alt="Ramon et al., 2011" rid="ref-ramon2011a" ref-type="bibr">Ramon
@@ -295,12 +307,12 @@ highly familiar faces.</p>
     compared with strangers (562 ms), providing conflicting evidence for
     the familiar face advantage. Together, findings highlight a common
     challenge in face recognition research regarding variability in
-    reaction time data as a result of inconsistent task demands.</p>
-        <p>A drawback of using reaction times as a dependent variable is
-    that the data represents the elapsed time from stimulus onset to
-    motor output, combining perceptual processing time, cognitive
-    decision time, and motor response, thus inflating the real time
-    required to recognise a face
+    reaction time data as a result of different task demands.</p>
+        <p>A drawback of relying on average reaction times as a dependent
+    variable is that the data represents the elapsed time from stimulus
+    onset to motor output, combining perceptual processing time,
+    cognitive decision time, and motor response, thus inflating the
+    actual time required to recognise a face
     (<xref alt="Alzueta et al., 2019" rid="ref-alzueta2019a" ref-type="bibr">Alzueta
     et al., 2019</xref>;
     <xref alt="Burton et al., 2015" rid="ref-burton2015a" ref-type="bibr">Burton
@@ -308,19 +320,18 @@ highly familiar faces.</p>
     <xref alt="Caharel et al., 2014" rid="ref-caharel2014a" ref-type="bibr">Caharel
     et al., 2014</xref>). Taubert et al.
     (<xref alt="2011" rid="ref-taubert2011a" ref-type="bibr">2011</xref>)
-    overcame this issue in their study using a staircase procedure,
-    whereby the time needed to recognise a face is determined by
-    manipulating the amount of time a face is displayed and measuring
-    the amount of time a participant needs to correctly identify a
-    target face 80% of the time. Their research revealed that
-    participants (N = 10) could accurately discriminate between
-    individual target faces after 50 ms
+    overcame this issue in their study by using a staircase procedure to
+    determine minimum exposure time. Their research revealed that
+    participants could accurately discriminate between individual target
+    faces when given 50 ms to view a stimulus
     (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a" ref-type="bibr">Taubert
     et al., 2011</xref>). Others have used electroencephalography (EEG)
     frequency tagging to compare neural responses to face images that
     progressively increased in image duration, to identify the threshold
     for successful face recognition
-    (<xref alt="Quek et al., 2021" rid="ref-quek2021a" ref-type="bibr">Quek
+    (<xref alt="Dobs et al., 2019b" rid="ref-dobs_how_2019" ref-type="bibr">Dobs
+    et al., 2019b</xref>;
+    <xref alt="Quek et al., 2021" rid="ref-quek2021a" ref-type="bibr">Quek
     et al., 2021</xref>). Results showed that exposures as brief as 83
     ms enabled observers to consistently recognise familiar (famous)
     faces from unfamiliar faces
@@ -333,51 +344,11 @@ highly familiar faces.</p>
     <xref alt="Blauch et al., 2021" rid="ref-blauch2021a" ref-type="bibr">Blauch
     et al., 2021</xref>;
     <xref alt="Oruc et al., 2019" rid="ref-oruc2019a" ref-type="bibr">Oruc
-    et al., 2019</xref>).</p>
-      </sec>
-      <sec id="face-processing-efficiency">
-        <title>Face Processing Efficiency</title>
-        <p>The literature provides two interpretations of face processing
-    efficiency. The holistic processing perspective suggests that faces
-    are processed by analysing the spatial relations between features,
-    providing a unique configuration for each individual so that faces
-    are processed whole, rather than in parts
-    (<xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a" ref-type="bibr">Sandford
-    &amp; Burton, 2014</xref>). Evidence for holistic processing has
-    been demonstrated predominantly in studies showing that when a face
-    is inverted, disrupting it’s ordinary featural configuration,
-    participants find it harder to identify target faces
-    (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a" ref-type="bibr">Taubert
-    et al., 2011</xref>;
-    <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a" ref-type="bibr">Tong
-    &amp; Nakayama, 1999</xref>). Interestingly, studies have revealed
-    that the effects of inversion are greater for unfamiliar faces than
-    familiar faces, suggesting that the familiar face processing
-    advantage may be attributed to holistic processing effects
-    (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a" ref-type="bibr">Oleggio
-    Castello et al., 2017</xref> ;
-    <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a" ref-type="bibr">Ramon
-    &amp; Belle, 2016</xref>)</p>
-        <p>By contrast, the feature-based processing perspective suggests
-    that processing efficiency, as observed with familiar faces, can be
-    attributed to the learning of face features, such as eyes, nose, and
-    mouth, which are then used as unique identifiers supporting
-    processing efficiency
-    (<xref alt="Abudarham &amp; Yovel, 2016" rid="ref-abudarham2016a" ref-type="bibr">Abudarham
-    &amp; Yovel, 2016</xref>). Lee et al.
-    (<xref alt="2022" rid="ref-lee2022a" ref-type="bibr">2022</xref>)
-    explored holistic and featural processing effects in a study where
-    participants viewed images of unfamiliar faces, friends’ faces, and
-    the self-face in an inversion task, and a part-whole (isolated
-    features) task. They found no significant difference in inversion
-    effects across the unfamiliar, friend and self-face conditions,
-    whereas, in the isolated features task, participants were faster and
-    more accurate at recognising the self-face compared to friend and
-    unfamiliar faces, suggesting the self-face may be processed in a
-    more feature-based manner. Therefore, the commonly held belief that
-    face recognition relies on holistic processing is being challenged,
-    and it seems likely that not all faces are processed in the same
-    way.</p>
+    et al., 2019</xref>).Here, we employed the same method as Taubert et
+    al.
+    (<xref alt="2011" rid="ref-taubert2011a" ref-type="bibr">2011</xref>)
+    to determine whether different perceptual processes underscore the
+    recognition of familiar and unfamiliar faces.</p>
       </sec>
       <sec id="effects-of-different-levels-of-familiarity-on-face-recognition-performance">
         <title>Effects of Different Levels of Familiarity on Face
@@ -479,6 +450,57 @@ highly familiar faces.</p>
       demonstrating similar processing of personally familiar faces and
       favourite celebrities.</p>
         </sec>
+      </sec>
+      <sec id="face-processing-efficiency-and-the-inversion-effect">
+        <title>Face Processing Efficiency and the Inversion Effect</title>
+        <p>The literature provides two interpretations of face processing
+    efficiency. The holistic processing perspective emphasises the
+    importance of analysing the spatial relations between features,
+    providing a unique configuration for each individual so that faces
+    are processed whole, rather than in parts
+    (<xref alt="Maurer et al., 2002" rid="ref-maurer_many_2002" ref-type="bibr">Maurer
+    et al., 2002</xref>;
+    <xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a" ref-type="bibr">Sandford
+    &amp; Burton, 2014</xref>). Evidence for holistic processing has
+    been demonstrated predominantly in studies showing that when a face
+    is inverted, disrupting its global configuration, participants find
+    it harder to identify target faces
+    (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a" ref-type="bibr">Taubert
+    et al., 2011</xref>;
+    <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a" ref-type="bibr">Tong
+    &amp; Nakayama, 1999</xref>). The face inversion effect has been
+    reliably used in the literature to explore face processing
+    efficiency
+    <ext-link ext-link-type="uri" xlink:href="Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology"/>).
+    Interestingly, studies have revealed that the effects of inversion
+    are greater for unfamiliar faces than familiar faces, suggesting
+    that familiar faces are not a slave to holistic processing
+    (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a" ref-type="bibr">Oleggio
+    Castello et al., 2017</xref>;
+    <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a" ref-type="bibr">Ramon
+    &amp; Belle, 2016</xref>;
+    <xref alt="Waidmann et al., 2022" rid="ref-waidmann_local_2022" ref-type="bibr">Waidmann
+    et al., 2022</xref>).</p>
+        <p>By contrast, the feature-based processing perspective suggests
+    that processing efficiency, as observed with familiar faces, can be
+    attributed to the learning of face features, such as eyes, nose, and
+    mouth, which are then used as unique identifiers supporting
+    processing efficiency
+    (<xref alt="Abudarham &amp; Yovel, 2016" rid="ref-abudarham2016a" ref-type="bibr">Abudarham
+    &amp; Yovel, 2016</xref>). Lee et al.
+    (<xref alt="2022" rid="ref-lee2022a" ref-type="bibr">2022</xref>)
+    explored holistic and featural processing effects in a study where
+    participants viewed images of unfamiliar faces, friends’ faces, and
+    the self-face in an inversion task, and a part-whole (isolated
+    features) task. They found no significant difference in inversion
+    effects across the unfamiliar, friend and self-face conditions,
+    whereas, in the isolated features task, participants were faster and
+    more accurate at recognising the self-face compared to friend and
+    unfamiliar faces, suggesting the self-face may be processed in a
+    more feature-based manner. Therefore, the commonly held belief that
+    face recognition relies on holistic processing is being challenged,
+    and it seems likely that not all faces are processed in the same
+    way.</p>
         <sec id="the-self-face">
           <title>The Self-face</title>
           <p>Our own face is unique, as it plays an influential role in our
@@ -1094,6 +1116,318 @@ highly familiar faces.</p>
   <back>
     <ref-list>
       <title/>
+      <ref id="ref-dobs_how_2019">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dobs</surname>
+              <given-names>Katharina</given-names>
+            </name>
+            <name>
+              <surname>Isik</surname>
+              <given-names>Leyla</given-names>
+            </name>
+            <name>
+              <surname>Pantazis</surname>
+              <given-names>Dimitrios</given-names>
+            </name>
+            <name>
+              <surname>Kanwisher</surname>
+              <given-names>Nancy</given-names>
+            </name>
+          </person-group>
+          <article-title>How face perception unfolds over time</article-title>
+          <source>Nature Communications</source>
+          <year iso-8601-date="2019-03">2019</year>
+          <month>03</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>10</volume>
+          <issue>1</issue>
+          <issn>2041-1723</issn>
+          <uri>https://www.nature.com/articles/s41467-019-09239-1</uri>
+          <pub-id pub-id-type="doi">10.1038/s41467-019-09239-1</pub-id>
+          <fpage>1258</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-hole_effects_2002">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hole</surname>
+              <given-names>Graham J</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>Patricia A</given-names>
+            </name>
+            <name>
+              <surname>Eaves</surname>
+              <given-names>Karen</given-names>
+            </name>
+            <name>
+              <surname>Rasek</surname>
+              <given-names>Ayman</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of Geometric Distortions on Face-Recognition Performance</article-title>
+          <source>Perception</source>
+          <year iso-8601-date="2002-10">2002</year>
+          <month>10</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>31</volume>
+          <issue>10</issue>
+          <issn>0301-0066</issn>
+          <uri>https://doi.org/10.1068/p3252</uri>
+          <pub-id pub-id-type="doi">10.1068/p3252</pub-id>
+          <fpage>1221</fpage>
+          <lpage>1240</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-long_database_2023">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Long</surname>
+              <given-names>Houqiu</given-names>
+            </name>
+            <name>
+              <surname>Peluso</surname>
+              <given-names>Natalie</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>Chris I.</given-names>
+            </name>
+            <name>
+              <surname>Japee</surname>
+              <given-names>Shruti</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+          </person-group>
+          <article-title>A database of heterogeneous faces for studying naturalistic expressions</article-title>
+          <source>Scientific Reports</source>
+          <year iso-8601-date="2023-04">2023</year>
+          <month>04</month>
+          <volume>13</volume>
+          <issue>1</issue>
+          <issn>2045-2322</issn>
+          <pub-id pub-id-type="doi">10.1038/s41598-023-32659-5</pub-id>
+          <pub-id pub-id-type="pmid">37012369</pub-id>
+          <fpage>5383</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-maurer_many_2002">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maurer</surname>
+              <given-names>Daphne</given-names>
+            </name>
+            <name>
+              <surname>Grand</surname>
+              <given-names>Richard Le</given-names>
+            </name>
+            <name>
+              <surname>Mondloch</surname>
+              <given-names>Catherine J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The many faces of configural processing</article-title>
+          <source>Trends in Cognitive Sciences</source>
+          <year iso-8601-date="2002-06">2002</year>
+          <month>06</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>6</volume>
+          <issue>6</issue>
+          <issn>1364-6613</issn>
+          <uri>https://www.sciencedirect.com/science/article/pii/S1364661302019034</uri>
+          <pub-id pub-id-type="doi">10.1016/S1364-6613(02)01903-4</pub-id>
+          <fpage>255</fpage>
+          <lpage>260</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-rossion_picture-plane_2008">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+          </person-group>
+          <article-title>Picture-plane inversion leads to qualitative changes of face perception</article-title>
+          <source>Acta Psychologica</source>
+          <year iso-8601-date="2008">2008</year>
+          <volume>128</volume>
+          <issue>2</issue>
+          <issn>1873-6297</issn>
+          <pub-id pub-id-type="doi">10.1016/j.actpsy.2008.02.003</pub-id>
+          <fpage>274</fpage>
+          <lpage>289</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-rossion_what_2019">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+          </person-group>
+          <article-title>What can we learn about human individual face recognition from experimental studies in monkeys?</article-title>
+          <source>Vision Research</source>
+          <year iso-8601-date="2019-04">2019</year>
+          <month>04</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>157</volume>
+          <issn>0042-6989</issn>
+          <uri>https://www.sciencedirect.com/science/article/pii/S0042698918301160</uri>
+          <pub-id pub-id-type="doi">10.1016/j.visres.2018.03.012</pub-id>
+          <fpage>142</fpage>
+          <lpage>158</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-towler_are_2019">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Towler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kemp</surname>
+              <given-names>R. I.</given-names>
+            </name>
+            <name>
+              <surname>Bruce</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>A. M.</given-names>
+            </name>
+            <name>
+              <surname>Dunn</surname>
+              <given-names>J. D.</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Are face recognition abilities in humans and sheep really ‘comparable’?</article-title>
+          <source>Royal Society Open Science</source>
+          <year iso-8601-date="2019-01">2019</year>
+          <month>01</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>6</volume>
+          <issue>1</issue>
+          <uri>https://royalsocietypublishing.org/doi/10.1098/rsos.180772</uri>
+          <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
+          <fpage>180772</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-waidmann_local_2022">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waidmann</surname>
+              <given-names>Elena N.</given-names>
+            </name>
+            <name>
+              <surname>Koyano</surname>
+              <given-names>Kenji W.</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>Julie J.</given-names>
+            </name>
+            <name>
+              <surname>Russ</surname>
+              <given-names>Brian E.</given-names>
+            </name>
+            <name>
+              <surname>Leopold</surname>
+              <given-names>David A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Local features drive identity responses in macaque anterior face patches</article-title>
+          <source>Nature Communications</source>
+          <year iso-8601-date="2022-09">2022</year>
+          <month>09</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>13</volume>
+          <issue>1</issue>
+          <issn>2041-1723</issn>
+          <uri>https://www.nature.com/articles/s41467-022-33240-w</uri>
+          <pub-id pub-id-type="doi">10.1038/s41467-022-33240-w</pub-id>
+          <fpage>5592</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-white_individual_2022">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>White</surname>
+              <given-names>David</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>A. Mike</given-names>
+            </name>
+          </person-group>
+          <article-title>Individual differences and the multidimensional nature of face perception</article-title>
+          <source>Nature Reviews Psychology</source>
+          <year iso-8601-date="2022-05">2022</year>
+          <month>05</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>1</volume>
+          <issue>5</issue>
+          <issn>2731-0574</issn>
+          <uri>https://www.nature.com/articles/s44159-022-00041-3</uri>
+          <pub-id pub-id-type="doi">10.1038/s44159-022-00041-3</pub-id>
+          <fpage>287</fpage>
+          <lpage>300</lpage>
+        </element-citation>
+      </ref>
       <ref id="ref-abudarham2016a">
         <element-citation publication-type="article-journal">
           <person-group person-group-type="author">
@@ -2935,7 +3269,7 @@ highly familiar faces.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-2-nb-article">
+  <sub-article article-type="notebook" id="nb-3-nb-article">
     <front-stub>
       <title-group>
         <article-title>Differences in the Perceptual Processing of Unfamiliar
@@ -3008,29 +3342,30 @@ analysis</role>
         <corresp id="cor-3-nb-article">dapthorp@une.edu.au</corresp>
       </author-notes>
       <abstract>
-        <p>Evidence that familiar faces are perceived differently from
-unfamiliar faces has important implications for our understanding of
-face recognition. Although familiarity effects on face recognition
-performance have been extensively researched, the perceptual processes
-that underlie these differences are comparatively unknown. Using a
-psychophysical staircase paradigm, we collected data from 28 female
-participants aged 18-65 years (<inline-formula><alternatives><tex-math><![CDATA[M = 43.1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mn>43.1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+        <p>Evidence that familiar faces are processed differently from
+unfamiliar faces has important implications for our understanding of how
+we recognise the people around us. Although familiarity effects on face
+recognition performance have been extensively researched, the perceptual
+processes that underlie these differences are comparatively unknown.
+Using a psychophysical staircase paradigm, we collected data from 28
+female participants aged 18-65 years (<inline-formula><alternatives><tex-math><![CDATA[M = 43.1]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>M</mml:mi><mml:mo>=</mml:mo><mml:mn>43.1</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
 <inline-formula><alternatives><tex-math><![CDATA[SD = 12.7]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>S</mml:mi><mml:mi>D</mml:mi><mml:mo>=</mml:mo><mml:mn>12.7</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>)
-and examined the minimum amount of time required to recognise a
-previously seen face across three levels of familiarity (unfamiliar,
-familiar, and self). A repeated-measures analysis of variance revealed
-shorter recognition and reaction times for more familiar faces than for
-unfamiliar faces. As expected, inverted faces took longer to recognise
-than upright faces, but this effect was reduced for familiar and
-self-faces. Recognition times provide evidence for distinct perceptual
-processing based on level of familiarity and suggest that our ability to
-recognise familiar faces may be poorly characterised by current
-theories. Overall, the results emphasise the uniqueness of the self-face
-within the familiarity continuum, as all participants were able to
-recognise their own face significantly faster than other faces. In light
-of these results, it is clear that a full understanding of face
-recognition will require a better characterisation of how we respond to
-highly familiar faces.</p>
+and probed perceptual processing by measuring the minimum amount of time
+required to recognise a previously seen face across three levels of
+familiarity (unfamiliar, familiar, and self). The results revealed that
+participants needed less time to recognise familiar faces compared to
+unfamiliar faces. Concomitantly, participants needed less time to
+respond when tasked with recognising faces compared to unfamiliar faces.
+As expected, inverted faces took longer to recognise than upright faces,
+but this effect was reduced for familiar and self-faces. Recognition
+times provide evidence for distinct perceptual processing based on level
+of familiarity and suggest that our ability to recognise familiar faces
+may be poorly characterised by current theories. Overall, the results
+emphasise the uniqueness of the self-face within the familiarity
+continuum, as all participants were able to recognise their own face
+significantly faster than other faces. In light of these results, it is
+clear that a full understanding of face recognition will require a
+better characterisation of how we respond to highly familiar faces.</p>
       </abstract>
     </front-stub>
     <body>
@@ -3226,24 +3561,23 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
       </sec>
       <sec id="introduction-nb-article">
         <title>Introduction</title>
-        <p>Face recognition is an extraordinary human skill. This unique
-  ability is the foundation of our social behaviour; it helps us
-  identify others and interpret important social cues, such as mood and
-  focus of attention
+        <p>Face recognition is the foundation of our social behaviour; it
+  helps us identify the people around us and make inferences about their
+  mood and focus of attention
   (<xref alt="Burton et al., 2015" rid="ref-burton2015a-nb-article" ref-type="bibr">Burton
   et al., 2015</xref>;
   <xref alt="Mohr et al., 2018" rid="ref-mohr2018a-nb-article" ref-type="bibr">Mohr
   et al., 2018</xref>). It has been estimated that we spend
-  20<inline-formula><alternatives><tex-math><![CDATA[%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow/></mml:math></alternatives></inline-formula>
+  20<inline-formula><alternatives><tex-math><![CDATA[\%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>%</mml:mi></mml:math></alternatives></inline-formula>
   of our day looking at faces, and can recognise over 4000 faces during
   our lifetime
   (<xref alt="Jenkins et al., 2018" rid="ref-jenkins2018a-nb-article" ref-type="bibr">Jenkins
   et al., 2018</xref>;
   <xref alt="Oruc et al., 2019" rid="ref-oruc2019a-nb-article" ref-type="bibr">Oruc
   et al., 2019</xref>). For most of us, the ability to recognise and
-  recall identity-specific information for other individuals appears to
-  occur almost effortlessly, with studies demonstrating that we can
-  recognise a familiar face as quickly as 360 ms
+  recall identity-specific information appears to occur almost
+  effortlessly, with studies demonstrating that we can recognise a
+  familiar face as quickly as 360 ms
   (<xref alt="Besson et al., 2016" rid="ref-besson2016a-nb-article" ref-type="bibr">Besson
   et al., 2016</xref>;
   <xref alt="Blauch et al., 2021" rid="ref-blauch2021a-nb-article" ref-type="bibr">Blauch
@@ -3257,14 +3591,18 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   for being face experts
   (<xref alt="Collins et al., 2018" rid="ref-collins2018a-nb-article" ref-type="bibr">Collins
   et al., 2018</xref>;
-  <xref alt="Dobs et al., 2019" rid="ref-dobs2019a-nb-article" ref-type="bibr">Dobs
-  et al., 2019</xref>;
+  <xref alt="Dobs et al., 2019a" rid="ref-dobs2019a-nb-article" ref-type="bibr">Dobs
+  et al., 2019a</xref>;
   <xref alt="Kramer et al., 2017" rid="ref-kramer2017a-nb-article" ref-type="bibr">Kramer
   et al., 2017</xref>;
   <xref alt="Quek et al., 2021" rid="ref-quek2021a-nb-article" ref-type="bibr">Quek
-  et al., 2021</xref>).</p>
+  et al., 2021</xref>;
+  <xref alt="Rossion &amp; Taubert, 2019" rid="ref-rossion_what_2019-nb-article" ref-type="bibr">Rossion
+  &amp; Taubert, 2019</xref>;
+  <xref alt="Towler et al., 2019" rid="ref-towler_are_2019-nb-article" ref-type="bibr">Towler
+  et al., 2019</xref>).</p>
         <p>The precise nature of our face expertise remains poorly understood,
-  with debate around whether the processes that govern face perception
+  with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
   processes for familiar faces
   (<xref alt="Abudarham et al., 2019" rid="ref-abudarham2019a-nb-article" ref-type="bibr">Abudarham
@@ -3276,7 +3614,8 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   may be a familiarity continuum in face recognition, whereby the brain
   will respond differently depending on the level of familiarity one has
   with the face. For example, our friends’ faces are not as familiar to
-  us as our own face
+  us as our own face, and this difference could change the way the brain
+  encodes and processes a face at the sensory and cognitive level
   (<xref alt="Bortolon. &amp; Raffard, 2018" rid="ref-bortolon2018a-nb-article" ref-type="bibr">Bortolon.
   &amp; Raffard, 2018</xref>;
   <xref alt="Rooney et al., 2012" rid="ref-rooney2012a-nb-article" ref-type="bibr">Rooney
@@ -3292,11 +3631,11 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   &amp; Musholt, 2014</xref>;
   <xref alt="Oliveira et al., 2015" rid="ref-oliveira2015a-nb-article" ref-type="bibr">Oliveira
   et al., 2015</xref>).</p>
-        <p>There is abundant evidence that greater levels of familiarity
-  facilitate processing efficiency, as it has been shown that the faces
-  of personally familiar people are processed faster and more accurately
-  than the faces of familiar celebrities, and both have an advantage
-  over strangers faces
+        <p>There is abundant evidence that greater levels of familiarity with
+  a person facilitate processing efficiency, as it has been shown that
+  the faces of personally familiar people are processed faster and more
+  accurately than the faces of familiar celebrities, and both have an
+  advantage over strangers faces
   (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a-nb-article" ref-type="bibr">Bortolon
   et al., 2017</xref>;
   <xref alt="Burton et al., 2015" rid="ref-burton2015a-nb-article" ref-type="bibr">Burton
@@ -3317,33 +3656,38 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   (<xref alt="1999" rid="ref-burton1999a-nb-article" ref-type="bibr">1999</xref>)
   found performance differences in their study which involved showing
   low resolution CCTV images to familiar and unfamiliar viewers.
-  Unfamiliar viewers were able to accurately identify faces 50% of the
-  time, whereas familiar viewers could identify faces almost perfectly,
-  suggesting that the processing of unfamiliar faces may be
+  Unfamiliar viewers were able to accurately identify faces
+  50<inline-formula><alternatives><tex-math><![CDATA[\%]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi>%</mml:mi></mml:math></alternatives></inline-formula>
+  of the time, whereas familiar viewers could identify faces almost
+  perfectly, suggesting that the processing of unfamiliar faces may be
   qualitatively different from familiar faces
   (<xref alt="Burton et al., 1999" rid="ref-burton1999a-nb-article" ref-type="bibr">Burton
   et al., 1999</xref>). The familiar face advantage has been observed
-  across a range of tasks including face inversion (i.e., turning faces
-  upside down) and distortion (e.g., compressing images of faces)
-  manipulations, highlighting familiarity as an important factor in face
-  recognition
+  across a range of image manipulations including face inversion (i.e.,
+  turning faces upside down) and geometric distortion (e.g., compressing
+  images of faces) manipulations, highlighting familiarity as an
+  important factor in face recognition
   (<xref alt="Allen-Davidian et al., 2021" rid="ref-allen-davidian2021a-nb-article" ref-type="bibr">Allen-Davidian
   et al., 2021</xref>;
+  <xref alt="Hole et al., 2002" rid="ref-hole_effects_2002-nb-article" ref-type="bibr">Hole
+  et al., 2002</xref>;
   <xref alt="Kramer et al., 2018" rid="ref-kramer2018a-nb-article" ref-type="bibr">Kramer
   et al., 2018</xref>;
+  <xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr">Rossion,
+  2008</xref>;
   <xref alt="Yang et al., 2014" rid="ref-yang2014a-nb-article" ref-type="bibr">Yang
   et al., 2014</xref>).</p>
         <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
-  experimental context. First, there are different levels of familiarity
-  ranging from recently learned faces, to faces that are familiar but
-  for which we have no personal knowledge (famous people,
-  acquaintances), to the faces of those we know well (family, close
-  friends, self-face; Ramon et al.
+  experimental context. First, there are different levels of
+  familiarity, ranging from recently recently seen and recently learned
+  faces to faces that are familiar but for which we have no personal
+  knowledge (famous people, acquaintances), to the faces of those we
+  know well (family, close friends, self-face; Ramon et al.
   (<xref alt="2011" rid="ref-ramon2011a-nb-article" ref-type="bibr">2011</xref>)).
   Levels of familiarity influence the depth of knowledge and experience
-  we associate with an individual, which likely impacts the mental
-  representations we store about them in memory
+  we associate with an individual, which likely impacts the underlying
+  mental representation we store in memory
   (<xref alt="Ramon &amp; Gobbini, 2017" rid="ref-ramon2017a-nb-article" ref-type="bibr">Ramon
   &amp; Gobbini, 2017</xref>). Second, each individual knows a unique
   collection of faces, which limits the type of stimuli that can be used
@@ -3361,9 +3705,11 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   often manipulate face images (e.g., cropped, hairless, expressionless)
   which is different to how a face appears under normal circumstances
   (<xref alt="Burton et al., 2011" rid="ref-burton2011a-nb-article" ref-type="bibr">Burton
-  et al., 2011</xref>). These challenges have contributed to the
-  inconsistency in face research findings, particularly regarding
-  familiar face recognition performance.</p>
+  et al., 2011</xref>;
+  <xref alt="Long et al., 2023" rid="ref-long_database_2023-nb-article" ref-type="bibr">Long
+  et al., 2023</xref>). These methodological constraints and unique
+  challenges have contributed to the inconsistencies in face research,
+  particularly regarding familiar face recognition performance.</p>
         <sec id="measuring-face-recognition-nb-article">
           <title>Measuring Face Recognition</title>
           <p>While in the real world only familiar faces are recognised, in
@@ -3373,16 +3719,16 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     (<xref alt="Burton, 2013" rid="ref-burton2013a-nb-article" ref-type="bibr">Burton,
     2013</xref>;
     <xref alt="Hancock et al., 2000" rid="ref-hancock2000a-nb-article" ref-type="bibr">Hancock
-    et al., 2000</xref>). Consistent with the literature, we will
+    et al., 2000</xref>;
+    <xref alt="White &amp; Burton, 2022" rid="ref-white_individual_2022-nb-article" ref-type="bibr">White
+    &amp; Burton, 2022</xref>). Consistent with the literature, we will
     conceptualise face recognition as the ability to recognise
     previously known or recently learned faces (familiar) and previously
     unknown faces (unfamiliar).</p>
-          <p>Face recognition has been investigated by recording the reaction
-    time required to accurately find targets in visual search paradigms.
-    Tasks often involve participants seeking a target face amongst
-    distractor faces, where detection is indicated using a go/no-go
-    categorisation, such as pressing specific keys on a keyboard to
-    indicate whether the target was present or absent in a given display
+          <p>Face recognition has been investigated by recording how long it
+    takes participants to accurately find targets. These tasks often
+    involve participants seeking a target face, where detection is
+    indicated using a go/no-go categorisation
     (<xref alt="Kloth et al., 2006" rid="ref-kloth2006a-nb-article" ref-type="bibr">Kloth
     et al., 2006</xref>;
     <xref alt="Ramon et al., 2011" rid="ref-ramon2011a-nb-article" ref-type="bibr">Ramon
@@ -3411,12 +3757,12 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     compared with strangers (562 ms), providing conflicting evidence for
     the familiar face advantage. Together, findings highlight a common
     challenge in face recognition research regarding variability in
-    reaction time data as a result of inconsistent task demands.</p>
-          <p>A drawback of using reaction times as a dependent variable is
-    that the data represents the elapsed time from stimulus onset to
-    motor output, combining perceptual processing time, cognitive
-    decision time, and motor response, thus inflating the real time
-    required to recognise a face
+    reaction time data as a result of different task demands.</p>
+          <p>A drawback of relying on average reaction times as a dependent
+    variable is that the data represents the elapsed time from stimulus
+    onset to motor output, combining perceptual processing time,
+    cognitive decision time, and motor response, thus inflating the
+    actual time required to recognise a face
     (<xref alt="Alzueta et al., 2019" rid="ref-alzueta2019a-nb-article" ref-type="bibr">Alzueta
     et al., 2019</xref>;
     <xref alt="Burton et al., 2015" rid="ref-burton2015a-nb-article" ref-type="bibr">Burton
@@ -3424,19 +3770,18 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     <xref alt="Caharel et al., 2014" rid="ref-caharel2014a-nb-article" ref-type="bibr">Caharel
     et al., 2014</xref>). Taubert et al.
     (<xref alt="2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">2011</xref>)
-    overcame this issue in their study using a staircase procedure,
-    whereby the time needed to recognise a face is determined by
-    manipulating the amount of time a face is displayed and measuring
-    the amount of time a participant needs to correctly identify a
-    target face 80% of the time. Their research revealed that
-    participants (N = 10) could accurately discriminate between
-    individual target faces after 50 ms
+    overcame this issue in their study by using a staircase procedure to
+    determine minimum exposure time. Their research revealed that
+    participants could accurately discriminate between individual target
+    faces when given 50 ms to view a stimulus
     (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">Taubert
     et al., 2011</xref>). Others have used electroencephalography (EEG)
     frequency tagging to compare neural responses to face images that
     progressively increased in image duration, to identify the threshold
     for successful face recognition
-    (<xref alt="Quek et al., 2021" rid="ref-quek2021a-nb-article" ref-type="bibr">Quek
+    (<xref alt="Dobs et al., 2019b" rid="ref-dobs_how_2019-nb-article" ref-type="bibr">Dobs
+    et al., 2019b</xref>;
+    <xref alt="Quek et al., 2021" rid="ref-quek2021a-nb-article" ref-type="bibr">Quek
     et al., 2021</xref>). Results showed that exposures as brief as 83
     ms enabled observers to consistently recognise familiar (famous)
     faces from unfamiliar faces
@@ -3449,51 +3794,11 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     <xref alt="Blauch et al., 2021" rid="ref-blauch2021a-nb-article" ref-type="bibr">Blauch
     et al., 2021</xref>;
     <xref alt="Oruc et al., 2019" rid="ref-oruc2019a-nb-article" ref-type="bibr">Oruc
-    et al., 2019</xref>).</p>
-        </sec>
-        <sec id="face-processing-efficiency-nb-article">
-          <title>Face Processing Efficiency</title>
-          <p>The literature provides two interpretations of face processing
-    efficiency. The holistic processing perspective suggests that faces
-    are processed by analysing the spatial relations between features,
-    providing a unique configuration for each individual so that faces
-    are processed whole, rather than in parts
-    (<xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a-nb-article" ref-type="bibr">Sandford
-    &amp; Burton, 2014</xref>). Evidence for holistic processing has
-    been demonstrated predominantly in studies showing that when a face
-    is inverted, disrupting it’s ordinary featural configuration,
-    participants find it harder to identify target faces
-    (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">Taubert
-    et al., 2011</xref>;
-    <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a-nb-article" ref-type="bibr">Tong
-    &amp; Nakayama, 1999</xref>). Interestingly, studies have revealed
-    that the effects of inversion are greater for unfamiliar faces than
-    familiar faces, suggesting that the familiar face processing
-    advantage may be attributed to holistic processing effects
-    (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a-nb-article" ref-type="bibr">Oleggio
-    Castello et al., 2017</xref> ;
-    <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a-nb-article" ref-type="bibr">Ramon
-    &amp; Belle, 2016</xref>)</p>
-          <p>By contrast, the feature-based processing perspective suggests
-    that processing efficiency, as observed with familiar faces, can be
-    attributed to the learning of face features, such as eyes, nose, and
-    mouth, which are then used as unique identifiers supporting
-    processing efficiency
-    (<xref alt="Abudarham &amp; Yovel, 2016" rid="ref-abudarham2016a-nb-article" ref-type="bibr">Abudarham
-    &amp; Yovel, 2016</xref>). Lee et al.
-    (<xref alt="2022" rid="ref-lee2022a-nb-article" ref-type="bibr">2022</xref>)
-    explored holistic and featural processing effects in a study where
-    participants viewed images of unfamiliar faces, friends’ faces, and
-    the self-face in an inversion task, and a part-whole (isolated
-    features) task. They found no significant difference in inversion
-    effects across the unfamiliar, friend and self-face conditions,
-    whereas, in the isolated features task, participants were faster and
-    more accurate at recognising the self-face compared to friend and
-    unfamiliar faces, suggesting the self-face may be processed in a
-    more feature-based manner. Therefore, the commonly held belief that
-    face recognition relies on holistic processing is being challenged,
-    and it seems likely that not all faces are processed in the same
-    way.</p>
+    et al., 2019</xref>).Here, we employed the same method as Taubert et
+    al.
+    (<xref alt="2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">2011</xref>)
+    to determine whether different perceptual processes underscore the
+    recognition of familiar and unfamiliar faces.</p>
         </sec>
         <sec id="effects-of-different-levels-of-familiarity-on-face-recognition-performance-nb-article">
           <title>Effects of Different Levels of Familiarity on Face
@@ -3595,6 +3900,57 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
       demonstrating similar processing of personally familiar faces and
       favourite celebrities.</p>
           </sec>
+        </sec>
+        <sec id="face-processing-efficiency-and-the-inversion-effect-nb-article">
+          <title>Face Processing Efficiency and the Inversion Effect</title>
+          <p>The literature provides two interpretations of face processing
+    efficiency. The holistic processing perspective emphasises the
+    importance of analysing the spatial relations between features,
+    providing a unique configuration for each individual so that faces
+    are processed whole, rather than in parts
+    (<xref alt="Maurer et al., 2002" rid="ref-maurer_many_2002-nb-article" ref-type="bibr">Maurer
+    et al., 2002</xref>;
+    <xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a-nb-article" ref-type="bibr">Sandford
+    &amp; Burton, 2014</xref>). Evidence for holistic processing has
+    been demonstrated predominantly in studies showing that when a face
+    is inverted, disrupting its global configuration, participants find
+    it harder to identify target faces
+    (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">Taubert
+    et al., 2011</xref>;
+    <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a-nb-article" ref-type="bibr">Tong
+    &amp; Nakayama, 1999</xref>). The face inversion effect has been
+    reliably used in the literature to explore face processing
+    efficiency
+    <ext-link ext-link-type="uri" xlink:href="Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology"/>).
+    Interestingly, studies have revealed that the effects of inversion
+    are greater for unfamiliar faces than familiar faces, suggesting
+    that familiar faces are not a slave to holistic processing
+    (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a-nb-article" ref-type="bibr">Oleggio
+    Castello et al., 2017</xref>;
+    <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a-nb-article" ref-type="bibr">Ramon
+    &amp; Belle, 2016</xref>;
+    <xref alt="Waidmann et al., 2022" rid="ref-waidmann_local_2022-nb-article" ref-type="bibr">Waidmann
+    et al., 2022</xref>).</p>
+          <p>By contrast, the feature-based processing perspective suggests
+    that processing efficiency, as observed with familiar faces, can be
+    attributed to the learning of face features, such as eyes, nose, and
+    mouth, which are then used as unique identifiers supporting
+    processing efficiency
+    (<xref alt="Abudarham &amp; Yovel, 2016" rid="ref-abudarham2016a-nb-article" ref-type="bibr">Abudarham
+    &amp; Yovel, 2016</xref>). Lee et al.
+    (<xref alt="2022" rid="ref-lee2022a-nb-article" ref-type="bibr">2022</xref>)
+    explored holistic and featural processing effects in a study where
+    participants viewed images of unfamiliar faces, friends’ faces, and
+    the self-face in an inversion task, and a part-whole (isolated
+    features) task. They found no significant difference in inversion
+    effects across the unfamiliar, friend and self-face conditions,
+    whereas, in the isolated features task, participants were faster and
+    more accurate at recognising the self-face compared to friend and
+    unfamiliar faces, suggesting the self-face may be processed in a
+    more feature-based manner. Therefore, the commonly held belief that
+    face recognition relies on holistic processing is being challenged,
+    and it seems likely that not all faces are processed in the same
+    way.</p>
           <sec id="the-self-face-nb-article">
             <title>The Self-face</title>
             <p>Our own face is unique, as it plays an influential role in our
@@ -4278,6 +4634,318 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     <back>
       <ref-list>
         <title/>
+        <ref id="ref-dobs_how_2019-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Dobs</surname>
+                <given-names>Katharina</given-names>
+              </name>
+              <name>
+                <surname>Isik</surname>
+                <given-names>Leyla</given-names>
+              </name>
+              <name>
+                <surname>Pantazis</surname>
+                <given-names>Dimitrios</given-names>
+              </name>
+              <name>
+                <surname>Kanwisher</surname>
+                <given-names>Nancy</given-names>
+              </name>
+            </person-group>
+            <article-title>How face perception unfolds over time</article-title>
+            <source>Nature Communications</source>
+            <year iso-8601-date="2019-03">2019</year>
+            <month>03</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>10</volume>
+            <issue>1</issue>
+            <issn>2041-1723</issn>
+            <uri>https://www.nature.com/articles/s41467-019-09239-1</uri>
+            <pub-id pub-id-type="doi">10.1038/s41467-019-09239-1</pub-id>
+            <fpage>1258</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-hole_effects_2002-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Hole</surname>
+                <given-names>Graham J</given-names>
+              </name>
+              <name>
+                <surname>George</surname>
+                <given-names>Patricia A</given-names>
+              </name>
+              <name>
+                <surname>Eaves</surname>
+                <given-names>Karen</given-names>
+              </name>
+              <name>
+                <surname>Rasek</surname>
+                <given-names>Ayman</given-names>
+              </name>
+            </person-group>
+            <article-title>Effects of Geometric Distortions on Face-Recognition Performance</article-title>
+            <source>Perception</source>
+            <year iso-8601-date="2002-10">2002</year>
+            <month>10</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>31</volume>
+            <issue>10</issue>
+            <issn>0301-0066</issn>
+            <uri>https://doi.org/10.1068/p3252</uri>
+            <pub-id pub-id-type="doi">10.1068/p3252</pub-id>
+            <fpage>1221</fpage>
+            <lpage>1240</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-long_database_2023-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Long</surname>
+                <given-names>Houqiu</given-names>
+              </name>
+              <name>
+                <surname>Peluso</surname>
+                <given-names>Natalie</given-names>
+              </name>
+              <name>
+                <surname>Baker</surname>
+                <given-names>Chris I.</given-names>
+              </name>
+              <name>
+                <surname>Japee</surname>
+                <given-names>Shruti</given-names>
+              </name>
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+            </person-group>
+            <article-title>A database of heterogeneous faces for studying naturalistic expressions</article-title>
+            <source>Scientific Reports</source>
+            <year iso-8601-date="2023-04">2023</year>
+            <month>04</month>
+            <volume>13</volume>
+            <issue>1</issue>
+            <issn>2045-2322</issn>
+            <pub-id pub-id-type="doi">10.1038/s41598-023-32659-5</pub-id>
+            <pub-id pub-id-type="pmid">37012369</pub-id>
+            <fpage>5383</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-maurer_many_2002-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Maurer</surname>
+                <given-names>Daphne</given-names>
+              </name>
+              <name>
+                <surname>Grand</surname>
+                <given-names>Richard Le</given-names>
+              </name>
+              <name>
+                <surname>Mondloch</surname>
+                <given-names>Catherine J.</given-names>
+              </name>
+            </person-group>
+            <article-title>The many faces of configural processing</article-title>
+            <source>Trends in Cognitive Sciences</source>
+            <year iso-8601-date="2002-06">2002</year>
+            <month>06</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>6</volume>
+            <issue>6</issue>
+            <issn>1364-6613</issn>
+            <uri>https://www.sciencedirect.com/science/article/pii/S1364661302019034</uri>
+            <pub-id pub-id-type="doi">10.1016/S1364-6613(02)01903-4</pub-id>
+            <fpage>255</fpage>
+            <lpage>260</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-rossion_picture-plane_2008-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+            </person-group>
+            <article-title>Picture-plane inversion leads to qualitative changes of face perception</article-title>
+            <source>Acta Psychologica</source>
+            <year iso-8601-date="2008">2008</year>
+            <volume>128</volume>
+            <issue>2</issue>
+            <issn>1873-6297</issn>
+            <pub-id pub-id-type="doi">10.1016/j.actpsy.2008.02.003</pub-id>
+            <fpage>274</fpage>
+            <lpage>289</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-rossion_what_2019-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+            </person-group>
+            <article-title>What can we learn about human individual face recognition from experimental studies in monkeys?</article-title>
+            <source>Vision Research</source>
+            <year iso-8601-date="2019-04">2019</year>
+            <month>04</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>157</volume>
+            <issn>0042-6989</issn>
+            <uri>https://www.sciencedirect.com/science/article/pii/S0042698918301160</uri>
+            <pub-id pub-id-type="doi">10.1016/j.visres.2018.03.012</pub-id>
+            <fpage>142</fpage>
+            <lpage>158</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-towler_are_2019-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Towler</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name>
+                <surname>Kemp</surname>
+                <given-names>R. I.</given-names>
+              </name>
+              <name>
+                <surname>Bruce</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name>
+                <surname>Burton</surname>
+                <given-names>A. M.</given-names>
+              </name>
+              <name>
+                <surname>Dunn</surname>
+                <given-names>J. D.</given-names>
+              </name>
+              <name>
+                <surname>White</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <article-title>Are face recognition abilities in humans and sheep really ‘comparable’?</article-title>
+            <source>Royal Society Open Science</source>
+            <year iso-8601-date="2019-01">2019</year>
+            <month>01</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>6</volume>
+            <issue>1</issue>
+            <uri>https://royalsocietypublishing.org/doi/10.1098/rsos.180772</uri>
+            <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
+            <fpage>180772</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-waidmann_local_2022-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Waidmann</surname>
+                <given-names>Elena N.</given-names>
+              </name>
+              <name>
+                <surname>Koyano</surname>
+                <given-names>Kenji W.</given-names>
+              </name>
+              <name>
+                <surname>Hong</surname>
+                <given-names>Julie J.</given-names>
+              </name>
+              <name>
+                <surname>Russ</surname>
+                <given-names>Brian E.</given-names>
+              </name>
+              <name>
+                <surname>Leopold</surname>
+                <given-names>David A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Local features drive identity responses in macaque anterior face patches</article-title>
+            <source>Nature Communications</source>
+            <year iso-8601-date="2022-09">2022</year>
+            <month>09</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>13</volume>
+            <issue>1</issue>
+            <issn>2041-1723</issn>
+            <uri>https://www.nature.com/articles/s41467-022-33240-w</uri>
+            <pub-id pub-id-type="doi">10.1038/s41467-022-33240-w</pub-id>
+            <fpage>5592</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-white_individual_2022-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>White</surname>
+                <given-names>David</given-names>
+              </name>
+              <name>
+                <surname>Burton</surname>
+                <given-names>A. Mike</given-names>
+              </name>
+            </person-group>
+            <article-title>Individual differences and the multidimensional nature of face perception</article-title>
+            <source>Nature Reviews Psychology</source>
+            <year iso-8601-date="2022-05">2022</year>
+            <month>05</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>1</volume>
+            <issue>5</issue>
+            <issn>2731-0574</issn>
+            <uri>https://www.nature.com/articles/s44159-022-00041-3</uri>
+            <pub-id pub-id-type="doi">10.1038/s44159-022-00041-3</pub-id>
+            <fpage>287</fpage>
+            <lpage>300</lpage>
+          </element-citation>
+        </ref>
         <ref id="ref-abudarham2016a-nb-article">
           <element-citation publication-type="article-journal">
             <person-group person-group-type="author">
