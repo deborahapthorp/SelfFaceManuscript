@@ -49,8 +49,14 @@ format:
   html: default
   docx: default
   jats: default
-  plos-pdf:
+  elsevier-pdf:
     keep-tex: true  
+    journal:
+      name: Cognition
+      formatting: review
+      model: 3p
+      layout: onecolumn
+      cite-style: authoryear
 ---
 
 ```{r load packages and data}
