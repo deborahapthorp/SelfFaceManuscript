@@ -526,8 +526,8 @@ familiar faces.</p>
       used EEG to investigate whether the self-face elicits distinct
       neural processes compared to friends’ and stranger faces. The N170
       component, a negative-going EEG potential typically associated
-      with face perception (see Appendix A), did not exhibit sensitivity
-      to the self-face, contradicting previous research
+      with face perception, did not exhibit sensitivity to the
+      self-face, contradicting previous research
       (<xref alt="Caharel &amp; Rossion, 2021" rid="ref-caharel2021a" ref-type="bibr">Caharel
       &amp; Rossion, 2021</xref>;
       <xref alt="Wiese et al., 2019" rid="ref-wiese2019a" ref-type="bibr">Wiese
@@ -611,24 +611,23 @@ familiar faces.</p>
     et al., 2019</xref>). This study was approved by the Human Research
     Ethics Committee (Approval No. HE23-030) at the University of New
     England (UNE). Written informed consent was obtained from all
-    participants (see Appendix B). While 30 participants completed the
-    study, the data for two participants was excluded from the analysis
-    based on the pre-registered exclusion criteria stating that
-    participants will be excluded if their recognition times for the
-    majority of their trials were slower than the starting point face
-    display time (18 frames/66.67ms) for the majority of their trials.
-    The final sample consisted of 28 females aged between 18 and 65
-    years (M = 43.1, SD = 12.7), recruited through word of mouth and via
-    flyers distributed on campus at the UNE (see Appendix C).
-    Participants signed up using the quick response (QR) code on the
-    flyer, which generated an email to the experimenter. Only female
-    participants were recruited to ensure stimulus consistency across
-    conditions and eliminate gender as a possible biasing factor in face
-    discrimination. The experiment took approximately 45 minutes to
-    complete, and participants were compensated with an AUD $25 gift
-    card. All participants had normal or corrected-to-normal vision and
-    no self-reported diagnosed impairment in face perception (e.g.,
-    prosopagnosia).</p>
+    participants. While 30 participants completed the study, the data
+    for two participants was excluded from the analysis based on the
+    pre-registered exclusion criteria stating that participants will be
+    excluded if their recognition times for the majority of their trials
+    were slower than the starting point face display time (18
+    frames/66.67ms) for the majority of their trials. The final sample
+    consisted of 28 females aged between 18 and 65 years (M = 43.1, SD =
+    12.7), recruited through word of mouth and via flyers distributed on
+    campus at the University. Participants signed up using the quick
+    response (QR) code on the flyer, which generated an email to the
+    experimenter. Only female participants were recruited to ensure
+    stimulus consistency across conditions and eliminate gender as a
+    possible biasing factor in face discrimination. The experiment took
+    approximately 45 minutes to complete, and participants were
+    compensated with an AUD $25 gift card. All participants had normal
+    or corrected-to-normal vision and no self-reported diagnosed
+    impairment in face perception (e.g., prosopagnosia).</p>
       </sec>
       <sec id="design-and-stimuli">
         <title>Design and Stimuli</title>
@@ -640,17 +639,17 @@ familiar faces.</p>
     Tottenham et al.
     (<xref alt="2009" rid="ref-tottenham2009a" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
-    face condition (see Appendix D). To create the self-face condition,
-    prior to the experiment, participants were asked to send two
-    photographs of themselves with a neutral expression, without eyewear
-    and with no hair across the face. Several steps were taken to equate
-    image sets across all three conditions. First, the faces were
-    aligned at the eyes and cropped to an oval to exclude hair and
-    clothing. Second, all face identities wore a neutral expression.
-    Third, two images per identity were used so that responses would be
-    more likely to indicate identity processing rather than image-based
-    processing. Fourth, all images were greyscale and root mean square
-    (RMS) normalised for contrast.</p>
+    face condition. To create the self-face condition, prior to the
+    experiment, participants were asked to send two photographs of
+    themselves with a neutral expression, without eyewear and with no
+    hair across the face. Several steps were taken to equate image sets
+    across all three conditions. First, the faces were aligned at the
+    eyes and cropped to an oval to exclude hair and clothing. Second,
+    all face identities wore a neutral expression. Third, two images per
+    identity were used so that responses would be more likely to
+    indicate identity processing rather than image-based processing.
+    Fourth, all images were greyscale and root mean square (RMS)
+    normalised for contrast.</p>
         <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180°. To ensure any transients from the onset of stimuli
@@ -699,16 +698,15 @@ familiar faces.</p>
       </sec>
       <sec id="procedure">
         <title>Procedure</title>
-        <p>Participants were verbally briefed on the aim of the research
-    (see Appendix E) and provided with an information sheet (see
-    Appendix F). An overview of the task was described as involving
-    recognition of 12 target faces in a series of displays over the
-    course of the experiment. Participants were seated opposite a desk
-    with the VIEWPixx display screen and a keyboard to complete a
-    practice trial to familiarise themselves with the task (see
-    <xref alt="Figure 2" rid="fig-setup">Figure 2</xref>). The practice
-    trial featured a randomly selected face from the unfamiliar face
-    set, which was then excluded from the main experiment. A random
+        <p>Participants were verbally briefed on the aim of the research and
+    provided with an information sheet. An overview of the task was
+    described as involving recognition of 12 target faces in a series of
+    displays over the course of the experiment. Participants were seated
+    opposite a desk with the VIEWPixx display screen and a keyboard to
+    complete a practice trial to familiarise themselves with the task
+    (see <xref alt="Figure 2" rid="fig-setup">Figure 2</xref>). The
+    practice trial featured a randomly selected face from the unfamiliar
+    face set, which was then excluded from the main experiment. A random
     selection of target and distractor faces were chosen for each
     participant. Before each trial, written instructions appeared on the
     screen advising participants to focus on a fixation cross at the
@@ -922,8 +920,9 @@ familiar faces.</p>
     better at discriminating faces from our own age group, it is
     possible that older participants found it easier to distinguish
     their own face from the distractor faces, which were young
-    identities (see Appendix C; Rhodes &amp; Anastasi
-    (<xref alt="2012" rid="ref-rhodes2012a" ref-type="bibr">2012</xref>)).</p>
+    identities
+    (<xref alt="Rhodes &amp; Anastasi, 2012" rid="ref-rhodes2012a" ref-type="bibr">Rhodes
+    &amp; Anastasi, 2012</xref>).</p>
       </sec>
       <sec id="familiarity-and-inversion-effects">
         <title>Familiarity and Inversion Effects</title>
@@ -1017,8 +1016,8 @@ familiar faces.</p>
     recognition time seems to be a more sensitive measure of familiarity
     effects in face recognition.</p>
       </sec>
-      <sec id="limitations-and-future-directions">
-        <title>Limitations and Future Directions</title>
+      <sec id="future-directions">
+        <title>Future Directions</title>
         <p>The staircase procedure was a key strength of the research,
     demonstrating that the reaction times reported in research may be
     underestimating human face recognition ability
@@ -1027,13 +1026,13 @@ familiar faces.</p>
     <xref alt="Caharel et al., 2014" rid="ref-caharel2014a" ref-type="bibr">Caharel
     et al., 2014</xref>;
     <xref alt="Ramon et al., 2011" rid="ref-ramon2011a" ref-type="bibr">Ramon
-    et al., 2011</xref>). However, the study design represented some
-    limitations centred around comparability with other face recognition
-    research. First, recognition times cannot be directly compared with
-    reaction times. Second, the staircase procedure only measured the
-    ability of participants to discriminate between two stimuli, unlike
-    other studies that require participants to identify a target face
-    among an array of distractor faces
+    et al., 2011</xref>). However, the study design could be considered
+    difficult to compare with other face recognition research. First,
+    recognition times cannot be directly compared with reaction times.
+    Second, the staircase procedure only measured the ability of
+    participants to discriminate between two stimuli, unlike other
+    studies that require participants to identify a target face among an
+    array of distractor faces
     (<xref alt="Megreya &amp; Burton, 2006" rid="ref-megraya2006a" ref-type="bibr">Megreya
     &amp; Burton, 2006</xref>). Third, the time constraint imposed by
     the staircase is not comparable with studies involving tasks without
@@ -1043,8 +1042,8 @@ familiar faces.</p>
     of these comparability concerns by replicating the same study
     together with a standard go/no-go face categorisation task, to allow
     for a comparison of reaction times between the two tasks. Further,
-    adapting the staircase to include a four alternative force choice
-    task, compared to the two alternatives used here, would provide a
+    adapting the staircase to include a four-alternative force choice
+    task, rather than the two alternatives used here, would provide a
     better comparison with studies involving recognition tasks that
     require discrimination between multiple exemplars. Although the
     study examined three levels of familiarity (unfamiliar, familiar,
@@ -1070,9 +1069,10 @@ familiar faces.</p>
     participants also provides valuable insight into the effects of
     real-world face learning on recognition.</p>
         <p>Future research should aim to involve diverse participants,
-    including males and representation from all age groups. The female
-    only sample may have influenced results, as there is some evidence
-    suggesting a female own-gender bias in face recognition performance
+    including all genders and representation from all age groups. The
+    female-only sample may have influenced results, as there is some
+    evidence suggesting a female own-gender bias in face recognition
+    performance
     (<xref alt="Herlitz &amp; Lovén, 2013" rid="ref-herlitz2013a" ref-type="bibr">Herlitz
     &amp; Lovén, 2013</xref>;
     <xref alt="Lovén et al., 2011" rid="ref-lov2011a" ref-type="bibr">Lovén
@@ -3980,8 +3980,8 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
       used EEG to investigate whether the self-face elicits distinct
       neural processes compared to friends’ and stranger faces. The N170
       component, a negative-going EEG potential typically associated
-      with face perception (see Appendix A), did not exhibit sensitivity
-      to the self-face, contradicting previous research
+      with face perception, did not exhibit sensitivity to the
+      self-face, contradicting previous research
       (<xref alt="Caharel &amp; Rossion, 2021" rid="ref-caharel2021a-nb-article" ref-type="bibr">Caharel
       &amp; Rossion, 2021</xref>;
       <xref alt="Wiese et al., 2019" rid="ref-wiese2019a-nb-article" ref-type="bibr">Wiese
@@ -4065,24 +4065,23 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     et al., 2019</xref>). This study was approved by the Human Research
     Ethics Committee (Approval No. HE23-030) at the University of New
     England (UNE). Written informed consent was obtained from all
-    participants (see Appendix B). While 30 participants completed the
-    study, the data for two participants was excluded from the analysis
-    based on the pre-registered exclusion criteria stating that
-    participants will be excluded if their recognition times for the
-    majority of their trials were slower than the starting point face
-    display time (18 frames/66.67ms) for the majority of their trials.
-    The final sample consisted of 28 females aged between 18 and 65
-    years (M = 43.1, SD = 12.7), recruited through word of mouth and via
-    flyers distributed on campus at the UNE (see Appendix C).
-    Participants signed up using the quick response (QR) code on the
-    flyer, which generated an email to the experimenter. Only female
-    participants were recruited to ensure stimulus consistency across
-    conditions and eliminate gender as a possible biasing factor in face
-    discrimination. The experiment took approximately 45 minutes to
-    complete, and participants were compensated with an AUD $25 gift
-    card. All participants had normal or corrected-to-normal vision and
-    no self-reported diagnosed impairment in face perception (e.g.,
-    prosopagnosia).</p>
+    participants. While 30 participants completed the study, the data
+    for two participants was excluded from the analysis based on the
+    pre-registered exclusion criteria stating that participants will be
+    excluded if their recognition times for the majority of their trials
+    were slower than the starting point face display time (18
+    frames/66.67ms) for the majority of their trials. The final sample
+    consisted of 28 females aged between 18 and 65 years (M = 43.1, SD =
+    12.7), recruited through word of mouth and via flyers distributed on
+    campus at the University. Participants signed up using the quick
+    response (QR) code on the flyer, which generated an email to the
+    experimenter. Only female participants were recruited to ensure
+    stimulus consistency across conditions and eliminate gender as a
+    possible biasing factor in face discrimination. The experiment took
+    approximately 45 minutes to complete, and participants were
+    compensated with an AUD $25 gift card. All participants had normal
+    or corrected-to-normal vision and no self-reported diagnosed
+    impairment in face perception (e.g., prosopagnosia).</p>
         </sec>
         <sec id="design-and-stimuli-nb-article">
           <title>Design and Stimuli</title>
@@ -4094,17 +4093,17 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     Tottenham et al.
     (<xref alt="2009" rid="ref-tottenham2009a-nb-article" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
-    face condition (see Appendix D). To create the self-face condition,
-    prior to the experiment, participants were asked to send two
-    photographs of themselves with a neutral expression, without eyewear
-    and with no hair across the face. Several steps were taken to equate
-    image sets across all three conditions. First, the faces were
-    aligned at the eyes and cropped to an oval to exclude hair and
-    clothing. Second, all face identities wore a neutral expression.
-    Third, two images per identity were used so that responses would be
-    more likely to indicate identity processing rather than image-based
-    processing. Fourth, all images were greyscale and root mean square
-    (RMS) normalised for contrast.</p>
+    face condition. To create the self-face condition, prior to the
+    experiment, participants were asked to send two photographs of
+    themselves with a neutral expression, without eyewear and with no
+    hair across the face. Several steps were taken to equate image sets
+    across all three conditions. First, the faces were aligned at the
+    eyes and cropped to an oval to exclude hair and clothing. Second,
+    all face identities wore a neutral expression. Third, two images per
+    identity were used so that responses would be more likely to
+    indicate identity processing rather than image-based processing.
+    Fourth, all images were greyscale and root mean square (RMS)
+    normalised for contrast.</p>
           <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180°. To ensure any transients from the onset of stimuli
@@ -4153,16 +4152,15 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
         </sec>
         <sec id="procedure-nb-article">
           <title>Procedure</title>
-          <p>Participants were verbally briefed on the aim of the research
-    (see Appendix E) and provided with an information sheet (see
-    Appendix F). An overview of the task was described as involving
-    recognition of 12 target faces in a series of displays over the
-    course of the experiment. Participants were seated opposite a desk
-    with the VIEWPixx display screen and a keyboard to complete a
-    practice trial to familiarise themselves with the task (see
-    <xref alt="Figure 2" rid="fig-setup-nb-article">Figure 2</xref>). The practice
-    trial featured a randomly selected face from the unfamiliar face
-    set, which was then excluded from the main experiment. A random
+          <p>Participants were verbally briefed on the aim of the research and
+    provided with an information sheet. An overview of the task was
+    described as involving recognition of 12 target faces in a series of
+    displays over the course of the experiment. Participants were seated
+    opposite a desk with the VIEWPixx display screen and a keyboard to
+    complete a practice trial to familiarise themselves with the task
+    (see <xref alt="Figure 2" rid="fig-setup-nb-article">Figure 2</xref>). The
+    practice trial featured a randomly selected face from the unfamiliar
+    face set, which was then excluded from the main experiment. A random
     selection of target and distractor faces were chosen for each
     participant. Before each trial, written instructions appeared on the
     screen advising participants to focus on a fixation cross at the
@@ -4444,8 +4442,9 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     better at discriminating faces from our own age group, it is
     possible that older participants found it easier to distinguish
     their own face from the distractor faces, which were young
-    identities (see Appendix C; Rhodes &amp; Anastasi
-    (<xref alt="2012" rid="ref-rhodes2012a-nb-article" ref-type="bibr">2012</xref>)).</p>
+    identities
+    (<xref alt="Rhodes &amp; Anastasi, 2012" rid="ref-rhodes2012a-nb-article" ref-type="bibr">Rhodes
+    &amp; Anastasi, 2012</xref>).</p>
         </sec>
         <sec id="familiarity-and-inversion-effects-nb-article">
           <title>Familiarity and Inversion Effects</title>
@@ -4539,8 +4538,8 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     recognition time seems to be a more sensitive measure of familiarity
     effects in face recognition.</p>
         </sec>
-        <sec id="limitations-and-future-directions-nb-article">
-          <title>Limitations and Future Directions</title>
+        <sec id="future-directions-nb-article">
+          <title>Future Directions</title>
           <p>The staircase procedure was a key strength of the research,
     demonstrating that the reaction times reported in research may be
     underestimating human face recognition ability
@@ -4549,13 +4548,13 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     <xref alt="Caharel et al., 2014" rid="ref-caharel2014a-nb-article" ref-type="bibr">Caharel
     et al., 2014</xref>;
     <xref alt="Ramon et al., 2011" rid="ref-ramon2011a-nb-article" ref-type="bibr">Ramon
-    et al., 2011</xref>). However, the study design represented some
-    limitations centred around comparability with other face recognition
-    research. First, recognition times cannot be directly compared with
-    reaction times. Second, the staircase procedure only measured the
-    ability of participants to discriminate between two stimuli, unlike
-    other studies that require participants to identify a target face
-    among an array of distractor faces
+    et al., 2011</xref>). However, the study design could be considered
+    difficult to compare with other face recognition research. First,
+    recognition times cannot be directly compared with reaction times.
+    Second, the staircase procedure only measured the ability of
+    participants to discriminate between two stimuli, unlike other
+    studies that require participants to identify a target face among an
+    array of distractor faces
     (<xref alt="Megreya &amp; Burton, 2006" rid="ref-megraya2006a-nb-article" ref-type="bibr">Megreya
     &amp; Burton, 2006</xref>). Third, the time constraint imposed by
     the staircase is not comparable with studies involving tasks without
@@ -4565,8 +4564,8 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     of these comparability concerns by replicating the same study
     together with a standard go/no-go face categorisation task, to allow
     for a comparison of reaction times between the two tasks. Further,
-    adapting the staircase to include a four alternative force choice
-    task, compared to the two alternatives used here, would provide a
+    adapting the staircase to include a four-alternative force choice
+    task, rather than the two alternatives used here, would provide a
     better comparison with studies involving recognition tasks that
     require discrimination between multiple exemplars. Although the
     study examined three levels of familiarity (unfamiliar, familiar,
@@ -4592,9 +4591,10 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     participants also provides valuable insight into the effects of
     real-world face learning on recognition.</p>
           <p>Future research should aim to involve diverse participants,
-    including males and representation from all age groups. The female
-    only sample may have influenced results, as there is some evidence
-    suggesting a female own-gender bias in face recognition performance
+    including all genders and representation from all age groups. The
+    female-only sample may have influenced results, as there is some
+    evidence suggesting a female own-gender bias in face recognition
+    performance
     (<xref alt="Herlitz &amp; Lovén, 2013" rid="ref-herlitz2013a-nb-article" ref-type="bibr">Herlitz
     &amp; Lovén, 2013</xref>;
     <xref alt="Lovén et al., 2011" rid="ref-lov2011a-nb-article" ref-type="bibr">Lovén
