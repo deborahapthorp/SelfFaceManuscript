@@ -439,19 +439,14 @@ Attaching package: 'reshape2'</code></pre>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raincloudplots)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (patchwork)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Define colors - unfamiliar</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>unfamiliar_upright_col <span class="ot">=</span> <span class="st">'#FF3030'</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>unfamiliar_inverted_col <span class="ot">=</span> <span class="st">"#836FFF"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Define colors - upright vs. inverted</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>upright_col <span class="ot">=</span> <span class="st">'#FF3030'</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>inverted_col <span class="ot">=</span> <span class="st">"#836FFF"</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Mentored Group Colors</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>familiar_upright_col <span class="ot">=</span> <span class="st">'#EE2C2C'</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>familiar_inverted_col <span class="ot">=</span> <span class="st">"#6959CD"</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">#Control Group Colors</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>self_upright_col <span class="ot">=</span> <span class="st">'#CD2626'</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>self_inverted_col <span class="ot">=</span> <span class="st">"#473C8B"</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>Mean_Frames <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Frames_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>Mean_Frames <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Frames_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
@@ -505,24 +500,32 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 <span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanFrames_F_Inverted<span class="sc">$</span>Mean_time,</span>
 <span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanFrames_S_Upright<span class="sc">$</span>Mean_time,</span>
 <span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanFrames_S_Inverted<span class="sc">$</span>Mean_time,</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Unfamiliar'</span>,<span class="st">'Familiar'</span>)),</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
 <span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
 <span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
 <span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
 <span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>) </span>
 <span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>faces_2x3_time <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_Time_All,</span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),</span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean recognition time (milliseconds)"</span>) <span class="sc">+</span></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Threshold recognition times for face presentation") +</span></span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
+<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_Time_All)[<span class="fu">colnames</span>(df_2x3_Time_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
+<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
+<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>faces_2x3_time <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
+<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_Time_All,</span>
+<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
+<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
+<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean recognition time (milliseconds)"</span>) <span class="sc">+</span></span>
+<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Threshold recognition times for face presentation") +</span></span>
+<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add lines for individual subjects </span></span>
+<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a> <span class="fu">geom_path</span>(<span class="fu">aes</span>(<span class="at">x =</span> jit, <span class="at">y =</span> y_axis, <span class="at">group =</span> <span class="fu">interaction</span>(Orientation, id), <span class="at">color =</span> Orientation), <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a> <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(inverted_col, upright_col))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Mean_RTs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Reaction_Times_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -579,24 +582,29 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 <span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanRTs_F_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
 <span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanRTs_S_Upright<span class="sc">$</span>Mean_RT_ms,</span>
 <span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanRTs_S_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Unfamiliar'</span>,<span class="st">'Familiar'</span>)),</span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
 <span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
 <span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
 <span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
 <span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>) </span>
 <span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
-<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
-<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_RTs_All,</span>
-<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),</span>
-<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),</span>
-<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
-<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
-<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean reaction time (milliseconds)"</span>) <span class="sc">+</span></span>
-<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Mean reaction times for face recognition") +</span></span>
-<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_RTs_All)[<span class="fu">colnames</span>(df_2x3_RTs_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_RTs_All,</span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean reaction time (milliseconds)"</span>) <span class="sc">+</span></span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Mean reaction times for face recognition") +</span></span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add lines for individual subjects </span></span>
+<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>(<span class="fu">aes</span>(<span class="at">x =</span> jit, <span class="at">y =</span> y_axis, <span class="at">group =</span> <span class="fu">interaction</span>(Orientation, id), <span class="at">color =</span> Orientation), <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(inverted_col, upright_col))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
@@ -624,7 +632,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 </section>
 <section id="face-processing-efficiency-and-the-inversion-effect" class="level2">
 <h2 class="anchored" data-anchor-id="face-processing-efficiency-and-the-inversion-effect">Face Processing Efficiency and the Inversion Effect</h2>
-<p>The literature provides two interpretations of face processing efficiency. The holistic processing perspective emphasises the importance of analysing the spatial relations between features, providing a unique configuration for each individual so that faces are processed whole, rather than in parts <span class="citation" data-cites="sandford2014a maurer_many_2002">(<a href="#ref-maurer_many_2002" role="doc-biblioref">Maurer et al., 2002</a>; <a href="#ref-sandford2014a" role="doc-biblioref">Sandford &amp; Burton, 2014</a>)</span>. Evidence for holistic processing has been demonstrated predominantly in studies showing that when a face is inverted, disrupting its global configuration, participants find it harder to identify target faces <span class="citation" data-cites="taubert2011a tong1999a">(<a href="#ref-taubert2011a" role="doc-biblioref">Taubert et al., 2011</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. The face inversion effect has been reliably used in the literature to explore face processing efficiency <a href="Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology"></a>). Interestingly, studies have revealed that the effects of inversion are greater for unfamiliar faces than familiar faces, suggesting that familiar faces are not a slave to holistic processing <span class="citation" data-cites="ramon2016a oleggio2017a waidmann_local_2022">(<a href="#ref-oleggio2017a" role="doc-biblioref">Oleggio Castello et al., 2017</a>; <a href="#ref-ramon2016a" role="doc-biblioref">Ramon &amp; Belle, 2016</a>; <a href="#ref-waidmann_local_2022" role="doc-biblioref">Waidmann et al., 2022</a>)</span>.</p>
+<p>The literature provides two interpretations of face processing efficiency. The holistic processing perspective emphasises the importance of analysing the spatial relations between features, providing a unique configuration for each individual so that faces are processed whole, rather than in parts <span class="citation" data-cites="sandford2014a maurer_many_2002">(<a href="#ref-maurer_many_2002" role="doc-biblioref">Maurer et al., 2002</a>; <a href="#ref-sandford2014a" role="doc-biblioref">Sandford &amp; Burton, 2014</a>)</span>. Evidence for holistic processing has been demonstrated predominantly in studies showing that when a face is inverted, disrupting its global configuration, participants find it harder to identify target faces <span class="citation" data-cites="taubert2011a tong1999a">(<a href="#ref-taubert2011a" role="doc-biblioref">Taubert et al., 2011</a>; <a href="#ref-tong1999a" role="doc-biblioref">Tong &amp; Nakayama, 1999</a>)</span>. The face inversion effect has been reliably used in the literature to explore face processing efficiency <span class="citation" data-cites="rossion_picture-plane_2008 valentine_upside-down_1988 taubert_effect_2015">(<a href="#ref-rossion_picture-plane_2008" role="doc-biblioref">Rossion, 2008</a>; <a href="#ref-taubert_effect_2015" role="doc-biblioref">Taubert et al., 2015</a>; <a href="#ref-valentine_upside-down_1988" role="doc-biblioref">Valentine, 1988</a>)</span>. Interestingly, studies have revealed that the effects of inversion are greater for unfamiliar faces than familiar faces, suggesting that familiar faces are not a slave to holistic processing <span class="citation" data-cites="ramon2016a oleggio2017a waidmann_local_2022">(<a href="#ref-oleggio2017a" role="doc-biblioref">Oleggio Castello et al., 2017</a>; <a href="#ref-ramon2016a" role="doc-biblioref">Ramon &amp; Belle, 2016</a>; <a href="#ref-waidmann_local_2022" role="doc-biblioref">Waidmann et al., 2022</a>)</span>.</p>
 <p>By contrast, the feature-based processing perspective suggests that processing efficiency, as observed with familiar faces, can be attributed to the learning of face features, such as eyes, nose, and mouth, which are then used as unique identifiers supporting processing efficiency <span class="citation" data-cites="abudarham2016a">(<a href="#ref-abudarham2016a" role="doc-biblioref">Abudarham &amp; Yovel, 2016</a>)</span>. <span class="citation" data-cites="lee2022a">Lee et al. (<a href="#ref-lee2022a" role="doc-biblioref">2022</a>)</span> explored holistic and featural processing effects in a study where participants viewed images of unfamiliar faces, friends’ faces, and the self-face in an inversion task, and a part-whole (isolated features) task. They found no significant difference in inversion effects across the unfamiliar, friend and self-face conditions, whereas, in the isolated features task, participants were faster and more accurate at recognising the self-face compared to friend and unfamiliar faces, suggesting the self-face may be processed in a more feature-based manner. Therefore, the commonly held belief that face recognition relies on holistic processing is being challenged, and it seems likely that not all faces are processed in the same way.</p>
 <section id="the-self-face" class="level3">
 <h3 class="anchored" data-anchor-id="the-self-face">The Self-face</h3>
@@ -1038,6 +1046,9 @@ Smith, M. L., Volna, B., &amp; Ewing, L. (2016). Distinct information critically
 <div id="ref-taubert2011a" class="csl-entry" role="listitem">
 Taubert, J., Apthorp, D., Aagten-Murphy, D., &amp; Alais, D. (2011). The role of holistic processing in face perception: Evidence from the face inversion effect. <em>Vision Research</em>, <em>51</em>, 1273–1278. <a href="https://doi.org/10.1016/j.visres.2011.04.002">https://doi.org/10.1016/j.visres.2011.04.002</a>
 </div>
+<div id="ref-taubert_effect_2015" class="csl-entry" role="listitem">
+Taubert, J., Van Belle, G., Vanduffel, W., Rossion, B., &amp; Vogels, R. (2015). The effect of face inversion for neurons inside and outside <span class="nocase">fMRI</span>-defined face-selective cortical regions. <em>Journal of Neurophysiology</em>, <em>113</em>(5), 1644–1655. <a href="https://doi.org/10.1152/jn.00700.2014">https://doi.org/10.1152/jn.00700.2014</a>
+</div>
 <div id="ref-tong1999a" class="csl-entry" role="listitem">
 Tong, F., &amp; Nakayama, K. (1999). Robust representations for faces: Evidence from visual search. <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>25</em>(4), 1016–1035. <a href="https://doi.org/10.1037//0096-1523.25.4.1016">https://doi.org/10.1037//0096-1523.25.4.1016</a>
 </div>
@@ -1049,6 +1060,9 @@ Towler, A., Kemp, R. I., Bruce, V., Burton, A. M., Dunn, J. D., &amp; White, D. 
 </div>
 <div id="ref-tshidzumba2019a" class="csl-entry" role="listitem">
 Tshidzumba, N. A. (2019). The selfie culture: Identity creation and status conferral on social media. <em>Gender &amp; Behaviour</em>, <em>17</em>(3), 13577–13584.
+</div>
+<div id="ref-valentine_upside-down_1988" class="csl-entry" role="listitem">
+Valentine, T. (1988). Upside-down faces: <span>A</span> review of the effect of inversion upon face recognition. <em>British Journal of Psychology</em>, <em>79</em>(4), 471–491. <a href="https://doi.org/10.1111/j.2044-8295.1988.tb02747.x">https://doi.org/10.1111/j.2044-8295.1988.tb02747.x</a>
 </div>
 <div id="ref-waidmann_local_2022" class="csl-entry" role="listitem">
 Waidmann, E. N., Koyano, K. W., Hong, J. J., Russ, B. E., &amp; Leopold, D. A. (2022). Local features drive identity responses in macaque anterior face patches. <em>Nature Communications</em>, <em>13</em>(1), 5592. <a href="https://doi.org/10.1038/s41467-022-33240-w">https://doi.org/10.1038/s41467-022-33240-w</a>
@@ -1464,7 +1478,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom"});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","loop":false,"selector":".lightbox","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -475,10 +475,15 @@ familiar faces.</p>
     &amp; Nakayama, 1999</xref>). The face inversion effect has been
     reliably used in the literature to explore face processing
     efficiency
-    <ext-link ext-link-type="uri" xlink:href="Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology"/>).
-    Interestingly, studies have revealed that the effects of inversion
-    are greater for unfamiliar faces than familiar faces, suggesting
-    that familiar faces are not a slave to holistic processing
+    (<xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008" ref-type="bibr">Rossion,
+    2008</xref>;
+    <xref alt="Taubert et al., 2015" rid="ref-taubert_effect_2015" ref-type="bibr">Taubert
+    et al., 2015</xref>;
+    <xref alt="Valentine, 1988" rid="ref-valentine_upside-down_1988" ref-type="bibr">Valentine,
+    1988</xref>). Interestingly, studies have revealed that the effects
+    of inversion are greater for unfamiliar faces than familiar faces,
+    suggesting that familiar faces are not a slave to holistic
+    processing
     (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a" ref-type="bibr">Oleggio
     Castello et al., 2017</xref>;
     <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a" ref-type="bibr">Ramon
@@ -1315,6 +1320,43 @@ familiar faces.</p>
           <lpage>158</lpage>
         </element-citation>
       </ref>
+      <ref id="ref-taubert_effect_2015">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+            <name>
+              <surname>Van Belle</surname>
+              <given-names>Goedele</given-names>
+            </name>
+            <name>
+              <surname>Vanduffel</surname>
+              <given-names>Wim</given-names>
+            </name>
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+            <name>
+              <surname>Vogels</surname>
+              <given-names>Rufin</given-names>
+            </name>
+          </person-group>
+          <article-title>The effect of face inversion for neurons inside and outside fMRI-defined face-selective cortical regions</article-title>
+          <source>Journal of Neurophysiology</source>
+          <year iso-8601-date="2015-03">2015</year>
+          <month>03</month>
+          <volume>113</volume>
+          <issue>5</issue>
+          <issn>1522-1598</issn>
+          <pub-id pub-id-type="doi">10.1152/jn.00700.2014</pub-id>
+          <pub-id pub-id-type="pmid">25520434</pub-id>
+          <fpage>1644</fpage>
+          <lpage>1655</lpage>
+        </element-citation>
+      </ref>
       <ref id="ref-towler_are_2019">
         <element-citation publication-type="article-journal">
           <person-group person-group-type="author">
@@ -1358,6 +1400,31 @@ familiar faces.</p>
           <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
           <fpage>180772</fpage>
           <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-valentine_upside-down_1988">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valentine</surname>
+              <given-names>Tim</given-names>
+            </name>
+          </person-group>
+          <article-title>Upside-down faces: A review of the effect of inversion upon face recognition</article-title>
+          <source>British Journal of Psychology</source>
+          <year iso-8601-date="1988">1988</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>79</volume>
+          <issue>4</issue>
+          <issn>2044-8295</issn>
+          <uri>https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8295.1988.tb02747.x</uri>
+          <pub-id pub-id-type="doi">10.1111/j.2044-8295.1988.tb02747.x</pub-id>
+          <fpage>471</fpage>
+          <lpage>491</lpage>
         </element-citation>
       </ref>
       <ref id="ref-waidmann_local_2022">
@@ -3386,17 +3453,12 @@ library(reshape2)</code>
 library(raincloudplots)
 library (patchwork)
 
-#Define colors - unfamiliar
-unfamiliar_upright_col = '#FF3030'
-unfamiliar_inverted_col = "#836FFF"
+#Define colors - upright vs. inverted
+upright_col = '#FF3030'
+inverted_col = "#836FFF"
 
-#Mentored Group Colors
-familiar_upright_col = '#EE2C2C'
-familiar_inverted_col = "#6959CD"
 
-#Control Group Colors
-self_upright_col = '#CD2626'
-self_inverted_col = "#473C8B"
+
 
 Mean_Frames &lt;- read_csv("Mean_Frames_Familiar_Faces_Filtered.csv")</code>
         <code language="r script">Mean_Frames_long &lt;- melt(Mean_Frames, 
@@ -3442,24 +3504,32 @@ df_2x3_Time_All &lt;- data_2x2(
   array_4 = MeanFrames_F_Inverted$Mean_time,
   array_5 = MeanFrames_S_Upright$Mean_time,
   array_6 = MeanFrames_S_Inverted$Mean_time,
-  labels = (c('Unfamiliar','Familiar')),
+  labels = (c('Upright','Inverted')),
   jit_distance = .09,
   jit_seed = 321,
   # spread_x_ticks = FALSE
 ) 
 
+# Change column name to be more meaningful
+colnames(df_2x3_Time_All)[colnames(df_2x3_Time_All) == "group"] &lt;- "Orientation"
 
 ## Raincloud plot for recognition time 
+
+
 faces_2x3_time &lt;- raincloud_2x3_repmes(
   data = df_2x3_Time_All,
-  colors = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
-  fills = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
+  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
+  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
   alpha = .5) +
   scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
   xlab("Face Familiarity") + 
   ylab("Mean recognition time (milliseconds)") +
   #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()</code>
+  theme_classic()+
+  
+  # Add lines for individual subjects 
+ geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+ scale_color_manual(values = c(inverted_col, upright_col))</code>
         <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
           <preformat>
 Attaching package: 'reshape2'</preformat>
@@ -3538,24 +3608,29 @@ df_2x3_RTs_All &lt;- data_2x2(
   array_4 = MeanRTs_F_Inverted$Mean_RT_ms,
   array_5 = MeanRTs_S_Upright$Mean_RT_ms,
   array_6 = MeanRTs_S_Inverted$Mean_RT_ms,
-  labels = (c('Unfamiliar','Familiar')),
+  labels = (c('Upright','Inverted')),
   jit_distance = .09,
   jit_seed = 321,
   # spread_x_ticks = FALSE
 ) 
 
+# Change column name to be more meaningful
+colnames(df_2x3_RTs_All)[colnames(df_2x3_RTs_All) == "group"] &lt;- "Orientation"
 
 ## Raincloud plot for recognition time 
 faces_2x3_RTs &lt;- raincloud_2x3_repmes(
   data = df_2x3_RTs_All,
-  colors = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
-  fills = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
+  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
+  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
   alpha = .5) +
   scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
   xlab("Face Familiarity") + 
   ylab("Mean reaction time (milliseconds)") +
   #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()</code>
+  theme_classic()+
+    # Add lines for individual subjects 
+  geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+  scale_color_manual(values = c(inverted_col, upright_col))</code>
         <sec id="nb-code-cell-2-output-0-nb-article" specific-use="notebook-output">
           <preformat>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
@@ -3929,10 +4004,15 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
     &amp; Nakayama, 1999</xref>). The face inversion effect has been
     reliably used in the literature to explore face processing
     efficiency
-    <ext-link ext-link-type="uri" xlink:href="Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology"/>).
-    Interestingly, studies have revealed that the effects of inversion
-    are greater for unfamiliar faces than familiar faces, suggesting
-    that familiar faces are not a slave to holistic processing
+    (<xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr">Rossion,
+    2008</xref>;
+    <xref alt="Taubert et al., 2015" rid="ref-taubert_effect_2015-nb-article" ref-type="bibr">Taubert
+    et al., 2015</xref>;
+    <xref alt="Valentine, 1988" rid="ref-valentine_upside-down_1988-nb-article" ref-type="bibr">Valentine,
+    1988</xref>). Interestingly, studies have revealed that the effects
+    of inversion are greater for unfamiliar faces than familiar faces,
+    suggesting that familiar faces are not a slave to holistic
+    processing
     (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a-nb-article" ref-type="bibr">Oleggio
     Castello et al., 2017</xref>;
     <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a-nb-article" ref-type="bibr">Ramon
@@ -4837,6 +4917,43 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
             <lpage>158</lpage>
           </element-citation>
         </ref>
+        <ref id="ref-taubert_effect_2015-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+              <name>
+                <surname>Van Belle</surname>
+                <given-names>Goedele</given-names>
+              </name>
+              <name>
+                <surname>Vanduffel</surname>
+                <given-names>Wim</given-names>
+              </name>
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+              <name>
+                <surname>Vogels</surname>
+                <given-names>Rufin</given-names>
+              </name>
+            </person-group>
+            <article-title>The effect of face inversion for neurons inside and outside fMRI-defined face-selective cortical regions</article-title>
+            <source>Journal of Neurophysiology</source>
+            <year iso-8601-date="2015-03">2015</year>
+            <month>03</month>
+            <volume>113</volume>
+            <issue>5</issue>
+            <issn>1522-1598</issn>
+            <pub-id pub-id-type="doi">10.1152/jn.00700.2014</pub-id>
+            <pub-id pub-id-type="pmid">25520434</pub-id>
+            <fpage>1644</fpage>
+            <lpage>1655</lpage>
+          </element-citation>
+        </ref>
         <ref id="ref-towler_are_2019-nb-article">
           <element-citation publication-type="article-journal">
             <person-group person-group-type="author">
@@ -4880,6 +4997,31 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
             <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
             <fpage>180772</fpage>
             <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-valentine_upside-down_1988-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Valentine</surname>
+                <given-names>Tim</given-names>
+              </name>
+            </person-group>
+            <article-title>Upside-down faces: A review of the effect of inversion upon face recognition</article-title>
+            <source>British Journal of Psychology</source>
+            <year iso-8601-date="1988">1988</year>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>79</volume>
+            <issue>4</issue>
+            <issn>2044-8295</issn>
+            <uri>https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8295.1988.tb02747.x</uri>
+            <pub-id pub-id-type="doi">10.1111/j.2044-8295.1988.tb02747.x</pub-id>
+            <fpage>471</fpage>
+            <lpage>491</lpage>
           </element-citation>
         </ref>
         <ref id="ref-waidmann_local_2022-nb-article">
