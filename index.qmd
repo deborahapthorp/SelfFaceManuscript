@@ -71,17 +71,12 @@ library(dplyr)
 library(raincloudplots)
 library (patchwork)
 
-#Define colors - unfamiliar
-unfamiliar_upright_col = '#FF3030'
-unfamiliar_inverted_col = "#836FFF"
+#Define colors - upright vs. inverted
+upright_col = '#FF3030'
+inverted_col = "#836FFF"
 
-#Mentored Group Colors
-familiar_upright_col = '#EE2C2C'
-familiar_inverted_col = "#6959CD"
 
-#Control Group Colors
-self_upright_col = '#CD2626'
-self_inverted_col = "#473C8B"
+
 
 Mean_Frames <- read_csv("Mean_Frames_Familiar_Faces_Filtered.csv")
 Mean_Frames_long <- melt(Mean_Frames, 
@@ -127,24 +122,34 @@ df_2x3_Time_All <- data_2x2(
   array_4 = MeanFrames_F_Inverted$Mean_time,
   array_5 = MeanFrames_S_Upright$Mean_time,
   array_6 = MeanFrames_S_Inverted$Mean_time,
-  labels = (c('Unfamiliar','Familiar')),
+  labels = (c('Upright','Inverted')),
   jit_distance = .09,
   jit_seed = 321,
   # spread_x_ticks = FALSE
 ) 
 
+# Change column name to be more meaningful
+colnames(df_2x3_Time_All)[colnames(df_2x3_Time_All) == "group"] <- "Orientation"
 
 ## Raincloud plot for recognition time 
+
+
 faces_2x3_time <- raincloud_2x3_repmes(
   data = df_2x3_Time_All,
-  colors = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
-  fills = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
+  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
+  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
   alpha = .5) +
   scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
   xlab("Face Familiarity") + 
   ylab("Mean recognition time (milliseconds)") +
   #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()
+  theme_classic()+
+  
+  # Add lines for individual subjects 
+ geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+ scale_color_manual(values = c(inverted_col, upright_col))
+
+        
 
 ```
 
@@ -194,24 +199,29 @@ df_2x3_RTs_All <- data_2x2(
   array_4 = MeanRTs_F_Inverted$Mean_RT_ms,
   array_5 = MeanRTs_S_Upright$Mean_RT_ms,
   array_6 = MeanRTs_S_Inverted$Mean_RT_ms,
-  labels = (c('Unfamiliar','Familiar')),
+  labels = (c('Upright','Inverted')),
   jit_distance = .09,
   jit_seed = 321,
   # spread_x_ticks = FALSE
 ) 
 
+# Change column name to be more meaningful
+colnames(df_2x3_RTs_All)[colnames(df_2x3_RTs_All) == "group"] <- "Orientation"
 
 ## Raincloud plot for recognition time 
 faces_2x3_RTs <- raincloud_2x3_repmes(
   data = df_2x3_RTs_All,
-  colors = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
-  fills = c(unfamiliar_upright_col, unfamiliar_inverted_col, familiar_upright_col, familiar_inverted_col, self_upright_col, self_inverted_col),
+  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
+  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
   alpha = .5) +
   scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
   xlab("Face Familiarity") + 
   ylab("Mean reaction time (milliseconds)") +
   #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()
+  theme_classic()+
+    # Add lines for individual subjects 
+  geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+  scale_color_manual(values = c(inverted_col, upright_col))
 
 
 
@@ -249,7 +259,7 @@ Personal information acquired through repeated interaction with an identity appe
 
 ## Face Processing Efficiency and the Inversion Effect
 
-The literature provides two interpretations of face processing efficiency. The holistic processing perspective emphasises the importance of analysing the spatial relations between features, providing a unique configuration for each individual so that faces are processed whole, rather than in parts [@sandford2014a; @maurer_many_2002]. Evidence for holistic processing has been demonstrated predominantly in studies showing that when a face is inverted, disrupting its global configuration, participants find it harder to identify target faces [@taubert2011a; @tong1999a]. The face inversion effect has been reliably used in the literature to explore face processing efficiency [ ](Rossion%202008%20Acta%20Psych;%20Valentine%201988;%20Taubert,%20Van%20Belle%20et%20al%202015%20Journal%20of%20Neurophysiology)). Interestingly, studies have revealed that the effects of inversion are greater for unfamiliar faces than familiar faces, suggesting that familiar faces are not a slave to holistic processing [@ramon2016a; @oleggio2017a; @waidmann_local_2022].
+The literature provides two interpretations of face processing efficiency. The holistic processing perspective emphasises the importance of analysing the spatial relations between features, providing a unique configuration for each individual so that faces are processed whole, rather than in parts [@sandford2014a; @maurer_many_2002]. Evidence for holistic processing has been demonstrated predominantly in studies showing that when a face is inverted, disrupting its global configuration, participants find it harder to identify target faces [@taubert2011a; @tong1999a]. The face inversion effect has been reliably used in the literature to explore face processing efficiency [@rossion_picture-plane_2008; @valentine_upside-down_1988; @taubert_effect_2015]. Interestingly, studies have revealed that the effects of inversion are greater for unfamiliar faces than familiar faces, suggesting that familiar faces are not a slave to holistic processing [@ramon2016a; @oleggio2017a; @waidmann_local_2022].
 
 By contrast, the feature-based processing perspective suggests that processing efficiency, as observed with familiar faces, can be attributed to the learning of face features, such as eyes, nose, and mouth, which are then used as unique identifiers supporting processing efficiency [@abudarham2016a]. @lee2022a explored holistic and featural processing effects in a study where participants viewed images of unfamiliar faces, friends’ faces, and the self-face in an inversion task, and a part-whole (isolated features) task. They found no significant difference in inversion effects across the unfamiliar, friend and self-face conditions, whereas, in the isolated features task, participants were faster and more accurate at recognising the self-face compared to friend and unfamiliar faces, suggesting the self-face may be processed in a more feature-based manner. Therefore, the commonly held belief that face recognition relies on holistic processing is being challenged, and it seems likely that not all faces are processed in the same way.
 
