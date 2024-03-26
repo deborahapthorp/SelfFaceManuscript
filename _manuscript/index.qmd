@@ -62,7 +62,8 @@ format:
 ```{r load packages and data}
 #| output: false
 
-
+library(afex)
+library(emmeans)
 library(readr)
 library(tidyr)
 library(reshape2)
@@ -227,6 +228,16 @@ faces_2x3_RTs <- raincloud_2x3_repmes(
 
 ```
 
+
+```{r ANOVAs}
+# Do ANOVA analysis of ratings 
+RecognitionTimes_ANOVA <- aov_ez("Participant", "Mean_time", Mean_Frames_long, within=c("Orientation", "Familiarity"),
+                            factorize = TRUE) # Do ANOVA
+
+EM_Means_RecognitionTimes <- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+
+```
+
 # Introduction
 
 Face recognition is the foundation of our social behaviour; it helps us identify the people around us and make inferences about their mood and focus of attention [@burton2015a; @mohr2018a]. It has been estimated that we spend 20$\%$ of our day looking at faces, and can recognise over 4000 faces during our lifetime [@jenkins2018a; @oruc2019a]. For most of us, the ability to recognise and recall identity-specific information appears to occur almost effortlessly, with studies demonstrating that we can recognise a familiar face as quickly as 360 ms [@besson2016a; @blauch2021a; @oruc2019a; @ramon2016a]. The efficiency with which humans can discriminate within a relatively homogeneous visual category, under constantly changing viewing conditions, has earned us the reputation for being face experts [@collins2018a; @dobs2019a; @kramer2017a; @quek2021a; @rossion_what_2019; @towler_are_2019].
@@ -331,13 +342,13 @@ A small but significant interaction was also observed between age and condition,
 
 ```{r}
 #| label: fig-correlations
-#| fig-cap: "Correlations between recognition times by age for each condition"
+#| fig-cap: "Correlations between recognition times and age for each condition"
 
 p1 <- ggplot(Mean_Frames, aes(x=Age, y=Unfamiliar_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Unfamiliar Upright Frame Time (ms)")+
+  labs(x="Age", y = "Unfamiliar, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -345,7 +356,7 @@ p2 <- ggplot(Mean_Frames, aes(x=Age, y=Familiar_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Familiar Upright Frame Time (ms)")+
+  labs(x="Age", y = "Familiar, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -354,7 +365,7 @@ p3 <- ggplot(Mean_Frames, aes(x=Age, y=Self_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Self Upright Frame Time (ms)")+
+  labs(x="Age", y = "Self, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -363,7 +374,7 @@ p4 <- ggplot(Mean_Frames, aes(x=Age, y=Unfamiliar_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Unfamiliar Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Unfamiliar, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
@@ -371,7 +382,7 @@ p5 <- ggplot(Mean_Frames, aes(x=Age, y=Familiar_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Familiar Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Familiar, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
@@ -380,7 +391,7 @@ p6 <- ggplot(Mean_Frames, aes(x=Age, y=Self_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Self Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Self, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
