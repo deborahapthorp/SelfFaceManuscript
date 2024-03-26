@@ -811,7 +811,7 @@ familiar faces.</p>
     between age and recognition time in each condition.</p>
         <fig id="fig-correlations">
           <caption>
-            <p>Figure 4: Correlations between recognition times by
+            <p>Figure 4: Correlations between recognition times and
       age for each condition</p>
           </caption>
           <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
@@ -3445,9 +3445,11 @@ familiar faces.</p>
     </front-stub>
     <body>
       <sec id="nb-code-cell-1-nb-article" specific-use="notebook-code">
-        <code language="r script">library(readr)
-library(tidyr)
-library(reshape2)</code>
+        <code language="r script">library(afex)</code>
+        <code language="r script">library(emmeans)
+library(readr)
+library(tidyr)</code>
+        <code language="r script">library(reshape2)</code>
         <code language="r script">library(tidyverse)</code>
         <code language="r script">library(dplyr)
 library(raincloudplots)
@@ -3531,28 +3533,68 @@ faces_2x3_time &lt;- raincloud_2x3_repmes(
  geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
  scale_color_manual(values = c(inverted_col, upright_col))</code>
         <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
+          <preformat>Loading required package: lme4</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-1-nb-article" specific-use="notebook-output">
+          <preformat>Loading required package: Matrix</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-2-nb-article" specific-use="notebook-output">
+          <preformat>************
+Welcome to afex. For support visit: http://afex.singmann.science/</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-3-nb-article" specific-use="notebook-output">
+          <preformat>- Functions for ANOVAs: aov_car(), aov_ez(), and aov_4()
+- Methods for calculating p-values with mixed(): 'S', 'KR', 'LRT', and 'PB'
+- 'afex_aov' and 'mixed' objects can be passed to emmeans() for follow-up tests
+- Get and set global package options with: afex_options()
+- Set sum-to-zero contrasts globally: set_sum_contrasts()
+- For example analyses see: browseVignettes("afex")
+************</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-4-nb-article" specific-use="notebook-output">
+          <preformat>
+Attaching package: 'afex'</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-5-nb-article" specific-use="notebook-output">
+          <preformat>The following object is masked from 'package:lme4':
+
+    lmer</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-6-nb-article" specific-use="notebook-output">
+          <preformat>
+Attaching package: 'tidyr'</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-7-nb-article" specific-use="notebook-output">
+          <preformat>The following objects are masked from 'package:Matrix':
+
+    expand, pack, unpack</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-8-nb-article" specific-use="notebook-output">
           <preformat>
 Attaching package: 'reshape2'</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-1-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-9-nb-article" specific-use="notebook-output">
           <preformat>The following object is masked from 'package:tidyr':
 
     smiths</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-2-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-10-nb-article" specific-use="notebook-output">
           <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ purrr     1.0.2
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ ggplot2   3.5.0     ✔ tibble    3.2.1
 ✔ lubridate 1.9.3     </preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-3-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-11-nb-article" specific-use="notebook-output">
           <preformat>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ tidyr::expand() masks Matrix::expand()
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
+✖ tidyr::pack()   masks Matrix::pack()
+✖ tidyr::unpack() masks Matrix::unpack()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-4-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-12-nb-article" specific-use="notebook-output">
           <preformat>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
@@ -3641,6 +3683,13 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
         </sec>
+      </sec>
+      <sec id="nb-code-cell-3-nb-article" specific-use="notebook-code">
+        <code language="r script"># Do ANOVA analysis of ratings 
+RecognitionTimes_ANOVA &lt;- aov_ez("Participant", "Mean_time", Mean_Frames_long, within=c("Orientation", "Familiarity"),
+                            factorize = TRUE) # Do ANOVA
+
+EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means</code>
       </sec>
       <sec id="introduction-nb-article">
         <title>Introduction</title>
@@ -4346,7 +4395,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Unfamiliar Upright Frame Time (ms)")+
+  labs(x="Age", y = "Unfamiliar, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -4354,7 +4403,7 @@ p2 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Familiar_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Familiar Upright Frame Time (ms)")+
+  labs(x="Age", y = "Familiar, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -4363,7 +4412,7 @@ p3 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Self_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Self Upright Frame Time (ms)")+
+  labs(x="Age", y = "Self, Upright")+
   ylim (0, 200)+
   theme_classic() 
 
@@ -4372,7 +4421,7 @@ p4 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Unfamiliar_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Unfamiliar Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Unfamiliar, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
@@ -4380,7 +4429,7 @@ p5 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Familiar_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Familiar Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Familiar, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
@@ -4389,14 +4438,14 @@ p6 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Self_Inverted*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
-  labs(x="Age", y = "Self Inverted Frame Time (ms)")+
+  labs(x="Age", y = "Self, Inverted")+
   ylim (0, 220)+
   theme_classic() 
 
 p1 + p2 + p3 + p4 + p5 + p6</code>
             <fig id="fig-correlations-nb-article">
               <caption>
-                <p>Figure 4: Correlations between recognition times by
+                <p>Figure 4: Correlations between recognition times and
       age for each condition</p>
               </caption>
               <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
