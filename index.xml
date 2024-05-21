@@ -151,8 +151,10 @@ familiar faces.</p>
   et al., 2017</xref>;
   <xref alt="Quek et al., 2021" rid="ref-quek2021a" ref-type="bibr">Quek
   et al., 2021</xref>;
-  <xref alt="rossion_what_2019?" rid="ref-rossion_what_2019" ref-type="bibr"><bold>rossion_what_2019?</bold></xref>;
-  <xref alt="towler_are_2019?" rid="ref-towler_are_2019" ref-type="bibr"><bold>towler_are_2019?</bold></xref>).</p>
+  <xref alt="Rossion &amp; Taubert, 2019" rid="ref-rossion_what_2019" ref-type="bibr">Rossion
+  &amp; Taubert, 2019</xref>;
+  <xref alt="Towler et al., 2019" rid="ref-towler_are_2019" ref-type="bibr">Towler
+  et al., 2019</xref>).</p>
       <p>The precise nature of our face expertise remains poorly understood,
   with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
@@ -221,12 +223,14 @@ familiar faces.</p>
   important factor in face recognition
   (<xref alt="Allen-Davidian et al., 2021" rid="ref-allen-davidian2021a" ref-type="bibr">Allen-Davidian
   et al., 2021</xref>;
+  <xref alt="Hole et al., 2002" rid="ref-hole_effects_2002" ref-type="bibr">Hole
+  et al., 2002</xref>;
   <xref alt="Kramer et al., 2018" rid="ref-kramer2018a" ref-type="bibr">Kramer
   et al., 2018</xref>;
+  <xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008" ref-type="bibr">Rossion,
+  2008</xref>;
   <xref alt="Yang et al., 2014" rid="ref-yang2014a" ref-type="bibr">Yang
-  et al., 2014</xref>;
-  <xref alt="rossion_picture-plane_2008?" rid="ref-rossion_picture-plane_2008" ref-type="bibr"><bold>rossion_picture-plane_2008?</bold></xref>;
-  <xref alt="hole_effects_2002?" rid="ref-hole_effects_2002" ref-type="bibr"><bold>hole_effects_2002?</bold></xref>).</p>
+  et al., 2014</xref>).</p>
       <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
   experimental context. First, there are different levels of
@@ -256,10 +260,10 @@ familiar faces.</p>
   which is different to how a face appears under normal circumstances
   (<xref alt="Burton et al., 2011" rid="ref-burton2011a" ref-type="bibr">Burton
   et al., 2011</xref>;
-  <xref alt="long_database_2023?" rid="ref-long_database_2023" ref-type="bibr"><bold>long_database_2023?</bold></xref>).
-  These methodological constraints and unique challenges have
-  contributed to the inconsistencies in face research, particularly
-  regarding familiar face recognition performance.</p>
+  <xref alt="Long et al., 2023" rid="ref-long_database_2023" ref-type="bibr">Long
+  et al., 2023</xref>). These methodological constraints and unique
+  challenges have contributed to the inconsistencies in face research,
+  particularly regarding familiar face recognition performance.</p>
       <sec id="measuring-face-recognition">
         <title>Measuring Face Recognition</title>
         <p>While in the real world only familiar faces are recognised, in
@@ -270,11 +274,11 @@ familiar faces.</p>
     2013</xref>;
     <xref alt="Hancock et al., 2000" rid="ref-hancock2000a" ref-type="bibr">Hancock
     et al., 2000</xref>;
-    <xref alt="white_individual_2022?" rid="ref-white_individual_2022" ref-type="bibr"><bold>white_individual_2022?</bold></xref>).
-    Consistent with the literature, we will conceptualise face
-    recognition as the ability to recognise previously known or recently
-    learned faces (familiar) and previously unknown faces
-    (unfamiliar).</p>
+    <xref alt="White &amp; Burton, 2022" rid="ref-white_individual_2022" ref-type="bibr">White
+    &amp; Burton, 2022</xref>). Consistent with the literature, we will
+    conceptualise face recognition as the ability to recognise
+    previously known or recently learned faces (familiar) and previously
+    unknown faces (unfamiliar).</p>
         <p>Face recognition has been investigated by recording how long it
     takes participants to accurately find targets. These tasks often
     involve participants seeking a target face, where detection is
@@ -458,30 +462,34 @@ familiar faces.</p>
     importance of analysing the spatial relations between features,
     providing a unique configuration for each individual so that faces
     are processed whole, rather than in parts
-    (<xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a" ref-type="bibr">Sandford
-    &amp; Burton, 2014</xref>;
-    <xref alt="maurer_many_2002?" rid="ref-maurer_many_2002" ref-type="bibr"><bold>maurer_many_2002?</bold></xref>).
-    Evidence for holistic processing has been demonstrated predominantly
-    in studies showing that when a face is inverted, disrupting its
-    global configuration, participants find it harder to identify target
-    faces
+    (<xref alt="Maurer et al., 2002" rid="ref-maurer_many_2002" ref-type="bibr">Maurer
+    et al., 2002</xref>;
+    <xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a" ref-type="bibr">Sandford
+    &amp; Burton, 2014</xref>). Evidence for holistic processing has
+    been demonstrated predominantly in studies showing that when a face
+    is inverted, disrupting its global configuration, participants find
+    it harder to identify target faces
     (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a" ref-type="bibr">Taubert
     et al., 2011</xref>;
     <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a" ref-type="bibr">Tong
     &amp; Nakayama, 1999</xref>). The face inversion effect has been
     reliably used in the literature to explore face processing
     efficiency
-    (<xref alt="rossion_picture-plane_2008?" rid="ref-rossion_picture-plane_2008" ref-type="bibr"><bold>rossion_picture-plane_2008?</bold></xref>;
-    <xref alt="valentine_upside-down_1988?" rid="ref-valentine_upside-down_1988" ref-type="bibr"><bold>valentine_upside-down_1988?</bold></xref>;
-    <xref alt="taubert_effect_2015?" rid="ref-taubert_effect_2015" ref-type="bibr"><bold>taubert_effect_2015?</bold></xref>).
-    Interestingly, studies have revealed that the effects of inversion
-    are greater for unfamiliar faces than familiar faces, suggesting
-    that familiar faces are not a slave to holistic processing
+    (<xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008" ref-type="bibr">Rossion,
+    2008</xref>;
+    <xref alt="Taubert et al., 2015" rid="ref-taubert_effect_2015" ref-type="bibr">Taubert
+    et al., 2015</xref>;
+    <xref alt="Valentine, 1988" rid="ref-valentine_upside-down_1988" ref-type="bibr">Valentine,
+    1988</xref>). Interestingly, studies have revealed that the effects
+    of inversion are greater for unfamiliar faces than familiar faces,
+    suggesting that familiar faces are not a slave to holistic
+    processing
     (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a" ref-type="bibr">Oleggio
     Castello et al., 2017</xref>;
     <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a" ref-type="bibr">Ramon
     &amp; Belle, 2016</xref>;
-    <xref alt="waidmann_local_2022?" rid="ref-waidmann_local_2022" ref-type="bibr"><bold>waidmann_local_2022?</bold></xref>).</p>
+    <xref alt="Waidmann et al., 2022" rid="ref-waidmann_local_2022" ref-type="bibr">Waidmann
+    et al., 2022</xref>).</p>
         <p>By contrast, the feature-based processing perspective suggests
     that processing efficiency, as observed with familiar faces, can be
     attributed to the learning of face features, such as eyes, nose, and
@@ -1117,6 +1125,342 @@ familiar faces.</p>
   <back>
     <ref-list>
       <title/>
+      <ref id="ref-hole_effects_2002">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hole</surname>
+              <given-names>Graham J</given-names>
+            </name>
+            <name>
+              <surname>George</surname>
+              <given-names>Patricia A</given-names>
+            </name>
+            <name>
+              <surname>Eaves</surname>
+              <given-names>Karen</given-names>
+            </name>
+            <name>
+              <surname>Rasek</surname>
+              <given-names>Ayman</given-names>
+            </name>
+          </person-group>
+          <article-title>Effects of Geometric Distortions on Face-Recognition Performance</article-title>
+          <source>Perception</source>
+          <year iso-8601-date="2002-10">2002</year>
+          <month>10</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>31</volume>
+          <issue>10</issue>
+          <issn>0301-0066</issn>
+          <uri>https://doi.org/10.1068/p3252</uri>
+          <pub-id pub-id-type="doi">10.1068/p3252</pub-id>
+          <fpage>1221</fpage>
+          <lpage>1240</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-long_database_2023">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Long</surname>
+              <given-names>Houqiu</given-names>
+            </name>
+            <name>
+              <surname>Peluso</surname>
+              <given-names>Natalie</given-names>
+            </name>
+            <name>
+              <surname>Baker</surname>
+              <given-names>Chris I.</given-names>
+            </name>
+            <name>
+              <surname>Japee</surname>
+              <given-names>Shruti</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+          </person-group>
+          <article-title>A database of heterogeneous faces for studying naturalistic expressions</article-title>
+          <source>Scientific Reports</source>
+          <year iso-8601-date="2023-04">2023</year>
+          <month>04</month>
+          <volume>13</volume>
+          <issue>1</issue>
+          <issn>2045-2322</issn>
+          <pub-id pub-id-type="doi">10.1038/s41598-023-32659-5</pub-id>
+          <pub-id pub-id-type="pmid">37012369</pub-id>
+          <fpage>5383</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-maurer_many_2002">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maurer</surname>
+              <given-names>Daphne</given-names>
+            </name>
+            <name>
+              <surname>Grand</surname>
+              <given-names>Richard Le</given-names>
+            </name>
+            <name>
+              <surname>Mondloch</surname>
+              <given-names>Catherine J.</given-names>
+            </name>
+          </person-group>
+          <article-title>The many faces of configural processing</article-title>
+          <source>Trends in Cognitive Sciences</source>
+          <year iso-8601-date="2002-06">2002</year>
+          <month>06</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>6</volume>
+          <issue>6</issue>
+          <issn>1364-6613</issn>
+          <uri>https://www.sciencedirect.com/science/article/pii/S1364661302019034</uri>
+          <pub-id pub-id-type="doi">10.1016/S1364-6613(02)01903-4</pub-id>
+          <fpage>255</fpage>
+          <lpage>260</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-rossion_picture-plane_2008">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+          </person-group>
+          <article-title>Picture-plane inversion leads to qualitative changes of face perception</article-title>
+          <source>Acta Psychologica</source>
+          <year iso-8601-date="2008">2008</year>
+          <volume>128</volume>
+          <issue>2</issue>
+          <issn>1873-6297</issn>
+          <pub-id pub-id-type="doi">10.1016/j.actpsy.2008.02.003</pub-id>
+          <fpage>274</fpage>
+          <lpage>289</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-rossion_what_2019">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+          </person-group>
+          <article-title>What can we learn about human individual face recognition from experimental studies in monkeys?</article-title>
+          <source>Vision Research</source>
+          <year iso-8601-date="2019-04">2019</year>
+          <month>04</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>157</volume>
+          <issn>0042-6989</issn>
+          <uri>https://www.sciencedirect.com/science/article/pii/S0042698918301160</uri>
+          <pub-id pub-id-type="doi">10.1016/j.visres.2018.03.012</pub-id>
+          <fpage>142</fpage>
+          <lpage>158</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-taubert_effect_2015">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taubert</surname>
+              <given-names>Jessica</given-names>
+            </name>
+            <name>
+              <surname>Van Belle</surname>
+              <given-names>Goedele</given-names>
+            </name>
+            <name>
+              <surname>Vanduffel</surname>
+              <given-names>Wim</given-names>
+            </name>
+            <name>
+              <surname>Rossion</surname>
+              <given-names>Bruno</given-names>
+            </name>
+            <name>
+              <surname>Vogels</surname>
+              <given-names>Rufin</given-names>
+            </name>
+          </person-group>
+          <article-title>The effect of face inversion for neurons inside and outside fMRI-defined face-selective cortical regions</article-title>
+          <source>Journal of Neurophysiology</source>
+          <year iso-8601-date="2015-03">2015</year>
+          <month>03</month>
+          <volume>113</volume>
+          <issue>5</issue>
+          <issn>1522-1598</issn>
+          <pub-id pub-id-type="doi">10.1152/jn.00700.2014</pub-id>
+          <pub-id pub-id-type="pmid">25520434</pub-id>
+          <fpage>1644</fpage>
+          <lpage>1655</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-towler_are_2019">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Towler</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Kemp</surname>
+              <given-names>R. I.</given-names>
+            </name>
+            <name>
+              <surname>Bruce</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>A. M.</given-names>
+            </name>
+            <name>
+              <surname>Dunn</surname>
+              <given-names>J. D.</given-names>
+            </name>
+            <name>
+              <surname>White</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Are face recognition abilities in humans and sheep really ‘comparable’?</article-title>
+          <source>Royal Society Open Science</source>
+          <year iso-8601-date="2019-01">2019</year>
+          <month>01</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>6</volume>
+          <issue>1</issue>
+          <uri>https://royalsocietypublishing.org/doi/10.1098/rsos.180772</uri>
+          <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
+          <fpage>180772</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-valentine_upside-down_1988">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Valentine</surname>
+              <given-names>Tim</given-names>
+            </name>
+          </person-group>
+          <article-title>Upside-down faces: A review of the effect of inversion upon face recognition</article-title>
+          <source>British Journal of Psychology</source>
+          <year iso-8601-date="1988">1988</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>79</volume>
+          <issue>4</issue>
+          <issn>2044-8295</issn>
+          <uri>https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8295.1988.tb02747.x</uri>
+          <pub-id pub-id-type="doi">10.1111/j.2044-8295.1988.tb02747.x</pub-id>
+          <fpage>471</fpage>
+          <lpage>491</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-waidmann_local_2022">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Waidmann</surname>
+              <given-names>Elena N.</given-names>
+            </name>
+            <name>
+              <surname>Koyano</surname>
+              <given-names>Kenji W.</given-names>
+            </name>
+            <name>
+              <surname>Hong</surname>
+              <given-names>Julie J.</given-names>
+            </name>
+            <name>
+              <surname>Russ</surname>
+              <given-names>Brian E.</given-names>
+            </name>
+            <name>
+              <surname>Leopold</surname>
+              <given-names>David A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Local features drive identity responses in macaque anterior face patches</article-title>
+          <source>Nature Communications</source>
+          <year iso-8601-date="2022-09">2022</year>
+          <month>09</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>13</volume>
+          <issue>1</issue>
+          <issn>2041-1723</issn>
+          <uri>https://www.nature.com/articles/s41467-022-33240-w</uri>
+          <pub-id pub-id-type="doi">10.1038/s41467-022-33240-w</pub-id>
+          <fpage>5592</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-white_individual_2022">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>White</surname>
+              <given-names>David</given-names>
+            </name>
+            <name>
+              <surname>Burton</surname>
+              <given-names>A. Mike</given-names>
+            </name>
+          </person-group>
+          <article-title>Individual differences and the multidimensional nature of face perception</article-title>
+          <source>Nature Reviews Psychology</source>
+          <year iso-8601-date="2022-05">2022</year>
+          <month>05</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2024-02-02">2024</year>
+            <month>02</month>
+            <day>02</day>
+          </date-in-citation>
+          <volume>1</volume>
+          <issue>5</issue>
+          <issn>2731-0574</issn>
+          <uri>https://www.nature.com/articles/s44159-022-00041-3</uri>
+          <pub-id pub-id-type="doi">10.1038/s44159-022-00041-3</pub-id>
+          <fpage>287</fpage>
+          <lpage>300</lpage>
+        </element-citation>
+      </ref>
       <ref id="ref-abudarham2016a">
         <element-citation publication-type="article-journal">
           <person-group person-group-type="author">
@@ -3200,7 +3544,7 @@ Attaching package: 'reshape2'</preformat>
           <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ purrr     1.0.2
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
 ✔ lubridate 1.9.3     </preformat>
         </sec>
         <sec id="nb-code-cell-1-output-11-nb-article" specific-use="notebook-output">
@@ -3347,8 +3691,10 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
   et al., 2017</xref>;
   <xref alt="Quek et al., 2021" rid="ref-quek2021a-nb-article" ref-type="bibr">Quek
   et al., 2021</xref>;
-  <xref alt="rossion_what_2019?" rid="ref-rossion_what_2019-nb-article" ref-type="bibr"><bold>rossion_what_2019?</bold></xref>;
-  <xref alt="towler_are_2019?" rid="ref-towler_are_2019-nb-article" ref-type="bibr"><bold>towler_are_2019?</bold></xref>).</p>
+  <xref alt="Rossion &amp; Taubert, 2019" rid="ref-rossion_what_2019-nb-article" ref-type="bibr">Rossion
+  &amp; Taubert, 2019</xref>;
+  <xref alt="Towler et al., 2019" rid="ref-towler_are_2019-nb-article" ref-type="bibr">Towler
+  et al., 2019</xref>).</p>
         <p>The precise nature of our face expertise remains poorly understood,
   with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
@@ -3417,12 +3763,14 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
   important factor in face recognition
   (<xref alt="Allen-Davidian et al., 2021" rid="ref-allen-davidian2021a-nb-article" ref-type="bibr">Allen-Davidian
   et al., 2021</xref>;
+  <xref alt="Hole et al., 2002" rid="ref-hole_effects_2002-nb-article" ref-type="bibr">Hole
+  et al., 2002</xref>;
   <xref alt="Kramer et al., 2018" rid="ref-kramer2018a-nb-article" ref-type="bibr">Kramer
   et al., 2018</xref>;
+  <xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr">Rossion,
+  2008</xref>;
   <xref alt="Yang et al., 2014" rid="ref-yang2014a-nb-article" ref-type="bibr">Yang
-  et al., 2014</xref>;
-  <xref alt="rossion_picture-plane_2008?" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr"><bold>rossion_picture-plane_2008?</bold></xref>;
-  <xref alt="hole_effects_2002?" rid="ref-hole_effects_2002-nb-article" ref-type="bibr"><bold>hole_effects_2002?</bold></xref>).</p>
+  et al., 2014</xref>).</p>
         <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
   experimental context. First, there are different levels of
@@ -3452,10 +3800,10 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
   which is different to how a face appears under normal circumstances
   (<xref alt="Burton et al., 2011" rid="ref-burton2011a-nb-article" ref-type="bibr">Burton
   et al., 2011</xref>;
-  <xref alt="long_database_2023?" rid="ref-long_database_2023-nb-article" ref-type="bibr"><bold>long_database_2023?</bold></xref>).
-  These methodological constraints and unique challenges have
-  contributed to the inconsistencies in face research, particularly
-  regarding familiar face recognition performance.</p>
+  <xref alt="Long et al., 2023" rid="ref-long_database_2023-nb-article" ref-type="bibr">Long
+  et al., 2023</xref>). These methodological constraints and unique
+  challenges have contributed to the inconsistencies in face research,
+  particularly regarding familiar face recognition performance.</p>
         <sec id="measuring-face-recognition-nb-article">
           <title>Measuring Face Recognition</title>
           <p>While in the real world only familiar faces are recognised, in
@@ -3466,11 +3814,11 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     2013</xref>;
     <xref alt="Hancock et al., 2000" rid="ref-hancock2000a-nb-article" ref-type="bibr">Hancock
     et al., 2000</xref>;
-    <xref alt="white_individual_2022?" rid="ref-white_individual_2022-nb-article" ref-type="bibr"><bold>white_individual_2022?</bold></xref>).
-    Consistent with the literature, we will conceptualise face
-    recognition as the ability to recognise previously known or recently
-    learned faces (familiar) and previously unknown faces
-    (unfamiliar).</p>
+    <xref alt="White &amp; Burton, 2022" rid="ref-white_individual_2022-nb-article" ref-type="bibr">White
+    &amp; Burton, 2022</xref>). Consistent with the literature, we will
+    conceptualise face recognition as the ability to recognise
+    previously known or recently learned faces (familiar) and previously
+    unknown faces (unfamiliar).</p>
           <p>Face recognition has been investigated by recording how long it
     takes participants to accurately find targets. These tasks often
     involve participants seeking a target face, where detection is
@@ -3654,30 +4002,34 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     importance of analysing the spatial relations between features,
     providing a unique configuration for each individual so that faces
     are processed whole, rather than in parts
-    (<xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a-nb-article" ref-type="bibr">Sandford
-    &amp; Burton, 2014</xref>;
-    <xref alt="maurer_many_2002?" rid="ref-maurer_many_2002-nb-article" ref-type="bibr"><bold>maurer_many_2002?</bold></xref>).
-    Evidence for holistic processing has been demonstrated predominantly
-    in studies showing that when a face is inverted, disrupting its
-    global configuration, participants find it harder to identify target
-    faces
+    (<xref alt="Maurer et al., 2002" rid="ref-maurer_many_2002-nb-article" ref-type="bibr">Maurer
+    et al., 2002</xref>;
+    <xref alt="Sandford &amp; Burton, 2014" rid="ref-sandford2014a-nb-article" ref-type="bibr">Sandford
+    &amp; Burton, 2014</xref>). Evidence for holistic processing has
+    been demonstrated predominantly in studies showing that when a face
+    is inverted, disrupting its global configuration, participants find
+    it harder to identify target faces
     (<xref alt="Taubert et al., 2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">Taubert
     et al., 2011</xref>;
     <xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a-nb-article" ref-type="bibr">Tong
     &amp; Nakayama, 1999</xref>). The face inversion effect has been
     reliably used in the literature to explore face processing
     efficiency
-    (<xref alt="rossion_picture-plane_2008?" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr"><bold>rossion_picture-plane_2008?</bold></xref>;
-    <xref alt="valentine_upside-down_1988?" rid="ref-valentine_upside-down_1988-nb-article" ref-type="bibr"><bold>valentine_upside-down_1988?</bold></xref>;
-    <xref alt="taubert_effect_2015?" rid="ref-taubert_effect_2015-nb-article" ref-type="bibr"><bold>taubert_effect_2015?</bold></xref>).
-    Interestingly, studies have revealed that the effects of inversion
-    are greater for unfamiliar faces than familiar faces, suggesting
-    that familiar faces are not a slave to holistic processing
+    (<xref alt="Rossion, 2008" rid="ref-rossion_picture-plane_2008-nb-article" ref-type="bibr">Rossion,
+    2008</xref>;
+    <xref alt="Taubert et al., 2015" rid="ref-taubert_effect_2015-nb-article" ref-type="bibr">Taubert
+    et al., 2015</xref>;
+    <xref alt="Valentine, 1988" rid="ref-valentine_upside-down_1988-nb-article" ref-type="bibr">Valentine,
+    1988</xref>). Interestingly, studies have revealed that the effects
+    of inversion are greater for unfamiliar faces than familiar faces,
+    suggesting that familiar faces are not a slave to holistic
+    processing
     (<xref alt="Oleggio Castello et al., 2017" rid="ref-oleggio2017a-nb-article" ref-type="bibr">Oleggio
     Castello et al., 2017</xref>;
     <xref alt="Ramon &amp; Belle, 2016" rid="ref-ramon2016a-nb-article" ref-type="bibr">Ramon
     &amp; Belle, 2016</xref>;
-    <xref alt="waidmann_local_2022?" rid="ref-waidmann_local_2022-nb-article" ref-type="bibr"><bold>waidmann_local_2022?</bold></xref>).</p>
+    <xref alt="Waidmann et al., 2022" rid="ref-waidmann_local_2022-nb-article" ref-type="bibr">Waidmann
+    et al., 2022</xref>).</p>
           <p>By contrast, the feature-based processing perspective suggests
     that processing efficiency, as observed with familiar faces, can be
     attributed to the learning of face features, such as eyes, nose, and
@@ -4381,6 +4733,342 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
     <back>
       <ref-list>
         <title/>
+        <ref id="ref-hole_effects_2002-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Hole</surname>
+                <given-names>Graham J</given-names>
+              </name>
+              <name>
+                <surname>George</surname>
+                <given-names>Patricia A</given-names>
+              </name>
+              <name>
+                <surname>Eaves</surname>
+                <given-names>Karen</given-names>
+              </name>
+              <name>
+                <surname>Rasek</surname>
+                <given-names>Ayman</given-names>
+              </name>
+            </person-group>
+            <article-title>Effects of Geometric Distortions on Face-Recognition Performance</article-title>
+            <source>Perception</source>
+            <year iso-8601-date="2002-10">2002</year>
+            <month>10</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>31</volume>
+            <issue>10</issue>
+            <issn>0301-0066</issn>
+            <uri>https://doi.org/10.1068/p3252</uri>
+            <pub-id pub-id-type="doi">10.1068/p3252</pub-id>
+            <fpage>1221</fpage>
+            <lpage>1240</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-long_database_2023-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Long</surname>
+                <given-names>Houqiu</given-names>
+              </name>
+              <name>
+                <surname>Peluso</surname>
+                <given-names>Natalie</given-names>
+              </name>
+              <name>
+                <surname>Baker</surname>
+                <given-names>Chris I.</given-names>
+              </name>
+              <name>
+                <surname>Japee</surname>
+                <given-names>Shruti</given-names>
+              </name>
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+            </person-group>
+            <article-title>A database of heterogeneous faces for studying naturalistic expressions</article-title>
+            <source>Scientific Reports</source>
+            <year iso-8601-date="2023-04">2023</year>
+            <month>04</month>
+            <volume>13</volume>
+            <issue>1</issue>
+            <issn>2045-2322</issn>
+            <pub-id pub-id-type="doi">10.1038/s41598-023-32659-5</pub-id>
+            <pub-id pub-id-type="pmid">37012369</pub-id>
+            <fpage>5383</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-maurer_many_2002-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Maurer</surname>
+                <given-names>Daphne</given-names>
+              </name>
+              <name>
+                <surname>Grand</surname>
+                <given-names>Richard Le</given-names>
+              </name>
+              <name>
+                <surname>Mondloch</surname>
+                <given-names>Catherine J.</given-names>
+              </name>
+            </person-group>
+            <article-title>The many faces of configural processing</article-title>
+            <source>Trends in Cognitive Sciences</source>
+            <year iso-8601-date="2002-06">2002</year>
+            <month>06</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>6</volume>
+            <issue>6</issue>
+            <issn>1364-6613</issn>
+            <uri>https://www.sciencedirect.com/science/article/pii/S1364661302019034</uri>
+            <pub-id pub-id-type="doi">10.1016/S1364-6613(02)01903-4</pub-id>
+            <fpage>255</fpage>
+            <lpage>260</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-rossion_picture-plane_2008-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+            </person-group>
+            <article-title>Picture-plane inversion leads to qualitative changes of face perception</article-title>
+            <source>Acta Psychologica</source>
+            <year iso-8601-date="2008">2008</year>
+            <volume>128</volume>
+            <issue>2</issue>
+            <issn>1873-6297</issn>
+            <pub-id pub-id-type="doi">10.1016/j.actpsy.2008.02.003</pub-id>
+            <fpage>274</fpage>
+            <lpage>289</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-rossion_what_2019-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+            </person-group>
+            <article-title>What can we learn about human individual face recognition from experimental studies in monkeys?</article-title>
+            <source>Vision Research</source>
+            <year iso-8601-date="2019-04">2019</year>
+            <month>04</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>157</volume>
+            <issn>0042-6989</issn>
+            <uri>https://www.sciencedirect.com/science/article/pii/S0042698918301160</uri>
+            <pub-id pub-id-type="doi">10.1016/j.visres.2018.03.012</pub-id>
+            <fpage>142</fpage>
+            <lpage>158</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-taubert_effect_2015-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Taubert</surname>
+                <given-names>Jessica</given-names>
+              </name>
+              <name>
+                <surname>Van Belle</surname>
+                <given-names>Goedele</given-names>
+              </name>
+              <name>
+                <surname>Vanduffel</surname>
+                <given-names>Wim</given-names>
+              </name>
+              <name>
+                <surname>Rossion</surname>
+                <given-names>Bruno</given-names>
+              </name>
+              <name>
+                <surname>Vogels</surname>
+                <given-names>Rufin</given-names>
+              </name>
+            </person-group>
+            <article-title>The effect of face inversion for neurons inside and outside fMRI-defined face-selective cortical regions</article-title>
+            <source>Journal of Neurophysiology</source>
+            <year iso-8601-date="2015-03">2015</year>
+            <month>03</month>
+            <volume>113</volume>
+            <issue>5</issue>
+            <issn>1522-1598</issn>
+            <pub-id pub-id-type="doi">10.1152/jn.00700.2014</pub-id>
+            <pub-id pub-id-type="pmid">25520434</pub-id>
+            <fpage>1644</fpage>
+            <lpage>1655</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-towler_are_2019-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Towler</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name>
+                <surname>Kemp</surname>
+                <given-names>R. I.</given-names>
+              </name>
+              <name>
+                <surname>Bruce</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name>
+                <surname>Burton</surname>
+                <given-names>A. M.</given-names>
+              </name>
+              <name>
+                <surname>Dunn</surname>
+                <given-names>J. D.</given-names>
+              </name>
+              <name>
+                <surname>White</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <article-title>Are face recognition abilities in humans and sheep really ‘comparable’?</article-title>
+            <source>Royal Society Open Science</source>
+            <year iso-8601-date="2019-01">2019</year>
+            <month>01</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>6</volume>
+            <issue>1</issue>
+            <uri>https://royalsocietypublishing.org/doi/10.1098/rsos.180772</uri>
+            <pub-id pub-id-type="doi">10.1098/rsos.180772</pub-id>
+            <fpage>180772</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-valentine_upside-down_1988-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Valentine</surname>
+                <given-names>Tim</given-names>
+              </name>
+            </person-group>
+            <article-title>Upside-down faces: A review of the effect of inversion upon face recognition</article-title>
+            <source>British Journal of Psychology</source>
+            <year iso-8601-date="1988">1988</year>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>79</volume>
+            <issue>4</issue>
+            <issn>2044-8295</issn>
+            <uri>https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8295.1988.tb02747.x</uri>
+            <pub-id pub-id-type="doi">10.1111/j.2044-8295.1988.tb02747.x</pub-id>
+            <fpage>471</fpage>
+            <lpage>491</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-waidmann_local_2022-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Waidmann</surname>
+                <given-names>Elena N.</given-names>
+              </name>
+              <name>
+                <surname>Koyano</surname>
+                <given-names>Kenji W.</given-names>
+              </name>
+              <name>
+                <surname>Hong</surname>
+                <given-names>Julie J.</given-names>
+              </name>
+              <name>
+                <surname>Russ</surname>
+                <given-names>Brian E.</given-names>
+              </name>
+              <name>
+                <surname>Leopold</surname>
+                <given-names>David A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Local features drive identity responses in macaque anterior face patches</article-title>
+            <source>Nature Communications</source>
+            <year iso-8601-date="2022-09">2022</year>
+            <month>09</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>13</volume>
+            <issue>1</issue>
+            <issn>2041-1723</issn>
+            <uri>https://www.nature.com/articles/s41467-022-33240-w</uri>
+            <pub-id pub-id-type="doi">10.1038/s41467-022-33240-w</pub-id>
+            <fpage>5592</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-white_individual_2022-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>White</surname>
+                <given-names>David</given-names>
+              </name>
+              <name>
+                <surname>Burton</surname>
+                <given-names>A. Mike</given-names>
+              </name>
+            </person-group>
+            <article-title>Individual differences and the multidimensional nature of face perception</article-title>
+            <source>Nature Reviews Psychology</source>
+            <year iso-8601-date="2022-05">2022</year>
+            <month>05</month>
+            <date-in-citation content-type="access-date">
+              <year iso-8601-date="2024-02-02">2024</year>
+              <month>02</month>
+              <day>02</day>
+            </date-in-citation>
+            <volume>1</volume>
+            <issue>5</issue>
+            <issn>2731-0574</issn>
+            <uri>https://www.nature.com/articles/s44159-022-00041-3</uri>
+            <pub-id pub-id-type="doi">10.1038/s44159-022-00041-3</pub-id>
+            <fpage>287</fpage>
+            <lpage>300</lpage>
+          </element-citation>
+        </ref>
         <ref id="ref-abudarham2016a-nb-article">
           <element-citation publication-type="article-journal">
             <person-group person-group-type="author">
