@@ -644,17 +644,19 @@ familiar faces.</p>
     Tottenham et al.
     (<xref alt="2009" rid="ref-tottenham2009a" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
-    face condition. To create the self-face condition, prior to the
-    experiment, participants were asked to send two photographs of
-    themselves with a neutral expression, without eyewear and with no
-    hair across the face. Several steps were taken to equate image sets
-    across all three conditions. First, the faces were aligned at the
-    eyes and cropped to an oval to exclude hair and clothing. Second,
-    all face identities wore a neutral expression. Third, two images per
-    identity were used so that responses would be more likely to
-    indicate identity processing rather than image-based processing.
-    Fourth, all images were greyscale and root mean square (RMS)
-    normalised for contrast.</p>
+    face condition. This was in order to ensure some level of real-world
+    familiarity with the face at a controlled level. To create the
+    self-face condition, prior to the experiment, participants were
+    asked to send two photographs of themselves with a neutral
+    expression, without eyewear and with no hair across the face.
+    Several steps were taken to equate image sets across all three
+    conditions. First, the faces were aligned at the eyes and cropped to
+    an oval to exclude hair and clothing. Second, all face identities
+    wore a neutral expression. Third, two images per identity were used
+    so that responses would be more likely to indicate identity
+    processing rather than image-based processing. Fourth, all images
+    were transformed to greyscale and root mean square (RMS) normalised
+    across all images for contrast.</p>
         <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180°. To ensure any transients from the onset of stimuli
@@ -3489,11 +3491,11 @@ faces_2x3_time &lt;- raincloud_2x3_repmes(
   xlab("Face Familiarity") + 
   ylab("Mean recognition time (milliseconds)") +
   #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()+
+  theme_classic()
   
   # Add lines for individual subjects 
- geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
- scale_color_manual(values = c(inverted_col, upright_col))</code>
+ #geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+# scale_color_manual(values = c(inverted_col, upright_col))</code>
         <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
           <preformat>Loading required package: lme4</preformat>
         </sec>
@@ -3631,10 +3633,10 @@ faces_2x3_RTs &lt;- raincloud_2x3_repmes(
   xlab("Face Familiarity") + 
   ylab("Mean reaction time (milliseconds)") +
   #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()+
+  theme_classic()
     # Add lines for individual subjects 
-  geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
-  scale_color_manual(values = c(inverted_col, upright_col))</code>
+ # geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+ # scale_color_manual(values = c(inverted_col, upright_col))</code>
         <sec id="nb-code-cell-2-output-0-nb-article" specific-use="notebook-output">
           <preformat>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
@@ -4184,17 +4186,19 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     Tottenham et al.
     (<xref alt="2009" rid="ref-tottenham2009a-nb-article" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
-    face condition. To create the self-face condition, prior to the
-    experiment, participants were asked to send two photographs of
-    themselves with a neutral expression, without eyewear and with no
-    hair across the face. Several steps were taken to equate image sets
-    across all three conditions. First, the faces were aligned at the
-    eyes and cropped to an oval to exclude hair and clothing. Second,
-    all face identities wore a neutral expression. Third, two images per
-    identity were used so that responses would be more likely to
-    indicate identity processing rather than image-based processing.
-    Fourth, all images were greyscale and root mean square (RMS)
-    normalised for contrast.</p>
+    face condition. This was in order to ensure some level of real-world
+    familiarity with the face at a controlled level. To create the
+    self-face condition, prior to the experiment, participants were
+    asked to send two photographs of themselves with a neutral
+    expression, without eyewear and with no hair across the face.
+    Several steps were taken to equate image sets across all three
+    conditions. First, the faces were aligned at the eyes and cropped to
+    an oval to exclude hair and clothing. Second, all face identities
+    wore a neutral expression. Third, two images per identity were used
+    so that responses would be more likely to indicate identity
+    processing rather than image-based processing. Fourth, all images
+    were transformed to greyscale and root mean square (RMS) normalised
+    across all images for contrast.</p>
           <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180°. To ensure any transients from the onset of stimuli
