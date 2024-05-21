@@ -144,11 +144,11 @@ faces_2x3_time <- raincloud_2x3_repmes(
   xlab("Face Familiarity") + 
   ylab("Mean recognition time (milliseconds)") +
   #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()+
+  theme_classic()
   
   # Add lines for individual subjects 
- geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
- scale_color_manual(values = c(inverted_col, upright_col))
+ #geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+# scale_color_manual(values = c(inverted_col, upright_col))
 
         
 
@@ -219,15 +219,14 @@ faces_2x3_RTs <- raincloud_2x3_repmes(
   xlab("Face Familiarity") + 
   ylab("Mean reaction time (milliseconds)") +
   #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()+
+  theme_classic()
     # Add lines for individual subjects 
-  geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
-  scale_color_manual(values = c(inverted_col, upright_col))
+ # geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
+ # scale_color_manual(values = c(inverted_col, upright_col))
 
 
 
 ```
-
 
 ```{r ANOVAs}
 # Do ANOVA analysis of ratings 
@@ -300,7 +299,7 @@ A power analysis using G\*Power 3.1.9.6 [@faul2009a] determined that a repeated-
 
 ## Design and Stimuli
 
-Stimuli were presented on a 22.5-inch (diagonal) VIEWPixx display toolbox, with a display resolution of 1920 (H) x 1200 (V) pixels. Face stimuli were programmed in MATLAB using custom code. Stimuli for the unfamiliar condition consisted of 16 female face identities selected from the NimStim database (the set of calm, neutral faces; @tottenham2009a). Two photographs of the experimenter were used to create a familiar face condition. To create the self-face condition, prior to the experiment, participants were asked to send two photographs of themselves with a neutral expression, without eyewear and with no hair across the face. Several steps were taken to equate image sets across all three conditions. First, the faces were aligned at the eyes and cropped to an oval to exclude hair and clothing. Second, all face identities wore a neutral expression. Third, two images per identity were used so that responses would be more likely to indicate identity processing rather than image-based processing. Fourth, all images were greyscale and root mean square (RMS) normalised for contrast.
+Stimuli were presented on a 22.5-inch (diagonal) VIEWPixx display toolbox, with a display resolution of 1920 (H) x 1200 (V) pixels. Face stimuli were programmed in MATLAB using custom code. Stimuli for the unfamiliar condition consisted of 16 female face identities selected from the NimStim database (the set of calm, neutral faces; @tottenham2009a). Two photographs of the experimenter were used to create a familiar face condition. This was in order to ensure some level of real-world familiarity with the face at a controlled level. To create the self-face condition, prior to the experiment, participants were asked to send two photographs of themselves with a neutral expression, without eyewear and with no hair across the face. Several steps were taken to equate image sets across all three conditions. First, the faces were aligned at the eyes and cropped to an oval to exclude hair and clothing. Second, all face identities wore a neutral expression. Third, two images per identity were used so that responses would be more likely to indicate identity processing rather than image-based processing. Fourth, all images were transformed to greyscale and root mean square (RMS) normalised across all images for contrast.
 
 The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180°. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6°) square patches of randomly-generated noise filtered with a $1/f$ frequency spectrum (see @fig-procedure). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.
 
