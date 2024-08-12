@@ -438,9 +438,17 @@ Attaching package: 'afex'</code></pre>
 
     lmer</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(emmeans)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'emmeans' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'tidyr'</code></pre>
@@ -450,7 +458,7 @@ Attaching package: 'tidyr'</code></pre>
 
     expand, pack, unpack</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'reshape2'</code></pre>
@@ -460,7 +468,7 @@ Attaching package: 'reshape2'</code></pre>
 
     smiths</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ purrr     1.0.2
@@ -477,18 +485,18 @@ Attaching package: 'reshape2'</code></pre>
 ✖ tidyr::unpack() masks Matrix::unpack()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raincloudplots)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (patchwork)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Define colors - upright vs. inverted</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>upright_col <span class="ot">=</span> <span class="st">'#FF3030'</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>inverted_col <span class="ot">=</span> <span class="st">"#836FFF"</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>Mean_Frames <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Frames_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raincloudplots)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (patchwork)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Define colors - upright vs. inverted</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>upright_col <span class="ot">=</span> <span class="st">'#FF3030'</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>inverted_col <span class="ot">=</span> <span class="st">"#836FFF"</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>Mean_Frames <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Frames_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
@@ -499,89 +507,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(Mean_Frames, </span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># ID variables - all the variables to keep but not split apart on</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">id.vars=</span><span class="fu">c</span>(<span class="st">"Participant"</span>, <span class="st">"Age"</span>),</span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># The source columns</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">measure.vars=</span><span class="fu">c</span>(<span class="st">"Unfamiliar_Upright"</span>, <span class="st">"Unfamiliar_Inverted"</span>, </span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"Familiar_Upright"</span>, <span class="st">"Familiar_Inverted"</span>, </span>
-<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"Self_Upright"</span>, <span class="st">"Self_Inverted"</span>),</span>
-<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># Name of the destination column that will identify the original</span></span>
-<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># column that the measurement came from</span></span>
-<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">variable.name=</span><span class="st">"Condition"</span>,</span>
-<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">value.name=</span><span class="st">"Mean_N_Frames"</span>               </span>
-<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>                         </span>
-<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>                         )</span>
-<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> Mean_Frames_long <span class="sc">%&gt;%</span></span>
-<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Orientation =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
-<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
-<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
-<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>                                    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Inverted'</span>))</span>
-<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> Mean_Frames_long <span class="sc">%&gt;%</span></span>
-<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Familiarity =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
-<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
-<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
-<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
-<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>                                 <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Self'</span>))</span>
-<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long<span class="sc">$</span>Mean_time <span class="ot">&lt;-</span> Mean_Frames_long<span class="sc">$</span>Mean_N_Frames<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>)</span>
-<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>MeanFrames_UF_Upright <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span>)</span>
-<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a>MeanFrames_UF_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span>)</span>
-<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a>MeanFrames_F_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span>)</span>
-<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a>MeanFrames_F_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span>)</span>
-<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a>MeanFrames_S_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span>)</span>
-<span id="cb19-35"><a href="#cb19-35" aria-hidden="true" tabindex="-1"></a>MeanFrames_S_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Self_Inverted'</span>)</span>
-<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a>df_2x3_Time_All <span class="ot">&lt;-</span> <span class="fu">data_2x2</span>(</span>
-<span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_1 =</span> MeanFrames_UF_Upright<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_2 =</span> MeanFrames_UF_Inverted<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_3 =</span> MeanFrames_F_Upright<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanFrames_F_Inverted<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanFrames_S_Upright<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanFrames_S_Inverted<span class="sc">$</span>Mean_time,</span>
-<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
-<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
-<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
-<span id="cb19-47"><a href="#cb19-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
-<span id="cb19-48"><a href="#cb19-48" aria-hidden="true" tabindex="-1"></a>) </span>
-<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
-<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_Time_All)[<span class="fu">colnames</span>(df_2x3_Time_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
-<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
-<span id="cb19-54"><a href="#cb19-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-55"><a href="#cb19-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-56"><a href="#cb19-56" aria-hidden="true" tabindex="-1"></a>faces_2x3_time <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
-<span id="cb19-57"><a href="#cb19-57" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_Time_All,</span>
-<span id="cb19-58"><a href="#cb19-58" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
-<span id="cb19-59"><a href="#cb19-59" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
-<span id="cb19-60"><a href="#cb19-60" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb19-61"><a href="#cb19-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
-<span id="cb19-62"><a href="#cb19-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
-<span id="cb19-63"><a href="#cb19-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean recognition time (milliseconds)"</span>) <span class="sc">+</span></span>
-<span id="cb19-64"><a href="#cb19-64" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Threshold recognition times for face presentation") +</span></span>
-<span id="cb19-65"><a href="#cb19-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span>
-<span id="cb19-66"><a href="#cb19-66" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb19-67"><a href="#cb19-67" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add lines for individual subjects </span></span>
-<span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a> <span class="co">#geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +</span></span>
-<span id="cb19-69"><a href="#cb19-69" aria-hidden="true" tabindex="-1"></a><span class="co"># scale_color_manual(values = c(inverted_col, upright_col))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Mean_RTs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Reaction_Times_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 28 Columns: 8
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Participant
-dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(Mean_RTs, </span>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(Mean_Frames, </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># ID variables - all the variables to keep but not split apart on</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">id.vars=</span><span class="fu">c</span>(<span class="st">"Participant"</span>, <span class="st">"Age"</span>),</span>
 <span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># The source columns</span></span>
@@ -591,69 +517,154 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 <span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># Name of the destination column that will identify the original</span></span>
 <span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># column that the measurement came from</span></span>
 <span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">variable.name=</span><span class="st">"Condition"</span>,</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">value.name=</span><span class="st">"Mean_RT_secs"</span>               </span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">value.name=</span><span class="st">"Mean_N_Frames"</span>               </span>
 <span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>                         </span>
 <span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>                         )</span>
 <span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> Mean_RTs_long <span class="sc">%&gt;%</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> Mean_Frames_long <span class="sc">%&gt;%</span></span>
 <span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Orientation =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
 <span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
 <span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
 <span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>                                    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Inverted'</span>))</span>
 <span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> Mean_RTs_long <span class="sc">%&gt;%</span></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long <span class="ot">&lt;-</span> Mean_Frames_long <span class="sc">%&gt;%</span></span>
 <span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Familiarity =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
 <span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
 <span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
 <span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
 <span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>                                 <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Self'</span>))</span>
 <span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long<span class="sc">$</span>Mean_RT_ms <span class="ot">&lt;-</span> Mean_RTs_long<span class="sc">$</span>Mean_RT_secs<span class="sc">*</span>(<span class="dv">1000</span>)</span>
-<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>MeanRTs_UF_Upright <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span>)</span>
-<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a>MeanRTs_UF_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span>)</span>
-<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a>MeanRTs_F_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span>)</span>
-<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>MeanRTs_F_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span>)</span>
-<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>MeanRTs_S_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span>)</span>
-<span id="cb22-35"><a href="#cb22-35" aria-hidden="true" tabindex="-1"></a>MeanRTs_S_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Self_Inverted'</span>)</span>
-<span id="cb22-36"><a href="#cb22-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-37"><a href="#cb22-37" aria-hidden="true" tabindex="-1"></a>df_2x3_RTs_All <span class="ot">&lt;-</span> <span class="fu">data_2x2</span>(</span>
-<span id="cb22-38"><a href="#cb22-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_1 =</span> MeanRTs_UF_Upright<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_2 =</span> MeanRTs_UF_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_3 =</span> MeanRTs_F_Upright<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-41"><a href="#cb22-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanRTs_F_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-42"><a href="#cb22-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanRTs_S_Upright<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-43"><a href="#cb22-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanRTs_S_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
-<span id="cb22-44"><a href="#cb22-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
-<span id="cb22-45"><a href="#cb22-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
-<span id="cb22-46"><a href="#cb22-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
-<span id="cb22-47"><a href="#cb22-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
-<span id="cb22-48"><a href="#cb22-48" aria-hidden="true" tabindex="-1"></a>) </span>
-<span id="cb22-49"><a href="#cb22-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-50"><a href="#cb22-50" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
-<span id="cb22-51"><a href="#cb22-51" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_RTs_All)[<span class="fu">colnames</span>(df_2x3_RTs_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
-<span id="cb22-52"><a href="#cb22-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-53"><a href="#cb22-53" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
-<span id="cb22-54"><a href="#cb22-54" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
-<span id="cb22-55"><a href="#cb22-55" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_RTs_All,</span>
-<span id="cb22-56"><a href="#cb22-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
-<span id="cb22-57"><a href="#cb22-57" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
-<span id="cb22-58"><a href="#cb22-58" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb22-59"><a href="#cb22-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
-<span id="cb22-60"><a href="#cb22-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
-<span id="cb22-61"><a href="#cb22-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean reaction time (milliseconds)"</span>) <span class="sc">+</span></span>
-<span id="cb22-62"><a href="#cb22-62" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Mean reaction times for face recognition") +</span></span>
-<span id="cb22-63"><a href="#cb22-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span>
-<span id="cb22-64"><a href="#cb22-64" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add lines for individual subjects </span></span>
-<span id="cb22-65"><a href="#cb22-65" aria-hidden="true" tabindex="-1"></a> <span class="co"># geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +</span></span>
-<span id="cb22-66"><a href="#cb22-66" aria-hidden="true" tabindex="-1"></a> <span class="co"># scale_color_manual(values = c(inverted_col, upright_col))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long<span class="sc">$</span>Mean_time <span class="ot">&lt;-</span> Mean_Frames_long<span class="sc">$</span>Mean_N_Frames<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>)</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>Mean_Frames_long<span class="sc">$</span>Age_c <span class="ot">&lt;-</span> Mean_Frames_long<span class="sc">$</span>Age <span class="sc">-</span> <span class="fu">mean</span>(Mean_Frames_long<span class="sc">$</span>Age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>MeanFrames_UF_Upright <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>MeanFrames_UF_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>MeanFrames_F_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span>)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>MeanFrames_F_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>MeanFrames_S_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>MeanFrames_S_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_Frames_long, Condition <span class="sc">==</span> <span class="st">'Self_Inverted'</span>)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>df_2x3_Time_All <span class="ot">&lt;-</span> <span class="fu">data_2x2</span>(</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_1 =</span> MeanFrames_UF_Upright<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_2 =</span> MeanFrames_UF_Inverted<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_3 =</span> MeanFrames_F_Upright<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanFrames_F_Inverted<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanFrames_S_Upright<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanFrames_S_Inverted<span class="sc">$</span>Mean_time,</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>) </span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_Time_All)[<span class="fu">colnames</span>(df_2x3_Time_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
+<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>faces_2x3_time <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
+<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_Time_All,</span>
+<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
+<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
+<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean recognition time (milliseconds)"</span>) <span class="sc">+</span></span>
+<span id="cb23-35"><a href="#cb23-35" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Threshold recognition times for face presentation") +</span></span>
+<span id="cb23-36"><a href="#cb23-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span>
+<span id="cb23-37"><a href="#cb23-37" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb23-38"><a href="#cb23-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add lines for individual subjects </span></span>
+<span id="cb23-39"><a href="#cb23-39" aria-hidden="true" tabindex="-1"></a> <span class="co">#geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +</span></span>
+<span id="cb23-40"><a href="#cb23-40" aria-hidden="true" tabindex="-1"></a><span class="co"># scale_color_manual(values = c(inverted_col, upright_col))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do ANOVA analysis of ratings </span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>RecognitionTimes_ANOVA <span class="ot">&lt;-</span> <span class="fu">aov_ez</span>(<span class="st">"Participant"</span>, <span class="st">"Mean_time"</span>, Mean_Frames_long, <span class="at">within=</span><span class="fu">c</span>(<span class="st">"Orientation"</span>, <span class="st">"Familiarity"</span>),</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">factorize =</span> <span class="cn">TRUE</span>) <span class="co"># Do ANOVA</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>EM_Means_RecognitionTimes <span class="ot">&lt;-</span> <span class="fu">emmeans</span> (RecognitionTimes_ANOVA, <span class="sc">~</span> Orientation<span class="sc">|</span>Familiarity) <span class="co"># Get EM Means</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Mean_RTs <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Mean_Reaction_Times_Familiar_Faces_Filtered.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 28 Columns: 8
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (1): Participant
+dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(Mean_RTs, </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># ID variables - all the variables to keep but not split apart on</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">id.vars=</span><span class="fu">c</span>(<span class="st">"Participant"</span>, <span class="st">"Age"</span>),</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># The source columns</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">measure.vars=</span><span class="fu">c</span>(<span class="st">"Unfamiliar_Upright"</span>, <span class="st">"Unfamiliar_Inverted"</span>, </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"Familiar_Upright"</span>, <span class="st">"Familiar_Inverted"</span>, </span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"Self_Upright"</span>, <span class="st">"Self_Inverted"</span>),</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># Name of the destination column that will identify the original</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># column that the measurement came from</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">variable.name=</span><span class="st">"Condition"</span>,</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">value.name=</span><span class="st">"Mean_RT_secs"</span>               </span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>                         </span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>                         )</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> Mean_RTs_long <span class="sc">%&gt;%</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Orientation =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>                                    Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span> <span class="sc">~</span> <span class="st">'Upright'</span>,</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>                                    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Inverted'</span>))</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long <span class="ot">&lt;-</span> Mean_RTs_long <span class="sc">%&gt;%</span></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Familiarity =</span> <span class="fu">case_when</span>(Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span> <span class="sc">~</span> <span class="st">'Unfamiliar'</span>,</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>                                 Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span> <span class="sc">~</span> <span class="st">'Familiar'</span>,</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>                                 <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Self'</span>))</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long<span class="sc">$</span>Mean_RT_ms <span class="ot">&lt;-</span> Mean_RTs_long<span class="sc">$</span>Mean_RT_secs<span class="sc">*</span>(<span class="dv">1000</span>)</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>Mean_RTs_long<span class="sc">$</span>Age_c <span class="ot">&lt;-</span> Mean_RTs_long<span class="sc">$</span>Age <span class="sc">-</span> <span class="fu">mean</span>(Mean_RTs_long<span class="sc">$</span>Age)</span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>MeanRTs_UF_Upright <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Upright'</span>)</span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>MeanRTs_UF_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Unfamiliar_Inverted'</span>)</span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a>MeanRTs_F_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Upright'</span>)</span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>MeanRTs_F_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Familiar_Inverted'</span>)</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>MeanRTs_S_Upright<span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Self_Upright'</span>)</span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>MeanRTs_S_Inverted <span class="ot">&lt;-</span> <span class="fu">filter</span>(Mean_RTs_long, Condition <span class="sc">==</span> <span class="st">'Self_Inverted'</span>)</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>df_2x3_RTs_All <span class="ot">&lt;-</span> <span class="fu">data_2x2</span>(</span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_1 =</span> MeanRTs_UF_Upright<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_2 =</span> MeanRTs_UF_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_3 =</span> MeanRTs_F_Upright<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_4 =</span> MeanRTs_F_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_5 =</span> MeanRTs_S_Upright<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">array_6 =</span> MeanRTs_S_Inverted<span class="sc">$</span>Mean_RT_ms,</span>
+<span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> (<span class="fu">c</span>(<span class="st">'Upright'</span>,<span class="st">'Inverted'</span>)),</span>
+<span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_distance =</span> .<span class="dv">09</span>,</span>
+<span id="cb26-47"><a href="#cb26-47" aria-hidden="true" tabindex="-1"></a>  <span class="at">jit_seed =</span> <span class="dv">321</span>,</span>
+<span id="cb26-48"><a href="#cb26-48" aria-hidden="true" tabindex="-1"></a>  <span class="co"># spread_x_ticks = FALSE</span></span>
+<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a>) </span>
+<span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Change column name to be more meaningful</span></span>
+<span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_2x3_RTs_All)[<span class="fu">colnames</span>(df_2x3_RTs_All) <span class="sc">==</span> <span class="st">"group"</span>] <span class="ot">&lt;-</span> <span class="st">"Orientation"</span></span>
+<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-54"><a href="#cb26-54" aria-hidden="true" tabindex="-1"></a><span class="do">## Raincloud plot for recognition time </span></span>
+<span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs <span class="ot">&lt;-</span> <span class="fu">raincloud_2x3_repmes</span>(</span>
+<span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> df_2x3_RTs_All,</span>
+<span id="cb26-57"><a href="#cb26-57" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a>  <span class="at">fills =</span> <span class="fu">c</span>(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),</span>
+<span id="cb26-59"><a href="#cb26-59" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">labels=</span><span class="fu">c</span>(<span class="st">"Unfamiliar"</span>, <span class="st">"Familiar"</span>, <span class="st">"Self"</span>), <span class="at">limits=</span><span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">4</span>)) <span class="sc">+</span></span>
+<span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Face Familiarity"</span>) <span class="sc">+</span> </span>
+<span id="cb26-62"><a href="#cb26-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Mean reaction time (milliseconds)"</span>) <span class="sc">+</span></span>
+<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(title = "Mean reaction times for face recognition") +</span></span>
+<span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span>
+<span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add lines for individual subjects </span></span>
+<span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a> <span class="co"># geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +</span></span>
+<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a> <span class="co"># scale_color_manual(values = c(inverted_col, upright_col))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do ANOVA analysis of ratings </span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>RecognitionTimes_ANOVA <span class="ot">&lt;-</span> <span class="fu">aov_ez</span>(<span class="st">"Participant"</span>, <span class="st">"Mean_time"</span>, Mean_Frames_long, <span class="at">within=</span><span class="fu">c</span>(<span class="st">"Orientation"</span>, <span class="st">"Familiarity"</span>),</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">factorize =</span> <span class="cn">FALSE</span>, <span class="at">covariate =</span> <span class="st">"Age_c"</span>) <span class="co"># Do ANOVA</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>EM_Means_RecognitionTimes <span class="ot">&lt;-</span> <span class="fu">emmeans</span> (RecognitionTimes_ANOVA, <span class="sc">~</span> Orientation<span class="sc">|</span>Familiarity) <span class="co"># Get EM Means</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
@@ -713,7 +724,7 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
 <div id="fig-procedure" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/FamiliarFace_Procedure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/FamiliarFace_Procedure.png" class="img-fluid figure-img"></a>
+<a href="images/FamiliarFace_Procedure.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/FamiliarFace_Procedure.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: The visual stimulation sequence for each trial
@@ -731,7 +742,7 @@ Figure&nbsp;1: The visual stimulation sequence for each trial
 <div id="fig-setup" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/setup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/setup.png" class="img-fluid figure-img"></a>
+<a href="images/setup.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/setup.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (2023)
@@ -748,16 +759,16 @@ Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (20
 </section>
 <section id="data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
-<p>Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as Fmax scores were below 10, in both upright, <span class="math inline">\(F_{max} = 2.110\)</span>, and inverted, <span class="math inline">\(F_{max} = 1.697\)</span>, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, <span class="math inline">\(W(28) = 0.82, p = .081\)</span> and the interaction between condition and face orientation, <span class="math inline">\(W(28) = 0.93, p = .399\)</span>.</p>
+<p>Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as <span class="math inline">\(F_{max}\)</span> scores were below 10, in both upright, <span class="math inline">\(F_{max} = 2.110\)</span>, and inverted, <span class="math inline">\(F_{max} = 1.697\)</span>, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, <span class="math inline">\(W(28) = 0.82, p = .081\)</span> and the interaction between condition and face orientation, <span class="math inline">\(W(28) = 0.93, p = .399\)</span>.</p>
 <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions <span class="math inline">\(F(2, 52) = 48.08, p &lt; .001, \eta_p^2 = .649\)</span>. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, <span class="math inline">\(t(26) = 3.99, p = .001\)</span>, and unfamiliar faces, <span class="math inline">\(t(26) = 11.12, p &lt; .001\)</span>. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, <span class="math inline">\(t(26) = 5.11, p &lt; .001\)</span>.</p>
 <p>Results also supported the third hypothesis that participants would require longer display times to recognise all faces when displays were inverted. The ANOVA indicated a main effect of orientation for face recognition times, <span class="math inline">\(F(1, 26) = 50.22, p &lt;.001, \eta_p^2 = .659\)</span>. In addition, the fourth hypothesis was supported: the face inversion effect was reduced for more familiar faces. The ANOVA indicated a significant interaction between condition and face orientation, <span class="math inline">\(F(2, 52) = 11.21, p &lt; .001, \eta_p^2 = .301\)</span>. The effects of inversion on recognition time were reduced when faces were more familiar. <a href="#fig-recognition-times" class="quarto-xref">Figure&nbsp;3</a> shows recognition times for inverted and upright face orientations for each condition.</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cell-fig-recognition-times" class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>faces_2x3_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="cell-fig-recognition-times" class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>faces_2x3_time</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-recognition-times" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="index_files/figure-html/fig-recognition-times-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="index_files/figure-html/fig-recognition-times-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-recognition-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/fig-recognition-times-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Recognition Times by Orientation for Each Condition
@@ -766,60 +777,60 @@ Figure&nbsp;3: Recognition Times by Orientation for Each Condition
 </div>
 </div>
 </div></div>
-<p>A small but significant interaction was also observed between age and condition, <span class="math inline">\(F(2, 52) = 4.16, p = .021, \eta_p^2 = .138\)</span>. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. <a href="#fig-correlations" class="quarto-xref">Figure&nbsp;4</a> shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [5]:</pre></div><div id="cell-fig-correlations" class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Unfamiliar_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Unfamiliar, Upright"</span>)<span class="sc">+</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Familiar_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Familiar, Upright"</span>)<span class="sc">+</span></span>
-<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
-<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Self_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Self, Upright"</span>)<span class="sc">+</span></span>
-<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
-<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>p4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Unfamiliar_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Unfamiliar, Inverted"</span>)<span class="sc">+</span></span>
-<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
-<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a>p5 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Familiar_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-37"><a href="#cb25-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-38"><a href="#cb25-38" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Familiar, Inverted"</span>)<span class="sc">+</span></span>
-<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
-<span id="cb25-41"><a href="#cb25-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-42"><a href="#cb25-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-43"><a href="#cb25-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-44"><a href="#cb25-44" aria-hidden="true" tabindex="-1"></a>p6 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Self_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
-<span id="cb25-45"><a href="#cb25-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
-<span id="cb25-46"><a href="#cb25-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
-<span id="cb25-47"><a href="#cb25-47" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
-<span id="cb25-48"><a href="#cb25-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Self, Inverted"</span>)<span class="sc">+</span></span>
-<span id="cb25-49"><a href="#cb25-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
-<span id="cb25-50"><a href="#cb25-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
-<span id="cb25-51"><a href="#cb25-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-52"><a href="#cb25-52" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> p2 <span class="sc">+</span> p3 <span class="sc">+</span> p4 <span class="sc">+</span> p5 <span class="sc">+</span> p6</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this analysis, age was also included as a continuous covariate. A small but significant interaction was also observed between age and condition, <span class="math inline">\(F(2, 52) = 4.16, p = .021, \eta_p^2 = .138\)</span>. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. <a href="#fig-correlations" class="quarto-xref">Figure&nbsp;4</a> shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.</p>
+<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="cell-fig-correlations" class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Unfamiliar_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Unfamiliar, Upright"</span>)<span class="sc">+</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Familiar_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Familiar, Upright"</span>)<span class="sc">+</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Self_Upright<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Self, Upright"</span>)<span class="sc">+</span></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">200</span>)<span class="sc">+</span></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>p4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Unfamiliar_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Unfamiliar, Inverted"</span>)<span class="sc">+</span></span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>p5 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Familiar_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-36"><a href="#cb29-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-37"><a href="#cb29-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-38"><a href="#cb29-38" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-39"><a href="#cb29-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Familiar, Inverted"</span>)<span class="sc">+</span></span>
+<span id="cb29-40"><a href="#cb29-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
+<span id="cb29-41"><a href="#cb29-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-42"><a href="#cb29-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-43"><a href="#cb29-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-44"><a href="#cb29-44" aria-hidden="true" tabindex="-1"></a>p6 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(Mean_Frames, <span class="fu">aes</span>(<span class="at">x=</span>Age, <span class="at">y=</span>Self_Inverted<span class="sc">*</span>(<span class="dv">1000</span><span class="sc">/</span><span class="dv">120</span>))) <span class="sc">+</span></span>
+<span id="cb29-45"><a href="#cb29-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">1</span>) <span class="sc">+</span>    <span class="co"># Use hollow circles</span></span>
+<span id="cb29-46"><a href="#cb29-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method=</span>lm,<span class="at">color=</span><span class="st">"black"</span>) <span class="sc">+</span>  <span class="co"># Add linear regression line </span></span>
+<span id="cb29-47"><a href="#cb29-47" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  (by default includes 95% confidence region)</span></span>
+<span id="cb29-48"><a href="#cb29-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age"</span>, <span class="at">y =</span> <span class="st">"Self, Inverted"</span>)<span class="sc">+</span></span>
+<span id="cb29-49"><a href="#cb29-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span> (<span class="dv">0</span>, <span class="dv">220</span>)<span class="sc">+</span></span>
+<span id="cb29-50"><a href="#cb29-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>() </span>
+<span id="cb29-51"><a href="#cb29-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-52"><a href="#cb29-52" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> p2 <span class="sc">+</span> p3 <span class="sc">+</span> p4 <span class="sc">+</span> p5 <span class="sc">+</span> p6</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'
@@ -832,7 +843,7 @@ Figure&nbsp;3: Recognition Times by Orientation for Each Condition
 <div id="fig-correlations" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="index_files/figure-html/fig-correlations-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="index_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-correlations-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Correlations between recognition times and age for each condition
@@ -847,13 +858,13 @@ Figure&nbsp;4: Correlations between recognition times and age for each condition
 <section id="reaction-time" class="level3">
 <h3 class="anchored" data-anchor-id="reaction-time">Reaction Time</h3>
 <p>An identical 2 x 3 repeated measures ANOVA was conducted on participant reaction times (computed as the elapsed time between stimulus presentation and button press), to identify whether reaction times would also reveal a familiarity effect in face recognition. The ANOVA showed a main effect of face condition, with faster reaction times for the more familiar faces, <span class="math inline">\(F(2, 52) = 3.85, p = .028, \eta_p^2 = .129\)</span>. There was also a significant main effect of face orientation, with longer reaction times for inverted faces, <span class="math inline">\(F(1, 26) = 18.71, p &lt;.001, eta_p^2 = .418\)</span>. However, there was no significant interaction between condition and face orientation, <span class="math inline">\(F(2, 52) = 0.14, p = .872, eta_p^2) = .005\)</span>. <a href="#fig-reaction-times" class="quarto-xref">Figure&nbsp;5</a> shows reaction times for inverted and upright face orientations for each condition.</p>
-<div class="cell-container"><div class="cell-decorator"><pre>In [6]:</pre></div><div id="cell-fig-reaction-times" class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-container"><div class="cell-decorator"><pre>In [7]:</pre></div><div id="cell-fig-reaction-times" class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>faces_2x3_RTs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="fig-reaction-times" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="index_files/figure-html/fig-reaction-times-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="index_files/figure-html/fig-reaction-times-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-reaction-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/fig-reaction-times-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: Reaction times by orientation for each condition
@@ -1524,7 +1535,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -108,7 +108,11 @@ Mean_Frames_long <- Mean_Frames_long %>%
                                  TRUE ~ 'Self'))
 
 Mean_Frames_long$Mean_time <- Mean_Frames_long$Mean_N_Frames*(1000/120)
+Mean_Frames_long$Age_c <- Mean_Frames_long$Age - mean(Mean_Frames_long$Age)
 
+```
+
+```{r make raincloud plots recognition}
 MeanFrames_UF_Upright <- filter(Mean_Frames_long, Condition == 'Unfamiliar_Upright')
 MeanFrames_UF_Inverted <- filter(Mean_Frames_long, Condition == 'Unfamiliar_Inverted')
 MeanFrames_F_Upright<- filter(Mean_Frames_long, Condition == 'Familiar_Upright')
@@ -185,6 +189,7 @@ Mean_RTs_long <- Mean_RTs_long %>%
                                  TRUE ~ 'Self'))
 
 Mean_RTs_long$Mean_RT_ms <- Mean_RTs_long$Mean_RT_secs*(1000)
+Mean_RTs_long$Age_c <- Mean_RTs_long$Age - mean(Mean_RTs_long$Age)
 
 MeanRTs_UF_Upright <- filter(Mean_RTs_long, Condition == 'Unfamiliar_Upright')
 MeanRTs_UF_Inverted <- filter(Mean_RTs_long, Condition == 'Unfamiliar_Inverted')
@@ -231,7 +236,7 @@ faces_2x3_RTs <- raincloud_2x3_repmes(
 ```{r ANOVAs}
 # Do ANOVA analysis of ratings 
 RecognitionTimes_ANOVA <- aov_ez("Participant", "Mean_time", Mean_Frames_long, within=c("Orientation", "Familiarity"),
-                            factorize = TRUE) # Do ANOVA
+                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
 
 EM_Means_RecognitionTimes <- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means
 
@@ -323,7 +328,7 @@ Data analyses were conducted using jamovi (version 2.3.21.0), with significance 
 
 ## Data Analysis
 
-Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as Fmax scores were below 10, in both upright, $F_{max} = 2.110$, and inverted, $F_{max} = 1.697$, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, $W(28) = 0.82, p = .081$ and the interaction between condition and face orientation, $W(28) = 0.93, p = .399$.
+Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as $F_{max}$ scores were below 10, in both upright, $F_{max} = 2.110$, and inverted, $F_{max} = 1.697$, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, $W(28) = 0.82, p = .081$ and the interaction between condition and face orientation, $W(28) = 0.93, p = .399$.
 
 A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions $F(2, 52) = 48.08, p < .001, \eta_p^2 = .649$. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, $t(26) = 3.99, p = .001$, and unfamiliar faces, $t(26) = 11.12, p < .001$. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, $t(26) = 5.11, p < .001$.
 
@@ -337,7 +342,7 @@ faces_2x3_time
 
 ```
 
-A small but significant interaction was also observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
+In this analysis, age was also included as a continuous covariate. A small but significant interaction was also observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
 
 ```{r}
 #| label: fig-correlations
