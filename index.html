@@ -368,11 +368,11 @@ window.Quarto = {
 <section id="design-and-stimuli" class="level2">
 <h2 class="anchored" data-anchor-id="design-and-stimuli">Design and Stimuli</h2>
 <p>Stimuli were presented on a 22.5-inch (diagonal) VIEWPixx display toolbox, with a display resolution of 1920 (H) x 1200 (V) pixels. Face stimuli were programmed in MATLAB using custom code. Stimuli for the unfamiliar condition consisted of 16 female face identities selected from the NimStim database (the set of calm, neutral faces; <span class="citation" data-cites="tottenham2009a">Tottenham et al. (<a href="#ref-tottenham2009a" role="doc-biblioref">2009</a>)</span>). Two photographs of the experimenter were used to create a familiar face condition. This was in order to ensure some level of real-world familiarity with the face at a controlled level. To create the self-face condition, prior to the experiment, participants were asked to send two photographs of themselves with a neutral expression, without eyewear and with no hair across the face. Several steps were taken to equate image sets across all three conditions. First, the faces were aligned at the eyes and cropped to an oval to exclude hair and clothing. Second, all face identities wore a neutral expression. Third, two images per identity were used so that responses would be more likely to indicate identity processing rather than image-based processing. Fourth, all images were transformed to greyscale and root mean square (RMS) normalised across all images for contrast.</p>
-<p>The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180°. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6°) square patches of randomly-generated noise filtered with a <span class="math inline">\(1/f\)</span> frequency spectrum (see <a href="#fig-procedure" class="quarto-xref">Figure&nbsp;1</a>). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.</p>
+<p>The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180<span class="math inline">\(^{\circ}\)</span>. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6<span class="math inline">\(^{\circ}\)</span>) square patches of randomly-generated noise filtered with a <span class="math inline">\(1/f\)</span> frequency spectrum (see <a href="#fig-procedure" class="quarto-xref">Figure&nbsp;1</a>). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.</p>
 <div id="fig-procedure" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/FamiliarFace_Procedure.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/FamiliarFace_Procedure.png" class="img-fluid figure-img"></a>
+<a href="images/FamiliarFace_Procedure.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/FamiliarFace_Procedure.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-procedure-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: The visual stimulation sequence for each trial
@@ -390,7 +390,7 @@ Figure&nbsp;1: The visual stimulation sequence for each trial
 <div id="fig-setup" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/setup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2"><img src="images/setup.png" class="img-fluid figure-img"></a>
+<a href="images/setup.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2"><img src="images/setup.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (2023)
@@ -408,14 +408,14 @@ Figure&nbsp;2: Depiction of experimental setup; image created by Simone Hale (20
 <section id="data-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
 <p>Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as <span class="math inline">\(F_{max}\)</span> scores were below 10, in both upright, <span class="math inline">\(F_{max} = 2.110\)</span>, and inverted, <span class="math inline">\(F_{max} = 1.697\)</span>, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, <span class="math inline">\(W(28) = 0.82, p = .081\)</span> and the interaction between condition and face orientation, <span class="math inline">\(W(28) = 0.93, p = .399\)</span>.</p>
-<p>A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions <span class="math inline">\(F(2, 52) = 48.08, p &lt; .001, \eta_p^2 = .649\)</span>. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, <span class="math inline">\(t(26) = 3.99, p = .001\)</span>, and unfamiliar faces, <span class="math inline">\(t(26) = 11.12, p &lt; .001\)</span>. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, <span class="math inline">\(t(26) = 5.11, p &lt; .001\)</span>.</p>
+<p>A 2 x 3 repeated-measures analysis of variance (ANOVA) with age as a continuous covariate was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions <span class="math inline">\(F(2, 52) = 48.08, p &lt; .001, \eta_p^2 = .649\)</span>. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, <span class="math inline">\(t(26) = 3.99, p = .001\)</span>, and unfamiliar faces, <span class="math inline">\(t(26) = 11.12, p &lt; .001\)</span>. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, <span class="math inline">\(t(26) = 5.11, p &lt; .001\)</span>.</p>
 <p>Results also supported the third hypothesis that participants would require longer display times to recognise all faces when displays were inverted. The ANOVA indicated a main effect of orientation for face recognition times, <span class="math inline">\(F(1, 26) = 50.22, p &lt;.001, \eta_p^2 = .659\)</span>. In addition, the fourth hypothesis was supported: the face inversion effect was reduced for more familiar faces. The ANOVA indicated a significant interaction between condition and face orientation, <span class="math inline">\(F(2, 52) = 11.21, p &lt; .001, \eta_p^2 = .301\)</span>. The effects of inversion on recognition time were reduced when faces were more familiar. <a href="#fig-recognition-times" class="quarto-xref">Figure&nbsp;3</a> shows recognition times for inverted and upright face orientations for each condition.</p>
 <div id="cell-fig-recognition-times" class="cell">
 <div class="cell-output-display">
 <div id="fig-recognition-times" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-recognition-times-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3"><img src="index_files/figure-html/fig-recognition-times-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-recognition-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/fig-recognition-times-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-recognition-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Recognition Times by Orientation for Each Condition
@@ -430,7 +430,7 @@ Figure&nbsp;3: Recognition Times by Orientation for Each Condition
 <div id="fig-correlations" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-correlations-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4"><img src="index_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-correlations-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/fig-correlations-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-correlations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Correlations between recognition times and age for each condition
@@ -450,7 +450,7 @@ Figure&nbsp;4: Correlations between recognition times and age for each condition
 <div id="fig-reaction-times" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-reaction-times-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5"><img src="index_files/figure-html/fig-reaction-times-1.png" class="img-fluid figure-img" width="672"></a>
+<a href="index_files/figure-html/fig-reaction-times-1.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/fig-reaction-times-1.png" class="img-fluid figure-img" width="672"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-reaction-times-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;5: Reaction times by orientation for each condition
@@ -1125,7 +1125,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
