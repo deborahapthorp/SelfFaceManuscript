@@ -72,12 +72,7 @@ library(dplyr)
 library(raincloudplots)
 library (patchwork)
 
-#Define colors - upright vs. inverted
-upright_col = '#FF3030'
-inverted_col = "#836FFF"
-
-
-
+## Recognition times 
 
 Mean_Frames <- read_csv("Mean_Frames_Familiar_Faces_Filtered.csv")
 Mean_Frames_long <- melt(Mean_Frames, 
@@ -110,55 +105,7 @@ Mean_Frames_long <- Mean_Frames_long %>%
 Mean_Frames_long$Mean_time <- Mean_Frames_long$Mean_N_Frames*(1000/120)
 Mean_Frames_long$Age_c <- Mean_Frames_long$Age - mean(Mean_Frames_long$Age)
 
-```
-
-```{r make raincloud plots recognition}
-MeanFrames_UF_Upright <- filter(Mean_Frames_long, Condition == 'Unfamiliar_Upright')
-MeanFrames_UF_Inverted <- filter(Mean_Frames_long, Condition == 'Unfamiliar_Inverted')
-MeanFrames_F_Upright<- filter(Mean_Frames_long, Condition == 'Familiar_Upright')
-MeanFrames_F_Inverted <- filter(Mean_Frames_long, Condition == 'Familiar_Inverted')
-MeanFrames_S_Upright<- filter(Mean_Frames_long, Condition == 'Self_Upright')
-MeanFrames_S_Inverted <- filter(Mean_Frames_long, Condition == 'Self_Inverted')
-
-df_2x3_Time_All <- data_2x2(
-  array_1 = MeanFrames_UF_Upright$Mean_time,
-  array_2 = MeanFrames_UF_Inverted$Mean_time,
-  array_3 = MeanFrames_F_Upright$Mean_time,
-  array_4 = MeanFrames_F_Inverted$Mean_time,
-  array_5 = MeanFrames_S_Upright$Mean_time,
-  array_6 = MeanFrames_S_Inverted$Mean_time,
-  labels = (c('Upright','Inverted')),
-  jit_distance = .09,
-  jit_seed = 321,
-  # spread_x_ticks = FALSE
-) 
-
-# Change column name to be more meaningful
-colnames(df_2x3_Time_All)[colnames(df_2x3_Time_All) == "group"] <- "Orientation"
-
-## Raincloud plot for recognition time 
-
-
-faces_2x3_time <- raincloud_2x3_repmes(
-  data = df_2x3_Time_All,
-  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  alpha = .5) +
-  scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
-  xlab("Face Familiarity") + 
-  ylab("Mean recognition time (milliseconds)") +
-  #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()
-  
-  # Add lines for individual subjects 
- #geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
-# scale_color_manual(values = c(inverted_col, upright_col))
-
-        
-
-```
-
-```{r make reaction time figure}
+## Reaction times 
 
 Mean_RTs <- read_csv("Mean_Reaction_Times_Familiar_Faces_Filtered.csv")
 Mean_RTs_long <- melt(Mean_RTs, 
@@ -191,47 +138,10 @@ Mean_RTs_long <- Mean_RTs_long %>%
 Mean_RTs_long$Mean_RT_ms <- Mean_RTs_long$Mean_RT_secs*(1000)
 Mean_RTs_long$Age_c <- Mean_RTs_long$Age - mean(Mean_RTs_long$Age)
 
-MeanRTs_UF_Upright <- filter(Mean_RTs_long, Condition == 'Unfamiliar_Upright')
-MeanRTs_UF_Inverted <- filter(Mean_RTs_long, Condition == 'Unfamiliar_Inverted')
-MeanRTs_F_Upright<- filter(Mean_RTs_long, Condition == 'Familiar_Upright')
-MeanRTs_F_Inverted <- filter(Mean_RTs_long, Condition == 'Familiar_Inverted')
-MeanRTs_S_Upright<- filter(Mean_RTs_long, Condition == 'Self_Upright')
-MeanRTs_S_Inverted <- filter(Mean_RTs_long, Condition == 'Self_Inverted')
-
-df_2x3_RTs_All <- data_2x2(
-  array_1 = MeanRTs_UF_Upright$Mean_RT_ms,
-  array_2 = MeanRTs_UF_Inverted$Mean_RT_ms,
-  array_3 = MeanRTs_F_Upright$Mean_RT_ms,
-  array_4 = MeanRTs_F_Inverted$Mean_RT_ms,
-  array_5 = MeanRTs_S_Upright$Mean_RT_ms,
-  array_6 = MeanRTs_S_Inverted$Mean_RT_ms,
-  labels = (c('Upright','Inverted')),
-  jit_distance = .09,
-  jit_seed = 321,
-  # spread_x_ticks = FALSE
-) 
-
-# Change column name to be more meaningful
-colnames(df_2x3_RTs_All)[colnames(df_2x3_RTs_All) == "group"] <- "Orientation"
-
-## Raincloud plot for recognition time 
-faces_2x3_RTs <- raincloud_2x3_repmes(
-  data = df_2x3_RTs_All,
-  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  alpha = .5) +
-  scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
-  xlab("Face Familiarity") + 
-  ylab("Mean reaction time (milliseconds)") +
-  #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()
-    # Add lines for individual subjects 
- # geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
- # scale_color_manual(values = c(inverted_col, upright_col))
-
 
 
 ```
+
 
 ```{r ANOVAs}
 # Do ANOVA analysis of ratings 
@@ -239,6 +149,20 @@ RecognitionTimes_ANOVA <- aov_ez("Participant", "Mean_time", Mean_Frames_long, w
                             factorize = FALSE, covariate = "Age_c") # Do ANOVA
 
 EM_Means_RecognitionTimes <- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+
+# Use afex_plot to plot these more simply
+recTimesPlot <-  afex_plot(RecognitionTimes_ANOVA,  ~ Familiarity,  ~ Orientation, error = "within")
+
+
+RTs_ANOVA <- aov_ez("Participant", "Mean_RT_ms", Mean_RTs_long, within=c("Orientation", "Familiarity"),
+                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
+
+EM_Means_RTs <- emmeans (RTs_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+
+# Use afex_plot to plot these more simply
+
+RTsPlot <-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "within")
+
 
 ```
 
@@ -306,7 +230,7 @@ A power analysis using G\*Power 3.1.9.6 [@faul2009a] determined that a repeated-
 
 Stimuli were presented on a 22.5-inch (diagonal) VIEWPixx display toolbox, with a display resolution of 1920 (H) x 1200 (V) pixels. Face stimuli were programmed in MATLAB using custom code. Stimuli for the unfamiliar condition consisted of 16 female face identities selected from the NimStim database (the set of calm, neutral faces; @tottenham2009a). Two photographs of the experimenter were used to create a familiar face condition. This was in order to ensure some level of real-world familiarity with the face at a controlled level. To create the self-face condition, prior to the experiment, participants were asked to send two photographs of themselves with a neutral expression, without eyewear and with no hair across the face. Several steps were taken to equate image sets across all three conditions. First, the faces were aligned at the eyes and cropped to an oval to exclude hair and clothing. Second, all face identities wore a neutral expression. Third, two images per identity were used so that responses would be more likely to indicate identity processing rather than image-based processing. Fourth, all images were transformed to greyscale and root mean square (RMS) normalised across all images for contrast.
 
-The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180°. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6°) square patches of randomly-generated noise filtered with a $1/f$ frequency spectrum (see @fig-procedure). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.
+The images were presented within a 128-pixel rectangle and viewed from a distance of 57 centimetres. Faces were presented upright or inverted 180$^{\circ}$. To ensure any transients from the onset of stimuli were masked, a mask stream was created using a series of 192-pixel (6$^{\circ}$) square patches of randomly-generated noise filtered with a $1/f$ frequency spectrum (see @fig-procedure). A mask stream of 200 ms appeared after each face image in all trials. Face stimuli were randomly offset from trial to trial by between 1 and 32 pixels from their original display location to avoid the effects of low-level feature matching. Trials were presented in random order to reduce any systematic effects of practice on the results. Trials were pilot tested prior to the experiment to determine a starting point of the staircases (18 frames/66.67ms) for each trial.
 
 ![The visual stimulation sequence for each trial](images/FamiliarFace_Procedure.png){#fig-procedure}
 
@@ -330,7 +254,7 @@ Data analyses were conducted using jamovi (version 2.3.21.0), with significance 
 
 Assumption testing for the two-way repeated-measures analysis of variance (ANOVA) indicated no violated assumptions. Visual inspection of Q-Q plots showed a normal distribution of face recognition times in each condition and no obvious outliers. Homogeneity of variance was assumed, as $F_{max}$ scores were below 10, in both upright, $F_{max} = 2.110$, and inverted, $F_{max} = 1.697$, orientations. Mauchly’s test indicated that the assumption of sphericity was not violated for the main effect of condition, $W(28) = 0.82, p = .081$ and the interaction between condition and face orientation, $W(28) = 0.93, p = .399$.
 
-A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions $F(2, 52) = 48.08, p < .001, \eta_p^2 = .649$. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, $t(26) = 3.99, p = .001$, and unfamiliar faces, $t(26) = 11.12, p < .001$. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, $t(26) = 5.11, p < .001$.
+A 2 x 3 repeated-measures analysis of variance (ANOVA) with age as a continuous covariate was used to explore the effects of face familiarity on face recognition time. The ANOVA showed a main effect of familiarity, with significant differences in face recognition times between unfamiliar, familiar and self-face conditions $F(2, 52) = 48.08, p < .001, \eta_p^2 = .649$. In support of the first hypothesis, post hoc comparisons with Bonferroni corrections showed participants recognised their own faces at shorter display times compared with less familiar faces, $t(26) = 3.99, p = .001$, and unfamiliar faces, $t(26) = 11.12, p < .001$. The second hypothesis was also supported, as a post hoc comparison showed participants recognised the familiar face (that of the experimenter) at shorter display times than unfamiliar faces, $t(26) = 5.11, p < .001$.
 
 Results also supported the third hypothesis that participants would require longer display times to recognise all faces when displays were inverted. The ANOVA indicated a main effect of orientation for face recognition times, $F(1, 26) = 50.22, p <.001, \eta_p^2 = .659$. In addition, the fourth hypothesis was supported: the face inversion effect was reduced for more familiar faces. The ANOVA indicated a significant interaction between condition and face orientation, $F(2, 52) = 11.21, p < .001, \eta_p^2 = .301$. The effects of inversion on recognition time were reduced when faces were more familiar. @fig-recognition-times shows recognition times for inverted and upright face orientations for each condition.
 
@@ -338,7 +262,9 @@ Results also supported the third hypothesis that participants would require long
 #| label: fig-recognition-times
 #| fig-cap: "Recognition Times by Orientation for Each Condition"
 
-faces_2x3_time
+#faces_2x3_time
+
+recTimesPlot + labs(x = 'Familiarity', y = 'Mean Recognition Time (ms)') + theme_classic()
 
 ```
 
@@ -413,7 +339,9 @@ An identical 2 x 3 repeated measures ANOVA was conducted on participant reaction
 #| label: fig-reaction-times
 #| fig-cap: "Reaction times by orientation for each condition"
 
-faces_2x3_RTs
+#faces_2x3_RTs
+
+RTsPlot + labs(x = 'Familiarity', y = 'Mean Reaction Time (ms)') + theme_classic()
 
 ```
 
