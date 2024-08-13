@@ -659,9 +659,11 @@ familiar faces.</p>
     across all images for contrast.</p>
         <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
-    inverted 180°. To ensure any transients from the onset of stimuli
-    were masked, a mask stream was created using a series of 192-pixel
-    (6°) square patches of randomly-generated noise filtered with a
+    inverted 180<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>.
+    To ensure any transients from the onset of stimuli were masked, a
+    mask stream was created using a series of 192-pixel
+    (6<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>)
+    square patches of randomly-generated noise filtered with a
     <inline-formula><alternatives><tex-math><![CDATA[1/f]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1</mml:mn><mml:mi>/</mml:mi><mml:mi>f</mml:mi></mml:mrow></mml:math></alternatives></inline-formula>
     frequency spectrum (see
     <xref alt="Figure 1" rid="fig-procedure">Figure 1</xref>). A mask
@@ -759,19 +761,22 @@ familiar faces.</p>
     variance (ANOVA) indicated no violated assumptions. Visual
     inspection of Q-Q plots showed a normal distribution of face
     recognition times in each condition and no obvious outliers.
-    Homogeneity of variance was assumed, as Fmax scores were below 10,
-    in both upright, <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+    Homogeneity of variance was assumed, as
+    <inline-formula><alternatives><tex-math><![CDATA[F_{max}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:math></alternatives></inline-formula>
+    scores were below 10, in both upright,
+    <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
     and inverted, <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 1.697]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>1.697</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
     orientations. Mauchly’s test indicated that the assumption of
     sphericity was not violated for the main effect of condition,
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.82, p = .081]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.081</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
     and the interaction between condition and face orientation,
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.93, p = .399]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.399</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
-        <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) was used
-    to explore the effects of face familiarity on face recognition time.
-    The ANOVA showed a main effect of familiarity, with significant
-    differences in face recognition times between unfamiliar, familiar
-    and self-face conditions <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+        <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) with age
+    as a continuous covariate was used to explore the effects of face
+    familiarity on face recognition time. The ANOVA showed a main effect
+    of familiarity, with significant differences in face recognition
+    times between unfamiliar, familiar and self-face conditions
+    <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     In support of the first hypothesis, post hoc comparisons with
     Bonferroni corrections showed participants recognised their own
     faces at shorter display times compared with less familiar faces,
@@ -802,8 +807,9 @@ familiar faces.</p>
           </caption>
           <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-recognition-times-1.png"/>
         </fig>
-        <p>A small but significant interaction was also observed between age
-    and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+        <p>In this analysis, age was also included as a continuous
+    covariate. A small but significant interaction was also observed
+    between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     For older participants, longer display times were required to
     recognise unfamiliar and familiar faces than younger participants,
     whereas older participants required relatively shorter display times
@@ -3304,7 +3310,7 @@ familiar faces.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-4-nb-article">
+  <sub-article article-type="notebook" id="nb-3-nb-article">
     <front-stub>
       <title-group>
         <article-title>Differences in the Perceptual Processing of Unfamiliar
@@ -3410,8 +3416,8 @@ familiar faces.</p>
     <body>
       <sec id="nb-code-cell-1-nb-article" specific-use="notebook-code">
         <code language="r script">library(afex)</code>
-        <code language="r script">library(emmeans)
-library(readr)
+        <code language="r script">library(emmeans)</code>
+        <code language="r script">library(readr)
 library(tidyr)</code>
         <code language="r script">library(reshape2)</code>
         <code language="r script">library(tidyverse)</code>
@@ -3419,12 +3425,7 @@ library(tidyr)</code>
 library(raincloudplots)
 library (patchwork)
 
-#Define colors - upright vs. inverted
-upright_col = '#FF3030'
-inverted_col = "#836FFF"
-
-
-
+## Recognition times 
 
 Mean_Frames &lt;- read_csv("Mean_Frames_Familiar_Faces_Filtered.csv")</code>
         <code language="r script">Mean_Frames_long &lt;- melt(Mean_Frames, 
@@ -3455,47 +3456,40 @@ Mean_Frames_long &lt;- Mean_Frames_long %&gt;%
                                  TRUE ~ 'Self'))
 
 Mean_Frames_long$Mean_time &lt;- Mean_Frames_long$Mean_N_Frames*(1000/120)
+Mean_Frames_long$Age_c &lt;- Mean_Frames_long$Age - mean(Mean_Frames_long$Age)
 
-MeanFrames_UF_Upright &lt;- filter(Mean_Frames_long, Condition == 'Unfamiliar_Upright')
-MeanFrames_UF_Inverted &lt;- filter(Mean_Frames_long, Condition == 'Unfamiliar_Inverted')
-MeanFrames_F_Upright&lt;- filter(Mean_Frames_long, Condition == 'Familiar_Upright')
-MeanFrames_F_Inverted &lt;- filter(Mean_Frames_long, Condition == 'Familiar_Inverted')
-MeanFrames_S_Upright&lt;- filter(Mean_Frames_long, Condition == 'Self_Upright')
-MeanFrames_S_Inverted &lt;- filter(Mean_Frames_long, Condition == 'Self_Inverted')
+## Reaction times 
 
-df_2x3_Time_All &lt;- data_2x2(
-  array_1 = MeanFrames_UF_Upright$Mean_time,
-  array_2 = MeanFrames_UF_Inverted$Mean_time,
-  array_3 = MeanFrames_F_Upright$Mean_time,
-  array_4 = MeanFrames_F_Inverted$Mean_time,
-  array_5 = MeanFrames_S_Upright$Mean_time,
-  array_6 = MeanFrames_S_Inverted$Mean_time,
-  labels = (c('Upright','Inverted')),
-  jit_distance = .09,
-  jit_seed = 321,
-  # spread_x_ticks = FALSE
-) 
+Mean_RTs &lt;- read_csv("Mean_Reaction_Times_Familiar_Faces_Filtered.csv")</code>
+        <code language="r script">Mean_RTs_long &lt;- melt(Mean_RTs, 
+                         # ID variables - all the variables to keep but not split apart on
+                         id.vars=c("Participant", "Age"),
+                         # The source columns
+                         measure.vars=c("Unfamiliar_Upright", "Unfamiliar_Inverted", 
+                                        "Familiar_Upright", "Familiar_Inverted", 
+                                        "Self_Upright", "Self_Inverted"),
+                         # Name of the destination column that will identify the original
+                         # column that the measurement came from
+                         variable.name="Condition",
+                         value.name="Mean_RT_secs"               
+                         
+                         )
 
-# Change column name to be more meaningful
-colnames(df_2x3_Time_All)[colnames(df_2x3_Time_All) == "group"] &lt;- "Orientation"
+Mean_RTs_long &lt;- Mean_RTs_long %&gt;%
+  mutate(Orientation = case_when(Condition == 'Unfamiliar_Upright' ~ 'Upright',
+                                    Condition == 'Familiar_Upright' ~ 'Upright',
+                                    Condition == 'Self_Upright' ~ 'Upright',
+                                    TRUE ~ 'Inverted'))
 
-## Raincloud plot for recognition time 
+Mean_RTs_long &lt;- Mean_RTs_long %&gt;%
+  mutate(Familiarity = case_when(Condition == 'Unfamiliar_Upright' ~ 'Unfamiliar',
+                                 Condition == 'Unfamiliar_Inverted' ~ 'Unfamiliar',
+                                 Condition == 'Familiar_Upright' ~ 'Familiar',
+                                 Condition == 'Familiar_Inverted' ~ 'Familiar',
+                                 TRUE ~ 'Self'))
 
-
-faces_2x3_time &lt;- raincloud_2x3_repmes(
-  data = df_2x3_Time_All,
-  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  alpha = .5) +
-  scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
-  xlab("Face Familiarity") + 
-  ylab("Mean recognition time (milliseconds)") +
-  #labs(title = "Threshold recognition times for face presentation") +
-  theme_classic()
-  
-  # Add lines for individual subjects 
- #geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
-# scale_color_manual(values = c(inverted_col, upright_col))</code>
+Mean_RTs_long$Mean_RT_ms &lt;- Mean_RTs_long$Mean_RT_secs*(1000)
+Mean_RTs_long$Age_c &lt;- Mean_RTs_long$Age - mean(Mean_RTs_long$Age)</code>
         <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
           <preformat>Loading required package: lme4</preformat>
         </sec>
@@ -3525,31 +3519,39 @@ Attaching package: 'afex'</preformat>
     lmer</preformat>
         </sec>
         <sec id="nb-code-cell-1-output-6-nb-article" specific-use="notebook-output">
+          <preformat>Warning: package 'emmeans' was built under R version 4.3.3</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-7-nb-article" specific-use="notebook-output">
+          <preformat>Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-8-nb-article" specific-use="notebook-output">
           <preformat>
 Attaching package: 'tidyr'</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-7-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-9-nb-article" specific-use="notebook-output">
           <preformat>The following objects are masked from 'package:Matrix':
 
     expand, pack, unpack</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-8-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-10-nb-article" specific-use="notebook-output">
           <preformat>
 Attaching package: 'reshape2'</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-9-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-11-nb-article" specific-use="notebook-output">
           <preformat>The following object is masked from 'package:tidyr':
 
     smiths</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-10-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-12-nb-article" specific-use="notebook-output">
           <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ purrr     1.0.2
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
 ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
 ✔ lubridate 1.9.3     </preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-11-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-13-nb-article" specific-use="notebook-output">
           <preformat>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ tidyr::expand() masks Matrix::expand()
 ✖ dplyr::filter() masks stats::filter()
@@ -3558,7 +3560,17 @@ Attaching package: 'reshape2'</preformat>
 ✖ tidyr::unpack() masks Matrix::unpack()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
         </sec>
-        <sec id="nb-code-cell-1-output-12-nb-article" specific-use="notebook-output">
+        <sec id="nb-code-cell-1-output-14-nb-article" specific-use="notebook-output">
+          <preformat>Rows: 28 Columns: 8
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (1): Participant
+dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
+        </sec>
+        <sec id="nb-code-cell-1-output-15-nb-article" specific-use="notebook-output">
           <preformat>Rows: 28 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
@@ -3570,90 +3582,24 @@ dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
         </sec>
       </sec>
       <sec id="nb-code-cell-2-nb-article" specific-use="notebook-code">
-        <code language="r script">Mean_RTs &lt;- read_csv("Mean_Reaction_Times_Familiar_Faces_Filtered.csv")</code>
-        <code language="r script">Mean_RTs_long &lt;- melt(Mean_RTs, 
-                         # ID variables - all the variables to keep but not split apart on
-                         id.vars=c("Participant", "Age"),
-                         # The source columns
-                         measure.vars=c("Unfamiliar_Upright", "Unfamiliar_Inverted", 
-                                        "Familiar_Upright", "Familiar_Inverted", 
-                                        "Self_Upright", "Self_Inverted"),
-                         # Name of the destination column that will identify the original
-                         # column that the measurement came from
-                         variable.name="Condition",
-                         value.name="Mean_RT_secs"               
-                         
-                         )
-
-Mean_RTs_long &lt;- Mean_RTs_long %&gt;%
-  mutate(Orientation = case_when(Condition == 'Unfamiliar_Upright' ~ 'Upright',
-                                    Condition == 'Familiar_Upright' ~ 'Upright',
-                                    Condition == 'Self_Upright' ~ 'Upright',
-                                    TRUE ~ 'Inverted'))
-
-Mean_RTs_long &lt;- Mean_RTs_long %&gt;%
-  mutate(Familiarity = case_when(Condition == 'Unfamiliar_Upright' ~ 'Unfamiliar',
-                                 Condition == 'Unfamiliar_Inverted' ~ 'Unfamiliar',
-                                 Condition == 'Familiar_Upright' ~ 'Familiar',
-                                 Condition == 'Familiar_Inverted' ~ 'Familiar',
-                                 TRUE ~ 'Self'))
-
-Mean_RTs_long$Mean_RT_ms &lt;- Mean_RTs_long$Mean_RT_secs*(1000)
-
-MeanRTs_UF_Upright &lt;- filter(Mean_RTs_long, Condition == 'Unfamiliar_Upright')
-MeanRTs_UF_Inverted &lt;- filter(Mean_RTs_long, Condition == 'Unfamiliar_Inverted')
-MeanRTs_F_Upright&lt;- filter(Mean_RTs_long, Condition == 'Familiar_Upright')
-MeanRTs_F_Inverted &lt;- filter(Mean_RTs_long, Condition == 'Familiar_Inverted')
-MeanRTs_S_Upright&lt;- filter(Mean_RTs_long, Condition == 'Self_Upright')
-MeanRTs_S_Inverted &lt;- filter(Mean_RTs_long, Condition == 'Self_Inverted')
-
-df_2x3_RTs_All &lt;- data_2x2(
-  array_1 = MeanRTs_UF_Upright$Mean_RT_ms,
-  array_2 = MeanRTs_UF_Inverted$Mean_RT_ms,
-  array_3 = MeanRTs_F_Upright$Mean_RT_ms,
-  array_4 = MeanRTs_F_Inverted$Mean_RT_ms,
-  array_5 = MeanRTs_S_Upright$Mean_RT_ms,
-  array_6 = MeanRTs_S_Inverted$Mean_RT_ms,
-  labels = (c('Upright','Inverted')),
-  jit_distance = .09,
-  jit_seed = 321,
-  # spread_x_ticks = FALSE
-) 
-
-# Change column name to be more meaningful
-colnames(df_2x3_RTs_All)[colnames(df_2x3_RTs_All) == "group"] &lt;- "Orientation"
-
-## Raincloud plot for recognition time 
-faces_2x3_RTs &lt;- raincloud_2x3_repmes(
-  data = df_2x3_RTs_All,
-  colors = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  fills = c(upright_col, inverted_col, upright_col, inverted_col, upright_col, inverted_col),
-  alpha = .5) +
-  scale_x_continuous(breaks=c(1,2,3), labels=c("Unfamiliar", "Familiar", "Self"), limits=c(0.5, 4)) +
-  xlab("Face Familiarity") + 
-  ylab("Mean reaction time (milliseconds)") +
-  #labs(title = "Mean reaction times for face recognition") +
-  theme_classic()
-    # Add lines for individual subjects 
- # geom_path(aes(x = jit, y = y_axis, group = interaction(Orientation, id), color = Orientation), alpha = .5) +
- # scale_color_manual(values = c(inverted_col, upright_col))</code>
-        <sec id="nb-code-cell-2-output-0-nb-article" specific-use="notebook-output">
-          <preformat>Rows: 28 Columns: 8
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Participant
-dbl (7): Unfamiliar_Upright, Unfamiliar_Inverted, Familiar_Upright, Familiar...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
-        </sec>
-      </sec>
-      <sec id="nb-code-cell-3-nb-article" specific-use="notebook-code">
         <code language="r script"># Do ANOVA analysis of ratings 
 RecognitionTimes_ANOVA &lt;- aov_ez("Participant", "Mean_time", Mean_Frames_long, within=c("Orientation", "Familiarity"),
-                            factorize = TRUE) # Do ANOVA
+                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
 
-EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means</code>
+EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+
+# Use afex_plot to plot these more simply
+recTimesPlot &lt;-  afex_plot(RecognitionTimes_ANOVA,  ~ Familiarity,  ~ Orientation, error = "within")
+
+
+RTs_ANOVA &lt;- aov_ez("Participant", "Mean_RT_ms", Mean_RTs_long, within=c("Orientation", "Familiarity"),
+                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
+
+EM_Means_RTs &lt;- emmeans (RTs_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+
+# Use afex_plot to plot these more simply
+
+RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "within")</code>
       </sec>
       <sec id="introduction-nb-article">
         <title>Introduction</title>
@@ -4201,9 +4147,11 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     across all images for contrast.</p>
           <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
-    inverted 180°. To ensure any transients from the onset of stimuli
-    were masked, a mask stream was created using a series of 192-pixel
-    (6°) square patches of randomly-generated noise filtered with a
+    inverted 180<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>.
+    To ensure any transients from the onset of stimuli were masked, a
+    mask stream was created using a series of 192-pixel
+    (6<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>)
+    square patches of randomly-generated noise filtered with a
     <inline-formula><alternatives><tex-math><![CDATA[1/f]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mn>1</mml:mn><mml:mi>/</mml:mi><mml:mi>f</mml:mi></mml:mrow></mml:math></alternatives></inline-formula>
     frequency spectrum (see
     <xref alt="Figure 1" rid="fig-procedure-nb-article">Figure 1</xref>). A mask
@@ -4301,19 +4249,22 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     variance (ANOVA) indicated no violated assumptions. Visual
     inspection of Q-Q plots showed a normal distribution of face
     recognition times in each condition and no obvious outliers.
-    Homogeneity of variance was assumed, as Fmax scores were below 10,
-    in both upright, <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
+    Homogeneity of variance was assumed, as
+    <inline-formula><alternatives><tex-math><![CDATA[F_{max}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:math></alternatives></inline-formula>
+    scores were below 10, in both upright,
+    <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
     and inverted, <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 1.697]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>1.697</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
     orientations. Mauchly’s test indicated that the assumption of
     sphericity was not violated for the main effect of condition,
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.82, p = .081]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.82</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.081</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
     and the interaction between condition and face orientation,
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.93, p = .399]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.399</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
-          <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) was used
-    to explore the effects of face familiarity on face recognition time.
-    The ANOVA showed a main effect of familiarity, with significant
-    differences in face recognition times between unfamiliar, familiar
-    and self-face conditions <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+          <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) with age
+    as a continuous covariate was used to explore the effects of face
+    familiarity on face recognition time. The ANOVA showed a main effect
+    of familiarity, with significant differences in face recognition
+    times between unfamiliar, familiar and self-face conditions
+    <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     In support of the first hypothesis, post hoc comparisons with
     Bonferroni corrections showed participants recognised their own
     faces at shorter display times compared with less familiar faces,
@@ -4338,7 +4289,9 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
     shows recognition times for inverted and upright face orientations
     for each condition.</p>
           <sec id="cell-fig-recognition-times-nb-article" specific-use="notebook-code">
-            <code language="r script">faces_2x3_time</code>
+            <code language="r script">#faces_2x3_time
+
+recTimesPlot + labs(x = 'Familiarity', y = 'Mean Recognition Time (ms)') + theme_classic()</code>
             <fig id="fig-recognition-times-nb-article">
               <caption>
                 <p>Figure 3: Recognition Times by Orientation for Each
@@ -4347,8 +4300,9 @@ EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|F
               <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-recognition-times-1.png"/>
             </fig>
           </sec>
-          <p>A small but significant interaction was also observed between age
-    and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+          <p>In this analysis, age was also included as a continuous
+    covariate. A small but significant interaction was also observed
+    between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     For older participants, longer display times were required to
     recognise unfamiliar and familiar faces than younger participants,
     whereas older participants required relatively shorter display times
@@ -4446,7 +4400,9 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
       shows reaction times for inverted and upright face orientations
       for each condition.</p>
             <sec id="cell-fig-reaction-times-nb-article" specific-use="notebook-code">
-              <code language="r script">faces_2x3_RTs</code>
+              <code language="r script">#faces_2x3_RTs
+
+RTsPlot + labs(x = 'Familiarity', y = 'Mean Reaction Time (ms)') + theme_classic()</code>
               <fig id="fig-reaction-times-nb-article">
                 <caption>
                   <p>Figure 5: Reaction times by orientation for each

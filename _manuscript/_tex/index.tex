@@ -217,10 +217,6 @@ Notebook}}
 \href{https://deborahapthorp.github.io/SelfFaceManuscript/index.qmd.html}{Article
 Notebook}}
 
-\textsubscript{Source:
-\href{https://deborahapthorp.github.io/SelfFaceManuscript/index.qmd.html}{Article
-Notebook}}
-
 \section{Introduction}\label{introduction}
 
 Face recognition is the foundation of our social behaviour; it helps us
@@ -578,17 +574,17 @@ and root mean square (RMS) normalised across all images for contrast.
 
 The images were presented within a 128-pixel rectangle and viewed from a
 distance of 57 centimetres. Faces were presented upright or inverted
-180°. To ensure any transients from the onset of stimuli were masked, a
-mask stream was created using a series of 192-pixel (6°) square patches
-of randomly-generated noise filtered with a \(1/f\) frequency spectrum
-(see Figure~\ref{fig-procedure}). A mask stream of 200 ms appeared after
-each face image in all trials. Face stimuli were randomly offset from
-trial to trial by between 1 and 32 pixels from their original display
-location to avoid the effects of low-level feature matching. Trials were
-presented in random order to reduce any systematic effects of practice
-on the results. Trials were pilot tested prior to the experiment to
-determine a starting point of the staircases (18 frames/66.67ms) for
-each trial.
+180\(^{\circ}\). To ensure any transients from the onset of stimuli were
+masked, a mask stream was created using a series of 192-pixel
+(6\(^{\circ}\)) square patches of randomly-generated noise filtered with
+a \(1/f\) frequency spectrum (see Figure~\ref{fig-procedure}). A mask
+stream of 200 ms appeared after each face image in all trials. Face
+stimuli were randomly offset from trial to trial by between 1 and 32
+pixels from their original display location to avoid the effects of
+low-level feature matching. Trials were presented in random order to
+reduce any systematic effects of practice on the results. Trials were
+pilot tested prior to the experiment to determine a starting point of
+the staircases (18 frames/66.67ms) for each trial.
 
 \begin{figure}
 
@@ -683,25 +679,26 @@ Assumption testing for the two-way repeated-measures analysis of
 variance (ANOVA) indicated no violated assumptions. Visual inspection of
 Q-Q plots showed a normal distribution of face recognition times in each
 condition and no obvious outliers. Homogeneity of variance was assumed,
-as Fmax scores were below 10, in both upright, \(F_{max} = 2.110\), and
-inverted, \(F_{max} = 1.697\), orientations. Mauchly's test indicated
-that the assumption of sphericity was not violated for the main effect
-of condition, \(W(28) = 0.82, p = .081\) and the interaction between
-condition and face orientation, \(W(28) = 0.93, p = .399\).
+as \(F_{max}\) scores were below 10, in both upright,
+\(F_{max} = 2.110\), and inverted, \(F_{max} = 1.697\), orientations.
+Mauchly's test indicated that the assumption of sphericity was not
+violated for the main effect of condition, \(W(28) = 0.82, p = .081\)
+and the interaction between condition and face orientation,
+\(W(28) = 0.93, p = .399\).
 
-A 2 x 3 repeated-measures analysis of variance (ANOVA) was used to
-explore the effects of face familiarity on face recognition time. The
-ANOVA showed a main effect of familiarity, with significant differences
-in face recognition times between unfamiliar, familiar and self-face
-conditions \(F(2, 52) = 48.08, p < .001, \eta_p^2 = .649\). In support
-of the first hypothesis, post hoc comparisons with Bonferroni
-corrections showed participants recognised their own faces at shorter
-display times compared with less familiar faces,
-\(t(26) = 3.99, p = .001\), and unfamiliar faces,
-\(t(26) = 11.12, p < .001\). The second hypothesis was also supported,
-as a post hoc comparison showed participants recognised the familiar
-face (that of the experimenter) at shorter display times than unfamiliar
-faces, \(t(26) = 5.11, p < .001\).
+A 2 x 3 repeated-measures analysis of variance (ANOVA) with age as a
+continuous covariate was used to explore the effects of face familiarity
+on face recognition time. The ANOVA showed a main effect of familiarity,
+with significant differences in face recognition times between
+unfamiliar, familiar and self-face conditions
+\(F(2, 52) = 48.08, p < .001, \eta_p^2 = .649\). In support of the first
+hypothesis, post hoc comparisons with Bonferroni corrections showed
+participants recognised their own faces at shorter display times
+compared with less familiar faces, \(t(26) = 3.99, p = .001\), and
+unfamiliar faces, \(t(26) = 11.12, p < .001\). The second hypothesis was
+also supported, as a post hoc comparison showed participants recognised
+the familiar face (that of the experimenter) at shorter display times
+than unfamiliar faces, \(t(26) = 5.11, p < .001\).
 
 Results also supported the third hypothesis that participants would
 require longer display times to recognise all faces when displays were
@@ -733,7 +730,8 @@ for Each Condition}
 \href{https://deborahapthorp.github.io/SelfFaceManuscript/index.qmd.html}{Article
 Notebook}}
 
-A small but significant interaction was also observed between age and
+In this analysis, age was also included as a continuous covariate. A
+small but significant interaction was also observed between age and
 condition, \(F(2, 52) = 4.16, p = .021, \eta_p^2 = .138\). For older
 participants, longer display times were required to recognise unfamiliar
 and familiar faces than younger participants, whereas older participants
