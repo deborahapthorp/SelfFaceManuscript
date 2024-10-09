@@ -155,7 +155,7 @@ familiar faces.</p>
   &amp; Taubert, 2019</xref>;
   <xref alt="Towler et al., 2019" rid="ref-towler_are_2019" ref-type="bibr">Towler
   et al., 2019</xref>).</p>
-      <p>The precise nature of our face expertise remains poorly understood,
+      <p>The precise nature of face expertise remains poorly understood,
   with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
   processes for familiar faces
@@ -189,7 +189,7 @@ familiar faces.</p>
   a person facilitate processing efficiency, as it has been shown that
   the faces of personally familiar people are processed faster and more
   accurately than the faces of familiar celebrities, and both have an
-  advantage over strangers faces
+  advantage over strangers’ faces
   (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a" ref-type="bibr">Bortolon
   et al., 2017</xref>;
   <xref alt="Burton et al., 2015" rid="ref-burton2015a" ref-type="bibr">Burton
@@ -234,10 +234,10 @@ familiar faces.</p>
       <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
   experimental context. First, there are different levels of
-  familiarity, ranging from recently recently seen and recently learned
-  faces to faces that are familiar but for which we have no personal
-  knowledge (famous people, acquaintances), to the faces of those we
-  know well (family, close friends, self-face; Ramon et al.
+  familiarity, ranging from recently seen and recently learned faces to
+  faces that are familiar but for which we have no personal knowledge
+  (famous people, acquaintances), to the faces of those we know well
+  (family, close friends, self-face; Ramon et al.
   (<xref alt="2011" rid="ref-ramon2011a" ref-type="bibr">2011</xref>)).
   Levels of familiarity influence the depth of knowledge and experience
   we associate with an individual, which likely impacts the underlying
@@ -348,8 +348,8 @@ familiar faces.</p>
     <xref alt="Blauch et al., 2021" rid="ref-blauch2021a" ref-type="bibr">Blauch
     et al., 2021</xref>;
     <xref alt="Oruc et al., 2019" rid="ref-oruc2019a" ref-type="bibr">Oruc
-    et al., 2019</xref>).Here, we employed the same method as Taubert et
-    al.
+    et al., 2019</xref>). Here, we employed the same method as Taubert
+    et al.
     (<xref alt="2011" rid="ref-taubert2011a" ref-type="bibr">2011</xref>)
     to determine whether different perceptual processes underscore the
     recognition of familiar and unfamiliar faces.</p>
@@ -363,14 +363,14 @@ familiar faces.</p>
     need for humans to efficiently process the enormous amount of visual
     information we are exposed to in our environment
     (<xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a" ref-type="bibr">Tong
-    &amp; Nakayama, 1999</xref>). The pursuit of identifying the neural
+    &amp; Nakayama, 1999</xref>). The process of identifying the neural
     mechanisms underlying the recognition of familiar faces has led to
     important discoveries regarding distinct processing capacities
     (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a" ref-type="bibr">Bortolon
     et al., 2017</xref>;
     <xref alt="Ramon &amp; Gobbini, 2017" rid="ref-ramon2017a" ref-type="bibr">Ramon
     &amp; Gobbini, 2017</xref>). There is growing evidence in support of
-    a familiarity continuum in face recognition highlighting processing
+    a familiarity continuum in face recognition, highlighting processing
     distinctions not only between unfamiliar and familiar faces, but
     within the familiar face category itself
     (<xref alt="Megreya &amp; Burton, 2006" rid="ref-megraya2006a" ref-type="bibr">Megreya
@@ -645,18 +645,18 @@ familiar faces.</p>
     (<xref alt="2009" rid="ref-tottenham2009a" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
     face condition. This was in order to ensure some level of real-world
-    familiarity with the face at a controlled level. To create the
-    self-face condition, prior to the experiment, participants were
-    asked to send two photographs of themselves with a neutral
-    expression, without eyewear and with no hair across the face.
-    Several steps were taken to equate image sets across all three
-    conditions. First, the faces were aligned at the eyes and cropped to
-    an oval to exclude hair and clothing. Second, all face identities
-    wore a neutral expression. Third, two images per identity were used
-    so that responses would be more likely to indicate identity
-    processing rather than image-based processing. Fourth, all images
-    were transformed to greyscale and root mean square (RMS) normalised
-    across all images for contrast.</p>
+    familiarity with the face for all participants at a highly
+    controlled level. To create the self-face condition, prior to the
+    experiment, participants were asked to send two photographs of
+    themselves with a neutral expression, without eyewear and with no
+    hair across the face. Several steps were taken to equate image sets
+    across all three conditions. First, the faces were aligned at the
+    eyes and cropped to an oval to exclude hair and clothing. Second,
+    all face identities wore a neutral expression. Third, two images per
+    identity were used so that responses would be more likely to
+    indicate identity processing rather than image-based processing.
+    Fourth, all images were transformed to greyscale and root mean
+    square (RMS) normalised across all images for contrast.</p>
         <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>.
@@ -716,16 +716,16 @@ familiar faces.</p>
     (see <xref alt="Figure 2" rid="fig-setup">Figure 2</xref>). The
     practice trial featured a randomly selected face from the unfamiliar
     face set, which was then excluded from the main experiment. A random
-    selection of target and distractor faces were chosen for each
-    participant. Before each trial, written instructions appeared on the
-    screen advising participants to focus on a fixation cross at the
-    centre of the screen and use the up and down arrow keys to indicate
-    whether the target face appeared above (up arrow) or below (down
-    arrow) the fixation cross. Participants pressed any key to continue
-    to initiate the display of a ‘target’ face stimulus for five
-    seconds. After the inspection period, participants pressed any key
-    to start the trial. Trials began with a mask stream followed by a
-    display containing the target face and a distractor face above and
+    unfamiliar target face and set of distractor faces were chosen for
+    each participant. Before each trial, written instructions appeared
+    on the screen advising participants to focus on a fixation cross at
+    the centre of the screen and use the up and down arrow keys to
+    indicate whether the target face appeared above (up arrow) or below
+    (down arrow) the fixation cross. Participants pressed any key to
+    continue to initiate the display of a ‘target’ face stimulus for
+    five seconds. After the inspection period, participants pressed any
+    key to start the trial. Trials began with a mask stream followed by
+    a display containing the target face and a distractor face above and
     below the fixation cross. The target face appeared randomly either
     above or below the fixation cross. Faces were displayed in either an
     upright or inverted position.</p>
@@ -745,11 +745,10 @@ familiar faces.</p>
         <p>Data analyses were conducted using jamovi (version 2.3.21.0),
     with significance levels set to <inline-formula><alternatives><tex-math><![CDATA[\alpha = .05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>α</mml:mi><mml:mo>=</mml:mo><mml:mn>.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
     for analysis and <inline-formula><alternatives><tex-math><![CDATA[\alpha = .001]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>α</mml:mi><mml:mo>=</mml:mo><mml:mn>.001</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
-    for assumption testing. Data were examined for missing responses and
-    no missingness was found. Two participants were excluded because
-    their threshold scores were consistently above the starting point of
-    the staircases (18 frames/ 66.67ms) for most of their trials. Thus,
-    28 of the original 30 participants were included in the analyses.
+    for assumption testing. Two participants were excluded because their
+    threshold scores were consistently above the starting point of the
+    staircases (18 frames/ 66.67ms) for most of their trials. Thus, 28
+    of the original 30 participants were included in the analyses.
     Recognition time was measured using the number of frames required to
     complete the task as determined by the staircase procedure. Frames
     were then converted to milliseconds based on the monitor refresh
@@ -759,9 +758,8 @@ familiar faces.</p>
         <title>Data Analysis</title>
         <p>Assumption testing for the two-way repeated-measures analysis of
     variance (ANOVA) indicated no violated assumptions. Visual
-    inspection of Q-Q plots showed a normal distribution of face
-    recognition times in each condition and no obvious outliers.
-    Homogeneity of variance was assumed, as
+    inspection of Q-Q plots showed a normal distribution of residuals
+    and no obvious outliers. Homogeneity of variance was assumed, as
     <inline-formula><alternatives><tex-math><![CDATA[F_{max}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:math></alternatives></inline-formula>
     scores were below 10, in both upright,
     <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
@@ -773,10 +771,10 @@ familiar faces.</p>
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.93, p = .399]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.399</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
         <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) with age
     as a continuous covariate was used to explore the effects of face
-    familiarity on face recognition time. The ANOVA showed a main effect
-    of familiarity, with significant differences in face recognition
-    times between unfamiliar, familiar and self-face conditions
-    <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+    familiarity on face recognition time. The analysis showed a main
+    effect of familiarity, with significant differences in face
+    recognition times between unfamiliar, familiar and self-face
+    conditions <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     In support of the first hypothesis, post hoc comparisons with
     Bonferroni corrections showed participants recognised their own
     faces at shorter display times compared with less familiar faces,
@@ -807,26 +805,29 @@ familiar faces.</p>
           </caption>
           <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-recognition-times-1.png"/>
         </fig>
-        <p>In this analysis, age was also included as a continuous
-    covariate. A small but significant interaction was also observed
-    between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
-    For older participants, longer display times were required to
-    recognise unfamiliar and familiar faces than younger participants,
-    whereas older participants required relatively shorter display times
-    to recognise the self-face compared to younger participants.
-    <xref alt="Figure 4" rid="fig-correlations">Figure 4</xref> shows
-    this interaction in more detail, illustrating the relationship
-    between age and recognition time in each condition.</p>
-        <fig id="fig-correlations">
-          <caption>
-            <p>Figure 4: Correlations between recognition times and
-      age for each condition</p>
-          </caption>
-          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
-        </fig>
       </sec>
-      <sec id="exploratory-analysis">
-        <title>Exploratory Analysis</title>
+      <sec id="exploratory-analyses">
+        <title>Exploratory Analyses</title>
+        <sec id="exploring-the-age-interaction">
+          <title>Exploring the age interaction</title>
+          <p>In this analysis, age was also included as a continuous
+      covariate. A small but significant interaction was observed
+      between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      For older participants, longer display times were required to
+      recognise unfamiliar and familiar faces than younger participants,
+      whereas older participants required relatively shorter display
+      times to recognise the self-face compared to younger participants.
+      <xref alt="Figure 4" rid="fig-correlations">Figure 4</xref> shows
+      this interaction in more detail, illustrating the relationship
+      between age and recognition time in each condition.</p>
+          <fig id="fig-correlations">
+            <caption>
+              <p>Figure 4: Correlations between recognition times and
+        age for each condition</p>
+            </caption>
+            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
+          </fig>
+        </sec>
         <sec id="reaction-time">
           <title>Reaction Time</title>
           <p>An identical 2 x 3 repeated measures ANOVA was conducted on
@@ -838,9 +839,9 @@ familiar faces.</p>
       <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 3.85, p = .028, \eta_p^2 = .129]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>3.85</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.028</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.129</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       There was also a significant main effect of face orientation, with
       longer reaction times for inverted faces,
-      <inline-formula><alternatives><tex-math><![CDATA[F(1, 26) = 18.71, p <.001, eta_p^2 = .418]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>26</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>18.71</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:msubsup><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.418</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      <inline-formula><alternatives><tex-math><![CDATA[F(1, 26) = 18.71, p <.001, \eta_p^2 = .418]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>26</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>18.71</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.418</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       However, there was no significant interaction between condition
-      and face orientation, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 0.14, p = .872, eta_p^2) = .005]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.14</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.872</mml:mn><mml:mo>,</mml:mo><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:msubsup><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo stretchy="false" form="postfix">)</mml:mo><mml:mo>=</mml:mo><mml:mn>.005</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      and face orientation, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 0.14, p = .872, \eta_p^2) = .005]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.14</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.872</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo stretchy="false" form="postfix">)</mml:mo><mml:mo>=</mml:mo><mml:mn>.005</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       <xref alt="Figure 5" rid="fig-reaction-times">Figure 5</xref>
       shows reaction times for inverted and upright face orientations
       for each condition.</p>
@@ -3310,7 +3311,7 @@ familiar faces.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-2-nb-article">
+  <sub-article article-type="notebook" id="nb-4-nb-article">
     <front-stub>
       <title-group>
         <article-title>Differences in the Perceptual Processing of Unfamiliar
@@ -3446,9 +3447,6 @@ Attaching package: 'afex'</preformat>
         </boxed-text>
         <code language="r script">library(emmeans)</code>
         <boxed-text>
-          <preformat>Warning: package 'emmeans' was built under R version 4.3.3</preformat>
-        </boxed-text>
-        <boxed-text>
           <preformat>Welcome to emmeans.
 Caution: You lose important information if you filter this package's results.
 See '? untidy'</preformat>
@@ -3492,7 +3490,7 @@ Attaching package: 'reshape2'</preformat>
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
         </boxed-text>
         <code language="r script">library(dplyr)
-library(raincloudplots)
+#library(raincloudplots)
 library (patchwork)
 
 ## Recognition times 
@@ -3583,17 +3581,24 @@ Mean_RTs_long$Age_c &lt;- Mean_RTs_long$Age - mean(Mean_RTs_long$Age)</code>
       </sec>
       <sec specific-use="notebook-content">
         <code language="r script"># Do ANOVA analysis of ratings 
-RecognitionTimes_ANOVA &lt;- aov_ez("Participant", "Mean_time", Mean_Frames_long, within=c("Orientation", "Familiarity"),
-                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
+RecognitionTimes_ANOVA &lt;- aov_ez("Participant", "Mean_time", Mean_Frames_long, 
+                                 within=c("Orientation", "Familiarity"),
+                                 factorize = FALSE, covariate = "Age_c",  
+                                 anova_table = list(correction = "none", es = "pes")) 
 
-EM_Means_RecognitionTimes &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means
+# Do ANOVA - don't GG correct and use partial eta squared
+
+EM_Means_RecognitionTimes_Interaction &lt;- emmeans (RecognitionTimes_ANOVA, ~ Orientation|Familiarity) # Get EM Means for interaction
+EM_Means_RecognitionTimes_Familiarity &lt;- emmeans (RecognitionTimes_ANOVA, ~ Familiarity) # Get EM Means
+
+posthoc_RecognitionTimes_Familiarity &lt;- pairs(EM_Means_RecognitionTimes_Familiarity, adjust="bon")
 
 # Use afex_plot to plot these more simply
 recTimesPlot &lt;-  afex_plot(RecognitionTimes_ANOVA,  ~ Familiarity,  ~ Orientation, error = "within")
 
 
 RTs_ANOVA &lt;- aov_ez("Participant", "Mean_RT_ms", Mean_RTs_long, within=c("Orientation", "Familiarity"),
-                            factorize = FALSE, covariate = "Age_c") # Do ANOVA
+                            factorize = FALSE, covariate = "Age_c", anova_table = list(correction = "none", es = "pes")) # Do ANOVA - don't GG correct and use partial eta squared
 
 EM_Means_RTs &lt;- emmeans (RTs_ANOVA, ~ Orientation|Familiarity) # Get EM Means
 
@@ -3643,7 +3648,7 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
   &amp; Taubert, 2019</xref>;
   <xref alt="Towler et al., 2019" rid="ref-towler_are_2019-nb-article" ref-type="bibr">Towler
   et al., 2019</xref>).</p>
-        <p>The precise nature of our face expertise remains poorly understood,
+        <p>The precise nature of face expertise remains poorly understood,
   with debate around whether the processes that govern face recognition
   are the same for all faces or whether there are distinct perceptual
   processes for familiar faces
@@ -3677,7 +3682,7 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
   a person facilitate processing efficiency, as it has been shown that
   the faces of personally familiar people are processed faster and more
   accurately than the faces of familiar celebrities, and both have an
-  advantage over strangers faces
+  advantage over strangers’ faces
   (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a-nb-article" ref-type="bibr">Bortolon
   et al., 2017</xref>;
   <xref alt="Burton et al., 2015" rid="ref-burton2015a-nb-article" ref-type="bibr">Burton
@@ -3722,10 +3727,10 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
         <p>However, familiarity is a challenging dimension to explore because
   its definition is multiplexed, and it is difficult to control in an
   experimental context. First, there are different levels of
-  familiarity, ranging from recently recently seen and recently learned
-  faces to faces that are familiar but for which we have no personal
-  knowledge (famous people, acquaintances), to the faces of those we
-  know well (family, close friends, self-face; Ramon et al.
+  familiarity, ranging from recently seen and recently learned faces to
+  faces that are familiar but for which we have no personal knowledge
+  (famous people, acquaintances), to the faces of those we know well
+  (family, close friends, self-face; Ramon et al.
   (<xref alt="2011" rid="ref-ramon2011a-nb-article" ref-type="bibr">2011</xref>)).
   Levels of familiarity influence the depth of knowledge and experience
   we associate with an individual, which likely impacts the underlying
@@ -3836,8 +3841,8 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
     <xref alt="Blauch et al., 2021" rid="ref-blauch2021a-nb-article" ref-type="bibr">Blauch
     et al., 2021</xref>;
     <xref alt="Oruc et al., 2019" rid="ref-oruc2019a-nb-article" ref-type="bibr">Oruc
-    et al., 2019</xref>).Here, we employed the same method as Taubert et
-    al.
+    et al., 2019</xref>). Here, we employed the same method as Taubert
+    et al.
     (<xref alt="2011" rid="ref-taubert2011a-nb-article" ref-type="bibr">2011</xref>)
     to determine whether different perceptual processes underscore the
     recognition of familiar and unfamiliar faces.</p>
@@ -3851,14 +3856,14 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
     need for humans to efficiently process the enormous amount of visual
     information we are exposed to in our environment
     (<xref alt="Tong &amp; Nakayama, 1999" rid="ref-tong1999a-nb-article" ref-type="bibr">Tong
-    &amp; Nakayama, 1999</xref>). The pursuit of identifying the neural
+    &amp; Nakayama, 1999</xref>). The process of identifying the neural
     mechanisms underlying the recognition of familiar faces has led to
     important discoveries regarding distinct processing capacities
     (<xref alt="Bortolon et al., 2017" rid="ref-bortolon2017a-nb-article" ref-type="bibr">Bortolon
     et al., 2017</xref>;
     <xref alt="Ramon &amp; Gobbini, 2017" rid="ref-ramon2017a-nb-article" ref-type="bibr">Ramon
     &amp; Gobbini, 2017</xref>). There is growing evidence in support of
-    a familiarity continuum in face recognition highlighting processing
+    a familiarity continuum in face recognition, highlighting processing
     distinctions not only between unfamiliar and familiar faces, but
     within the familiar face category itself
     (<xref alt="Megreya &amp; Burton, 2006" rid="ref-megraya2006a-nb-article" ref-type="bibr">Megreya
@@ -4133,18 +4138,18 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
     (<xref alt="2009" rid="ref-tottenham2009a-nb-article" ref-type="bibr">2009</xref>)).
     Two photographs of the experimenter were used to create a familiar
     face condition. This was in order to ensure some level of real-world
-    familiarity with the face at a controlled level. To create the
-    self-face condition, prior to the experiment, participants were
-    asked to send two photographs of themselves with a neutral
-    expression, without eyewear and with no hair across the face.
-    Several steps were taken to equate image sets across all three
-    conditions. First, the faces were aligned at the eyes and cropped to
-    an oval to exclude hair and clothing. Second, all face identities
-    wore a neutral expression. Third, two images per identity were used
-    so that responses would be more likely to indicate identity
-    processing rather than image-based processing. Fourth, all images
-    were transformed to greyscale and root mean square (RMS) normalised
-    across all images for contrast.</p>
+    familiarity with the face for all participants at a highly
+    controlled level. To create the self-face condition, prior to the
+    experiment, participants were asked to send two photographs of
+    themselves with a neutral expression, without eyewear and with no
+    hair across the face. Several steps were taken to equate image sets
+    across all three conditions. First, the faces were aligned at the
+    eyes and cropped to an oval to exclude hair and clothing. Second,
+    all face identities wore a neutral expression. Third, two images per
+    identity were used so that responses would be more likely to
+    indicate identity processing rather than image-based processing.
+    Fourth, all images were transformed to greyscale and root mean
+    square (RMS) normalised across all images for contrast.</p>
           <p>The images were presented within a 128-pixel rectangle and viewed
     from a distance of 57 centimetres. Faces were presented upright or
     inverted 180<inline-formula><alternatives><tex-math><![CDATA[^{\circ}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></alternatives></inline-formula>.
@@ -4204,16 +4209,16 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
     (see <xref alt="Figure 2" rid="fig-setup-nb-article">Figure 2</xref>). The
     practice trial featured a randomly selected face from the unfamiliar
     face set, which was then excluded from the main experiment. A random
-    selection of target and distractor faces were chosen for each
-    participant. Before each trial, written instructions appeared on the
-    screen advising participants to focus on a fixation cross at the
-    centre of the screen and use the up and down arrow keys to indicate
-    whether the target face appeared above (up arrow) or below (down
-    arrow) the fixation cross. Participants pressed any key to continue
-    to initiate the display of a ‘target’ face stimulus for five
-    seconds. After the inspection period, participants pressed any key
-    to start the trial. Trials began with a mask stream followed by a
-    display containing the target face and a distractor face above and
+    unfamiliar target face and set of distractor faces were chosen for
+    each participant. Before each trial, written instructions appeared
+    on the screen advising participants to focus on a fixation cross at
+    the centre of the screen and use the up and down arrow keys to
+    indicate whether the target face appeared above (up arrow) or below
+    (down arrow) the fixation cross. Participants pressed any key to
+    continue to initiate the display of a ‘target’ face stimulus for
+    five seconds. After the inspection period, participants pressed any
+    key to start the trial. Trials began with a mask stream followed by
+    a display containing the target face and a distractor face above and
     below the fixation cross. The target face appeared randomly either
     above or below the fixation cross. Faces were displayed in either an
     upright or inverted position.</p>
@@ -4233,11 +4238,10 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
           <p>Data analyses were conducted using jamovi (version 2.3.21.0),
     with significance levels set to <inline-formula><alternatives><tex-math><![CDATA[\alpha = .05]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>α</mml:mi><mml:mo>=</mml:mo><mml:mn>.05</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
     for analysis and <inline-formula><alternatives><tex-math><![CDATA[\alpha = .001]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>α</mml:mi><mml:mo>=</mml:mo><mml:mn>.001</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>
-    for assumption testing. Data were examined for missing responses and
-    no missingness was found. Two participants were excluded because
-    their threshold scores were consistently above the starting point of
-    the staircases (18 frames/ 66.67ms) for most of their trials. Thus,
-    28 of the original 30 participants were included in the analyses.
+    for assumption testing. Two participants were excluded because their
+    threshold scores were consistently above the starting point of the
+    staircases (18 frames/ 66.67ms) for most of their trials. Thus, 28
+    of the original 30 participants were included in the analyses.
     Recognition time was measured using the number of frames required to
     complete the task as determined by the staircase procedure. Frames
     were then converted to milliseconds based on the monitor refresh
@@ -4247,9 +4251,8 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
           <title>Data Analysis</title>
           <p>Assumption testing for the two-way repeated-measures analysis of
     variance (ANOVA) indicated no violated assumptions. Visual
-    inspection of Q-Q plots showed a normal distribution of face
-    recognition times in each condition and no obvious outliers.
-    Homogeneity of variance was assumed, as
+    inspection of Q-Q plots showed a normal distribution of residuals
+    and no obvious outliers. Homogeneity of variance was assumed, as
     <inline-formula><alternatives><tex-math><![CDATA[F_{max}]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub></mml:math></alternatives></inline-formula>
     scores were below 10, in both upright,
     <inline-formula><alternatives><tex-math><![CDATA[F_{max} = 2.110]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mn>2.110</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>,
@@ -4261,10 +4264,10 @@ RTsPlot &lt;-  afex_plot(RTs_ANOVA,  ~ Familiarity,  ~ Orientation, error = "wit
     <inline-formula><alternatives><tex-math><![CDATA[W(28) = 0.93, p = .399]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>W</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>28</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.93</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.399</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.</p>
           <p>A 2 x 3 repeated-measures analysis of variance (ANOVA) with age
     as a continuous covariate was used to explore the effects of face
-    familiarity on face recognition time. The ANOVA showed a main effect
-    of familiarity, with significant differences in face recognition
-    times between unfamiliar, familiar and self-face conditions
-    <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+    familiarity on face recognition time. The analysis showed a main
+    effect of familiarity, with significant differences in face
+    recognition times between unfamiliar, familiar and self-face
+    conditions <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 48.08, p < .001, \eta_p^2 = .649]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>48.08</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.649</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
     In support of the first hypothesis, post hoc comparisons with
     Bonferroni corrections showed participants recognised their own
     faces at shorter display times compared with less familiar faces,
@@ -4300,18 +4303,23 @@ recTimesPlot + labs(x = 'Familiarity', y = 'Mean Recognition Time (ms)') + theme
               <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-recognition-times-1.png"/>
             </fig>
           </sec>
-          <p>In this analysis, age was also included as a continuous
-    covariate. A small but significant interaction was also observed
-    between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
-    For older participants, longer display times were required to
-    recognise unfamiliar and familiar faces than younger participants,
-    whereas older participants required relatively shorter display times
-    to recognise the self-face compared to younger participants.
-    <xref alt="Figure 4" rid="fig-correlations-nb-article">Figure 4</xref> shows
-    this interaction in more detail, illustrating the relationship
-    between age and recognition time in each condition.</p>
-          <sec id="cell-fig-correlations-nb-article" specific-use="notebook-content">
-            <code language="r script">p1 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Unfamiliar_Upright*(1000/120))) +
+        </sec>
+        <sec id="exploratory-analyses-nb-article">
+          <title>Exploratory Analyses</title>
+          <sec id="exploring-the-age-interaction-nb-article">
+            <title>Exploring the age interaction</title>
+            <p>In this analysis, age was also included as a continuous
+      covariate. A small but significant interaction was observed
+      between age and condition, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 4.16, p = .021, \eta_p^2 = .138]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>4.16</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.021</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.138</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      For older participants, longer display times were required to
+      recognise unfamiliar and familiar faces than younger participants,
+      whereas older participants required relatively shorter display
+      times to recognise the self-face compared to younger participants.
+      <xref alt="Figure 4" rid="fig-correlations-nb-article">Figure 4</xref> shows
+      this interaction in more detail, illustrating the relationship
+      between age and recognition time in each condition.</p>
+            <sec id="cell-fig-correlations-nb-article" specific-use="notebook-content">
+              <code language="r script">p1 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Unfamiliar_Upright*(1000/120))) +
   geom_point(shape=1) +    # Use hollow circles
   geom_smooth(method=lm,color="black") +  # Add linear regression line 
   #  (by default includes 95% confidence region)
@@ -4363,25 +4371,23 @@ p6 &lt;- ggplot(Mean_Frames, aes(x=Age, y=Self_Inverted*(1000/120))) +
   theme_classic() 
 
 p1 + p2 + p3 + p4 + p5 + p6</code>
-            <boxed-text>
-              <preformat>`geom_smooth()` using formula = 'y ~ x'
+              <boxed-text>
+                <preformat>`geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'</preformat>
-            </boxed-text>
-            <fig id="fig-correlations-nb-article">
-              <caption>
-                <p>Figure 4: Correlations between recognition times and
-      age for each condition</p>
-              </caption>
-              <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
-            </fig>
+              </boxed-text>
+              <fig id="fig-correlations-nb-article">
+                <caption>
+                  <p>Figure 4: Correlations between recognition times and
+        age for each condition</p>
+                </caption>
+                <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-correlations-1.png"/>
+              </fig>
+            </sec>
           </sec>
-        </sec>
-        <sec id="exploratory-analysis-nb-article">
-          <title>Exploratory Analysis</title>
           <sec id="reaction-time-nb-article">
             <title>Reaction Time</title>
             <p>An identical 2 x 3 repeated measures ANOVA was conducted on
@@ -4393,9 +4399,9 @@ p1 + p2 + p3 + p4 + p5 + p6</code>
       <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 3.85, p = .028, \eta_p^2 = .129]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>3.85</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.028</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.129</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       There was also a significant main effect of face orientation, with
       longer reaction times for inverted faces,
-      <inline-formula><alternatives><tex-math><![CDATA[F(1, 26) = 18.71, p <.001, eta_p^2 = .418]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>26</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>18.71</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:msubsup><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.418</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      <inline-formula><alternatives><tex-math><![CDATA[F(1, 26) = 18.71, p <.001, \eta_p^2 = .418]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mn>26</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>18.71</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>&lt;</mml:mo><mml:mn>.001</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>.418</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       However, there was no significant interaction between condition
-      and face orientation, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 0.14, p = .872, eta_p^2) = .005]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.14</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.872</mml:mn><mml:mo>,</mml:mo><mml:mi>e</mml:mi><mml:mi>t</mml:mi><mml:msubsup><mml:mi>a</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo stretchy="false" form="postfix">)</mml:mo><mml:mo>=</mml:mo><mml:mn>.005</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
+      and face orientation, <inline-formula><alternatives><tex-math><![CDATA[F(2, 52) = 0.14, p = .872, \eta_p^2) = .005]]></tex-math><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:mi>F</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mn>2</mml:mn><mml:mo>,</mml:mo><mml:mn>52</mml:mn><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mn>0.14</mml:mn><mml:mo>,</mml:mo><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>.872</mml:mn><mml:mo>,</mml:mo><mml:msubsup><mml:mi>η</mml:mi><mml:mi>p</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo stretchy="false" form="postfix">)</mml:mo><mml:mo>=</mml:mo><mml:mn>.005</mml:mn></mml:mrow></mml:math></alternatives></inline-formula>.
       <xref alt="Figure 5" rid="fig-reaction-times-nb-article">Figure 5</xref>
       shows reaction times for inverted and upright face orientations
       for each condition.</p>

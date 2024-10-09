@@ -69,7 +69,7 @@ library(tidyr)
 library(reshape2)
 library(tidyverse)
 library(dplyr)
-library(raincloudplots)
+#library(raincloudplots)
 library (patchwork)
 
 ## Recognition times 
@@ -279,7 +279,7 @@ recTimesPlot + labs(x = 'Familiarity', y = 'Mean Recognition Time (ms)') + theme
 
 ### Exploring the age interaction
 
-In this analysis, age was also included as a continuous covariate. A small but significant interaction was also observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
+In this analysis, age was also included as a continuous covariate. A small but significant interaction was observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
 
 ```{r}
 #| label: fig-correlations
@@ -344,7 +344,7 @@ p1 + p2 + p3 + p4 + p5 + p6
 
 ### Reaction Time
 
-An identical 2 x 3 repeated measures ANOVA was conducted on participant reaction times (computed as the elapsed time between stimulus presentation and button press), to identify whether reaction times would also reveal a familiarity effect in face recognition. The ANOVA showed a main effect of face condition, with faster reaction times for the more familiar faces, $F(2, 52) = 3.85, p = .028, \eta_p^2 = .129$. There was also a significant main effect of face orientation, with longer reaction times for inverted faces, $F(1, 26) = 18.71, p <.001, eta_p^2 = .418$. However, there was no significant interaction between condition and face orientation, $F(2, 52) = 0.14, p = .872, eta_p^2) = .005$. @fig-reaction-times shows reaction times for inverted and upright face orientations for each condition.
+An identical 2 x 3 repeated measures ANOVA was conducted on participant reaction times (computed as the elapsed time between stimulus presentation and button press), to identify whether reaction times would also reveal a familiarity effect in face recognition. The ANOVA showed a main effect of face condition, with faster reaction times for the more familiar faces, $F(2, 52) = 3.85, p = .028, \eta_p^2 = .129$. There was also a significant main effect of face orientation, with longer reaction times for inverted faces, $F(1, 26) = 18.71, p <.001, \eta_p^2 = .418$. However, there was no significant interaction between condition and face orientation, $F(2, 52) = 0.14, p = .872, \eta_p^2) = .005$. @fig-reaction-times shows reaction times for inverted and upright face orientations for each condition.
 
 ```{r}
 #| label: fig-reaction-times
