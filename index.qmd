@@ -40,7 +40,7 @@ keywords:
   - Face inversion effect 
 
 abstract: |
-  Evidence that familiar faces are processed differently from unfamiliar faces has important implications for our understanding of how we recognise the people around us. Although familiarity effects on face recognition performance have been extensively researched, the perceptual and cognitive processes that underlie these differences are comparatively unknown. Using a psychophysical staircase paradigm, we collected data from 28 female participants aged 18-65 years ($M = 43.1$, $SD = 12.7$) and probed perceptual processing by measuring the minimum amount of time required to recognise a previously seen face across three levels of familiarity (unfamiliar, familiar, and self). We also measured a second dependent variable, reaction time, which is thought to reflect both perceptual and cognitive processes. The results revealed that participants needed less time to recognise familiar faces compared to unfamiliar faces. Concomitantly, participants needed less time to respond when tasked with recognising faces compared to unfamiliar faces. As expected, inverted faces took longer to recognise than upright faces, but this effect was reduced for familiar and self-faces. Recognition times provide evidence for distinct perceptual processing based on level of familiarity and suggest that our ability to recognise familiar faces may be poorly characterised by current theories. Overall, the results emphasise the uniqueness of the self-face within the familiarity continuum, as all participants were able to recognise their own face significantly faster than other faces. In light of these results, it is clear that a full understanding of how face recognition is accomplished will require a better characterisation of how we respond to highly familiar faces.
+  Evidence that familiar faces are processed differently from unfamiliar faces has important implications for our understanding of how we recognise the people around us. Although familiarity effects on face recognition performance have been extensively researched, the perceptual and cognitive processes that underlie these differences are comparatively unknown. Using a psychophysical staircase paradigm, we collected data from 28 female participants aged 18-65 years ($M = 43.1$, $SD = 12.7$) and probed perceptual processing by measuring the minimum amount of time required to recognise a previously seen face across three levels of familiarity (unfamiliar, familiar, and self). We also measured a second dependent variable, reaction time, which is thought to reflect both perceptual and cognitive processes. The results revealed that participants needed less time to recognise familiar faces compared to unfamiliar faces. Concomitantly, participants needed less time to respond when tasked with recognising familiar compared to unfamiliar faces. As expected, inverted faces took longer to recognise than upright faces, but this effect was reduced for familiar and self-faces. Recognition times provide evidence for distinct perceptual processing based on level of familiarity and suggest that our ability to recognise familiar faces may be poorly characterised by current theories. Overall, the results emphasise the uniqueness of the self-face within the familiarity continuum, as all participants were able to recognise their own face significantly faster than other faces. In light of these results, it is clear that a full understanding of how face recognition is accomplished will require a better characterisation of how we respond to highly familiar faces.
 
 bibliography: selffaces.bib
 csl: apa.csl
@@ -281,6 +281,9 @@ recTimesPlot + labs(x = 'Familiarity', y = 'Mean Recognition Time (ms)') + theme
 
 In this analysis, age was also included as a continuous covariate. A small but significant interaction was observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
 
+In this analysis, age was also included as a continuous covariate. A small but significant interaction was also observed between age and condition, $F(2, 52) = 4.16, p = .021, \eta_p^2 = .138$. For older participants, longer display times were required to recognise unfamiliar and familiar faces than younger participants, whereas older participants required relatively shorter display times to recognise the self-face compared to younger participants. @fig-correlations shows this interaction in more detail, illustrating the relationship between age and recognition time in each condition.
+
+
 ```{r}
 #| label: fig-correlations
 #| fig-cap: "Correlations between recognition times and age for each condition"
@@ -389,3 +392,39 @@ Future research should aim to involve diverse participants, including all gender
 ## Conclusion
 
 Overall, the findings of the present study demonstrate the familiarity advantage in face recognition. We provide strong evidence in support of distinct perceptual processing at different levels of familiarity, as demonstrated by faster recognition times for both the self-face and familiar face compared to unfamiliar faces. The self-face appears to be processed differently to other familiar faces, validating the self-face as an important inclusion in face studies seeking to understand the familiarity effect in face recognition. The staircase procedure provided a unique insight into processing time, highlighting the potential underestimation of face recognition ability in the literature. The finding that face inversion is less disruptive to the processing of more familiar faces is further evidence of distinct perceptual processes and challenges the widely held view that faces are processed holistically. We recommend further exploration of the effects of inversion at different levels of familiarity, to enhance understanding of perceptual processing distinctions, and identify implications for holistic and featural processing theories.
+
+# Declarations
+
+## Funding
+
+This study was supported by the University of New England’s Faculty of Medicine and Health funding for Honours projects, which was used to reimburse the participants. 
+
+## Conflicts of interest
+
+The authors have no conflicts of interest to declare.
+
+## Ethics approval
+
+This study was approved by the University of New England’s Human Research Ethics Committee, approval no. HE23-030.
+
+## Consent to participate
+
+Participants gave informed written consent to participate in the study.
+
+## Consent for publication
+
+Participants gave consent for publication (including publication of open data) in their written consent.
+
+## Availability of data and materials
+
+All data and materials for stimulus presentation are available on the [OSF](https://osf.io/dtm3a/), except for the participants’ own faces, for ethical and privacy reasons.  
+
+## Preregistration
+
+This study was [preregistered on the OSF](https://osf.io/dtm3a/registrations) on 24th August 2023, prior to data collection. 
+
+## Code availability
+
+All analysis code and stimulus presentation code is also available publicly on the [OSF](https://osf.io/dtm3a/).  
+
+
